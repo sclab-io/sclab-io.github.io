@@ -6,7 +6,7 @@ language_tabs: # must be one of https://git.io/vQNgJ
   - javascript
 
 toc_footers:
-  - <a href='https://www.sclab.io'>개발자 토큰 생성</a>
+  - <a href='https://app.sclab.io'>개발자 토큰 생성</a>
 
 includes:
   - errors
@@ -88,7 +88,7 @@ curl "https://app.sclab.io/api/1/<ID>" \
 
 ### HTTP 요청
 
-`GET https://sclab.io/api/1/<ID>`
+`GET https://app.sclab.io/api/1/<ID>`
 
 <aside class="success">
 <code>ID</code> 값을 자신이 생성한 아이디 값과 일치하게 바꿔 주세요. https://app.sclab.io/api/1/sW47bBZjYyWGjcfaF

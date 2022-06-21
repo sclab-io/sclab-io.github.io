@@ -6,7 +6,7 @@ language_tabs: # must be one of https://git.io/vQNgJ
   - javascript
 
 toc_footers:
-  - <a href='https://www.sclab.io'>Sign Up for a Developer token</a>
+  - <a href='https://app.sclab.io'>Sign Up for a Developer token</a>
 
 includes:
   - errors
@@ -88,7 +88,7 @@ then every user who browse your published site will be affected this action.
 
 ### HTTP Request
 
-`GET https://sclab.io/api/1/<ID>`
+`GET https://app.sclab.io/api/1/<ID>`
 
 <aside class="success">
 You must replace <code>ID</code> your api end point like this https://app.sclab.io/api/1/sW47bBZjYyWGjcfaF
