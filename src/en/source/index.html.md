@@ -1,13 +1,12 @@
 ---
-title: API Reference
+title: SCLAB API Reference
 
 language_tabs: # must be one of https://git.io/vQNgJ
   - shell
   - javascript
 
 toc_footers:
-  - <a href='https://www.sclab.io'>Sign Up for a Developer Key</a>
-  - <a href='https://github.com/slatedocs/slate'>Documentation Powered by Slate</a>
+  - <a href='https://www.sclab.io'>Sign Up for a Developer token</a>
 
 includes:
   - errors
@@ -23,221 +22,122 @@ meta:
 
 # Introduction
 
-Welcome to the SCLAB API! You can use our API to access SCLAB API endpoints, which can get information on various cats, kittens, and breeds in our database.
+Welcome to the SCLAB API! You can use our API to access SCLAB API endpoints.
 
-We have language bindings in Shell, Ruby, Python, and JavaScript! You can view code examples in the dark area to the right, and you can switch the programming language of the examples with the tabs in the top right.
-
-This example API documentation page was created with [Slate](https://github.com/slatedocs/slate). Feel free to edit it and use it as a base for your own API's documentation.
+We have language bindings in Shell, Javascript! You can view code examples in the dark area to the right, and you can switch the programming language of the examples with the tabs in the top right.
 
 # Authentication
 
 > To authorize, use this code:
 
-```ruby
-require 'kittn'
-
-api = SCLAB::APIClient.authorize!('meowmeowmeow')
-```
-
-```python
-import kittn
-
-api = kittn.authorize('meowmeowmeow')
-```
-
 ```shell
-# With shell, you can just pass the correct header with each request
+# authorization header 
 curl "api_endpoint_here" \
-  -H "Authorization: meowmeowmeow"
+  -H "Authorization: APITokenHere"
+
+# query string for without header
+curl "api_endpoint_here?token=APITokenHere"
+
+# json body for POST
+curl "api_endpoint_here" \
+  -H "Content-Type: application/json" \
+  -X POST \
+  -d "{\"token\": \"APITokenHere\"}"
 ```
 
 ```javascript
-const kittn = require('kittn');
-
-let api = kittn.authorize('meowmeowmeow');
 ```
 
-> Make sure to replace `meowmeowmeow` with your API key.
+> Make sure to replace `APITokenHere` with your API Token.
 
-SCLAB uses API keys to allow access to the API. You can register a new SCLAB API key at our [developer portal](http://example.com/developers).
+SCLAB uses API JWT to allow access to the API. You can register a new SCLAB API key at our [SCLAB Studio](http://app.sclab.io).
 
-SCLAB expects for the API key to be included in all API requests to the server in a header that looks like the following:
+SCLAB expects for the API token to be included in all API requests to the server in a header that looks like the following:
 
-`Authorization: meowmeowmeow`
+`Authorization: APITokenHere`
+
+And also you can use query string or JSON key and value for POST request.
 
 <aside class="notice">
-You must replace <code>meowmeowmeow</code> with your personal API key.
+You must replace <code>APITokenHere</code> with your personal API Token.
 </aside>
 
-# Kittens
+# API Action
 
-## Get All Kittens
-
-```ruby
-require 'kittn'
-
-api = SCLAB::APIClient.authorize!('meowmeowmeow')
-api.kittens.get
-```
-
-```python
-import kittn
-
-api = kittn.authorize('meowmeowmeow')
-api.kittens.get()
-```
+## Run Action
 
 ```shell
-curl "http://example.com/api/kittens" \
-  -H "Authorization: meowmeowmeow"
+curl "https://app.sclab.io/api/1/<ID>" \
+  -H "Authorization: APITokenHere"
 ```
 
 ```javascript
-const kittn = require('kittn');
-
-let api = kittn.authorize('meowmeowmeow');
-let kittens = api.kittens.get();
 ```
 
 > The above command returns JSON structured like this:
 
 ```json
-[
-  {
-    "id": 1,
-    "name": "Fluffums",
-    "breed": "calico",
-    "fluffiness": 6,
-    "cuteness": 7
-  },
-  {
-    "id": 2,
-    "name": "Max",
-    "breed": "unknown",
-    "fluffiness": 5,
-    "cuteness": 10
-  }
-]
+{
+  "result": "ok"
+}
 ```
 
-This endpoint retrieves all kittens.
+This endpoint run single API Action. 
+When this end point got the response successfully, 
+then every user who browse your published site will be affected this action.
 
 ### HTTP Request
 
-`GET http://example.com/api/kittens`
-
-### Query Parameters
-
-Parameter | Default | Description
---------- | ------- | -----------
-include_cats | false | If set to true, the result will also include cats.
-available | true | If set to false, the result will include kittens that have already been adopted.
+`GET https://sclab.io/api/1/<ID>`
 
 <aside class="success">
-Remember — a happy kitten is an authenticated kitten!
+You must replace <code>ID</code> your api end point like this https://app.sclab.io/api/1/sW47bBZjYyWGjcfaF
 </aside>
 
-## Get a Specific Kitten
+### URL Parameters
 
-```ruby
-require 'kittn'
+Parameter | Description
+-- | --
+ID | API Action ID from SCLAB Studio
 
-api = SCLAB::APIClient.authorize!('meowmeowmeow')
-api.kittens.get(2)
-```
+# Accounts Management
 
-```python
-import kittn
-
-api = kittn.authorize('meowmeowmeow')
-api.kittens.get(2)
-```
+## Create new account
 
 ```shell
-curl "http://example.com/api/kittens/2" \
-  -H "Authorization: meowmeowmeow"
+curl "https://app.sclab.io/api/1/user/create" \
+  -X POST \
+  -H "Authorization: APITokenHere" \
+  -H "Content-Type: application/json" \
+  -d "{\"email\": \"email@address.com\", \"password\": \"password string\", \"name\": \"user name\"}"
 ```
 
 ```javascript
-const kittn = require('kittn');
-
-let api = kittn.authorize('meowmeowmeow');
-let max = api.kittens.get(2);
 ```
 
 > The above command returns JSON structured like this:
 
 ```json
 {
-  "id": 2,
-  "name": "Max",
-  "breed": "unknown",
-  "fluffiness": 5,
-  "cuteness": 10
+  "result": {
+    "_userId": "aspfokgwegoepwk",
+    "status": "user created"
+  }
 }
 ```
 
-This endpoint retrieves a specific kitten.
-
-<aside class="warning">Inside HTML code blocks like this one, you can't use Markdown, so use <code>&lt;code&gt;</code> blocks to denote code.</aside>
+This endpoint creates new site user account.
 
 ### HTTP Request
 
-`GET http://example.com/kittens/<ID>`
+`POST https://app.sclab.io/api/1/user/create`
 
-### URL Parameters
+### JSON Parameters
 
-Parameter | Description
---------- | -----------
-ID | The ID of the kitten to retrieve
-
-## Delete a Specific Kitten
-
-```ruby
-require 'kittn'
-
-api = SCLAB::APIClient.authorize!('meowmeowmeow')
-api.kittens.delete(2)
-```
-
-```python
-import kittn
-
-api = kittn.authorize('meowmeowmeow')
-api.kittens.delete(2)
-```
-
-```shell
-curl "http://example.com/api/kittens/2" \
-  -X DELETE \
-  -H "Authorization: meowmeowmeow"
-```
-
-```javascript
-const kittn = require('kittn');
-
-let api = kittn.authorize('meowmeowmeow');
-let max = api.kittens.delete(2);
-```
-
-> The above command returns JSON structured like this:
-
-```json
-{
-  "id": 2,
-  "deleted" : ":("
-}
-```
-
-This endpoint deletes a specific kitten.
-
-### HTTP Request
-
-`DELETE http://example.com/kittens/<ID>`
-
-### URL Parameters
-
-Parameter | Description
---------- | -----------
-ID | The ID of the kitten to delete
-
+Parameter | Required | Description 
+-- | -- | -- | 
+email | Y | User email address
+password | Y | User password
+name | Y | User name
+phone | N | User phone number
+address | N | User address
