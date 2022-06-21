@@ -66,6 +66,9 @@ You must replace <code>APITokenHere</code> with your personal API Token.
 
 # API 액션
 
+API 액션은 외부 서비스에서 특정상황(긴급상황 등)에 접속해 있는 사용자들의 화면을 일괄적으로 바꾸기 위한 기능 입니다.
+액션은 퍼블리싱을 한 이후에만 작동 되며, 액션이 등록되어 있지 않은 엔드포인트는 작동 되지 않습니다.
+
 ## 액션 실행
 
 ```shell

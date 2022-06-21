@@ -340,7 +340,7 @@
           </li>
       </ul>
         <ul class="toc-footer">
-            <li><a href='https://www.sclab.io'>Sign Up for a Developer token</a></li>
+            <li><a href='https://app.sclab.io'>Sign Up for a Developer token</a></li>
         </ul>
     </div>
     <div class="page-wrapper">
@@ -382,7 +382,12 @@ curl <span class="s2">"api_endpoint_here"</span> <span class="se">\</span>
 <aside class="notice">
 You must replace <code>APITokenHere</code> with your personal API Token.
 </aside>
-<h1 id='api-action'>API Action</h1><h2 id='run-action'>Run Action</h2><div class="highlight"><pre class="highlight shell tab-shell"><code>curl <span class="s2">"https://app.sclab.io/api/1/&lt;ID&gt;"</span> <span class="se">\</span>
+
+<p><img src="images/token_screen_shot-6f4fd05b.png" alt="API Page Screen Shot" /></p>
+<h1 id='api-action'>API Action</h1>
+<p>API action is a function to collectively change the screen of users who are connected to a specific situation (emergency, etc.) in an external service.
+Actions only work after publishing, and endpoints that do not have actions registered do not work.</p>
+<h2 id='run-action'>Run Action</h2><div class="highlight"><pre class="highlight shell tab-shell"><code>curl <span class="s2">"https://app.sclab.io/api/1/&lt;ID&gt;"</span> <span class="se">\</span>
   <span class="nt">-H</span> <span class="s2">"Authorization: APITokenHere"</span>
 </code></pre></div><div class="highlight"><pre class="highlight javascript tab-javascript"><code></code></pre></div>
 <blockquote>
@@ -396,7 +401,7 @@ You must replace <code>APITokenHere</code> with your personal API Token.
 When this end point got the response successfully, 
 then every user who browse your published site will be affected this action.</p>
 <h3 id='http-request'>HTTP Request</h3>
-<p><code>GET https://sclab.io/api/1/&lt;ID&gt;</code></p>
+<p><code>GET https://app.sclab.io/api/1/&lt;ID&gt;</code></p>
 
 <aside class="success">
 You must replace <code>ID</code> your api end point like this https://app.sclab.io/api/1/sW47bBZjYyWGjcfaF

@@ -66,6 +66,9 @@ You must replace <code>APITokenHere</code> with your personal API Token.
 
 # API Action
 
+API action is a function to collectively change the screen of users who are connected to a specific situation (emergency, etc.) in an external service.
+Actions only work after publishing, and endpoints that do not have actions registered do not work.
+
 ## Run Action
 
 ```shell

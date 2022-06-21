@@ -340,7 +340,7 @@
           </li>
       </ul>
         <ul class="toc-footer">
-            <li><a href='https://www.sclab.io'>개발자 토큰 생성</a></li>
+            <li><a href='https://app.sclab.io'>개발자 토큰 생성</a></li>
         </ul>
     </div>
     <div class="page-wrapper">
@@ -382,7 +382,12 @@ curl <span class="s2">"api_endpoint_here"</span> <span class="se">\</span>
 <aside class="notice">
 You must replace <code>APITokenHere</code> with your personal API Token.
 </aside>
-<h1 id='api'>API 액션</h1><h2 id='36310773f5'>액션 실행</h2><div class="highlight"><pre class="highlight shell tab-shell"><code>curl <span class="s2">"https://app.sclab.io/api/1/&lt;ID&gt;"</span> <span class="se">\</span>
+
+<p><img src="images/token_screen_shot-6f4fd05b.png" alt="API Page Screen Shot" /></p>
+<h1 id='api'>API 액션</h1>
+<p>API 액션은 외부 서비스에서 특정상황(긴급상황 등)에 접속해 있는 사용자들의 화면을 일괄적으로 바꾸기 위한 기능 입니다.
+액션은 퍼블리싱을 한 이후에만 작동 되며, 액션이 등록되어 있지 않은 엔드포인트는 작동 되지 않습니다.</p>
+<h2 id='36310773f5'>액션 실행</h2><div class="highlight"><pre class="highlight shell tab-shell"><code>curl <span class="s2">"https://app.sclab.io/api/1/&lt;ID&gt;"</span> <span class="se">\</span>
   <span class="nt">-H</span> <span class="s2">"Authorization: APITokenHere"</span>
 </code></pre></div><div class="highlight"><pre class="highlight javascript tab-javascript"><code></code></pre></div>
 <blockquote>
@@ -396,7 +401,7 @@ You must replace <code>APITokenHere</code> with your personal API Token.
 이 엔드 포인트가 성공적으로 결과값을 응답 받으면,
 퍼블리시된 사이트를 브라우져로 접속한 모든 사용자에게 적용 됩니다.</p>
 <h3 id='http'>HTTP 요청</h3>
-<p><code>GET https://sclab.io/api/1/&lt;ID&gt;</code></p>
+<p><code>GET https://app.sclab.io/api/1/&lt;ID&gt;</code></p>
 
 <aside class="success">
 <code>ID</code> 값을 자신이 생성한 아이디 값과 일치하게 바꿔 주세요. https://app.sclab.io/api/1/sW47bBZjYyWGjcfaF
