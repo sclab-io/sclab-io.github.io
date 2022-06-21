@@ -62,6 +62,8 @@ And also you can use query string or JSON key and value for POST request.
 You must replace <code>APITokenHere</code> with your personal API Token.
 </aside>
 
+![API Page Screen Shot](./images/token_screen_shot.png)
+
 # API Action
 
 ## Run Action

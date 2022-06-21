@@ -62,6 +62,8 @@ curl "api_endpoint_here" \
 You must replace <code>APITokenHere</code> with your personal API Token.
 </aside>
 
+![API Page Screen Shot](./images/token_screen_shot.png)
+
 # API 액션
 
 ## 액션 실행
