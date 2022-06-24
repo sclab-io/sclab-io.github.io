@@ -107,6 +107,50 @@ ID | SCLAB Studio 에서 생성한 ID 값
 
 # 계정 관리
 
+## 회원정보 가져오기
+
+```shell
+curl "https://app.sclab.io/api/1/user/get?_userId=jJpp2WfD7yp7y2cEk" \
+  -H "Authorization: APITokenHere" \
+  -H "Content-Type: application/json"
+
+or
+
+curl "https://app.sclab.io/api/1/user/get?email=test@sclab.io" \
+  -H "Authorization: APITokenHere" \
+  -H "Content-Type: application/json"
+```
+
+```javascript
+```
+
+> The above command returns JSON structured like this:
+
+```json
+{
+  "result": {
+    "_userId": "jJpp2WfD7yp7y2cEk",
+    "email": "test@sclab.io",
+    "name": "tester",
+    "phone": "01012341234",
+    "address": "seoul"
+  }
+}
+```
+
+이 엔드포인트는 회원정보를 가져옵니다.
+
+### HTTP 요청
+
+`GET https://app.sclab.io/api/1/user/get`
+
+### JSON Parameters
+
+키 | 필수 | 설명
+-- | -- | -- |
+_userId | N | 회원 아이디
+email | N | 이메일
+
 ## 신규 계정 생성
 
 ```shell
@@ -146,3 +190,76 @@ password | Y | 비밀번호
 name | Y | 이름
 phone | N | 전화번호
 address | N | 주소
+
+## 회원 정보 수정
+
+```shell
+curl "https://app.sclab.io/api/1/user/update" \
+  -X POST \
+  -H "Authorization: APITokenHere" \
+  -H "Content-Type: application/json" \
+  -d "{\"name\": \"user name\"}"
+```
+
+```javascript
+```
+
+> The above command returns JSON structured like this:
+
+```json
+{
+  "result": {
+    "status": "user updated"
+  }
+}
+```
+
+이 엔드포인트는 사이트 회원의 프로필정보를 수정 합니다. [이름, 전화번호, 주소]
+
+### HTTP 요청
+
+`POST https://app.sclab.io/api/1/user/create`
+
+### JSON Parameters
+
+키 | 필수 | 설명
+-- | -- | -- |
+_userId | Y | 회원아이디
+name | N | 이름
+phone | N | 전화번호
+address | N | 주소
+
+## 사이트 회원삭제
+
+```shell
+curl "https://app.sclab.io/api/1/user/delete" \
+  -X DELETE \
+  -H "Authorization: APITokenHere" \
+  -H "Content-Type: application/json" \
+  -d "{\"_userId\": \"user id\"}"
+```
+
+```javascript
+```
+
+> The above command returns JSON structured like this:
+
+```json
+{
+  "result": {
+    "status": "user removed"
+  }
+}
+```
+
+사이트 회원은 삭제 되지만, 회원 계정은 삭제되지 않습니다.
+
+### HTTP 요청
+
+`DELETE https://app.sclab.io/api/1/user/delete`
+
+### JSON Parameters
+
+키 | 필수 | 설명
+-- | -- | -- |
+_userId | Y | 회원 아이디

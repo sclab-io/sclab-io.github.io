@@ -331,7 +331,16 @@
             <a href="#accounts-management" class="toc-h1 toc-link" data-title="Accounts Management">Accounts Management</a>
               <ul class="toc-list-h2">
                   <li>
+                    <a href="#get-user-information" class="toc-h2 toc-link" data-title="Get user information">Get user information</a>
+                  </li>
+                  <li>
                     <a href="#create-new-account" class="toc-h2 toc-link" data-title="Create new account">Create new account</a>
+                  </li>
+                  <li>
+                    <a href="#update-account-profile" class="toc-h2 toc-link" data-title="Update account profile">Update account profile</a>
+                  </li>
+                  <li>
+                    <a href="#delete-user-from-site" class="toc-h2 toc-link" data-title="Delete user from site">Delete user from site</a>
                   </li>
               </ul>
           </li>
@@ -418,7 +427,52 @@ You must replace <code>ID</code> your api end point like this https://app.sclab.
 <td>API Action ID from SCLAB Studio</td>
 </tr>
 </tbody></table>
-<h1 id='accounts-management'>Accounts Management</h1><h2 id='create-new-account'>Create new account</h2><div class="highlight"><pre class="highlight shell tab-shell"><code>curl <span class="s2">"https://app.sclab.io/api/1/user/create"</span> <span class="se">\</span>
+<h1 id='accounts-management'>Accounts Management</h1><h2 id='get-user-information'>Get user information</h2><div class="highlight"><pre class="highlight shell tab-shell"><code>curl <span class="s2">"https://app.sclab.io/api/1/user/get?_userId=jJpp2WfD7yp7y2cEk"</span> <span class="se">\</span>
+  <span class="nt">-H</span> <span class="s2">"Authorization: APITokenHere"</span> <span class="se">\</span>
+  <span class="nt">-H</span> <span class="s2">"Content-Type: application/json"</span>
+
+or
+
+curl <span class="s2">"https://app.sclab.io/api/1/user/get?email=test@sclab.io"</span> <span class="se">\</span>
+  <span class="nt">-H</span> <span class="s2">"Authorization: APITokenHere"</span> <span class="se">\</span>
+  <span class="nt">-H</span> <span class="s2">"Content-Type: application/json"</span>
+</code></pre></div><div class="highlight"><pre class="highlight javascript tab-javascript"><code></code></pre></div>
+<blockquote>
+<p>The above command returns JSON structured like this:</p>
+</blockquote>
+<div class="highlight"><pre class="highlight json tab-json"><code><span class="p">{</span><span class="w">
+  </span><span class="nl">"result"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+    </span><span class="nl">"_userId"</span><span class="p">:</span><span class="w"> </span><span class="s2">"jJpp2WfD7yp7y2cEk"</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"email"</span><span class="p">:</span><span class="w"> </span><span class="s2">"test@sclab.io"</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"tester"</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"phone"</span><span class="p">:</span><span class="w"> </span><span class="s2">"01012341234"</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"address"</span><span class="p">:</span><span class="w"> </span><span class="s2">"seoul"</span><span class="w">
+  </span><span class="p">}</span><span class="w">
+</span><span class="p">}</span><span class="w">
+</span></code></pre></div>
+<p>This endpoint get user information.</p>
+<h3 id='http-request-2'>HTTP Request</h3>
+<p><code>GET https://app.sclab.io/api/1/user/get</code></p>
+<h3 id='json-parameters'>JSON Parameters</h3>
+<table><thead>
+<tr>
+<th>Parameter</th>
+<th>Required</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>_userId</td>
+<td>N</td>
+<td>User id</td>
+</tr>
+<tr>
+<td>email</td>
+<td>N</td>
+<td>Email</td>
+</tr>
+</tbody></table>
+<h2 id='create-new-account'>Create new account</h2><div class="highlight"><pre class="highlight shell tab-shell"><code>curl <span class="s2">"https://app.sclab.io/api/1/user/create"</span> <span class="se">\</span>
   <span class="nt">-X</span> POST <span class="se">\</span>
   <span class="nt">-H</span> <span class="s2">"Authorization: APITokenHere"</span> <span class="se">\</span>
   <span class="nt">-H</span> <span class="s2">"Content-Type: application/json"</span> <span class="se">\</span>
@@ -435,9 +489,9 @@ You must replace <code>ID</code> your api end point like this https://app.sclab.
 </span><span class="p">}</span><span class="w">
 </span></code></pre></div>
 <p>This endpoint creates new site user account.</p>
-<h3 id='http-request-2'>HTTP Request</h3>
+<h3 id='http-request-3'>HTTP Request</h3>
 <p><code>POST https://app.sclab.io/api/1/user/create</code></p>
-<h3 id='json-parameters'>JSON Parameters</h3>
+<h3 id='json-parameters-2'>JSON Parameters</h3>
 <table><thead>
 <tr>
 <th>Parameter</th>
@@ -469,6 +523,85 @@ You must replace <code>ID</code> your api end point like this https://app.sclab.
 <td>address</td>
 <td>N</td>
 <td>User address</td>
+</tr>
+</tbody></table>
+<h2 id='update-account-profile'>Update account profile</h2><div class="highlight"><pre class="highlight shell tab-shell"><code>curl <span class="s2">"https://app.sclab.io/api/1/user/update"</span> <span class="se">\</span>
+  <span class="nt">-X</span> POST <span class="se">\</span>
+  <span class="nt">-H</span> <span class="s2">"Authorization: APITokenHere"</span> <span class="se">\</span>
+  <span class="nt">-H</span> <span class="s2">"Content-Type: application/json"</span> <span class="se">\</span>
+  <span class="nt">-d</span> <span class="s2">"{</span><span class="se">\"</span><span class="s2">name</span><span class="se">\"</span><span class="s2">: </span><span class="se">\"</span><span class="s2">user name</span><span class="se">\"</span><span class="s2">}"</span>
+</code></pre></div><div class="highlight"><pre class="highlight javascript tab-javascript"><code></code></pre></div>
+<blockquote>
+<p>The above command returns JSON structured like this:</p>
+</blockquote>
+<div class="highlight"><pre class="highlight json tab-json"><code><span class="p">{</span><span class="w">
+  </span><span class="nl">"result"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+    </span><span class="nl">"status"</span><span class="p">:</span><span class="w"> </span><span class="s2">"user updated"</span><span class="w">
+  </span><span class="p">}</span><span class="w">
+</span><span class="p">}</span><span class="w">
+</span></code></pre></div>
+<p>This endpoint update site user account profile [name, phone, address].</p>
+<h3 id='http-request-4'>HTTP Request</h3>
+<p><code>POST https://app.sclab.io/api/1/user/create</code></p>
+<h3 id='json-parameters-3'>JSON Parameters</h3>
+<table><thead>
+<tr>
+<th>Parameter</th>
+<th>Required</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>_userId</td>
+<td>Y</td>
+<td>User id</td>
+</tr>
+<tr>
+<td>name</td>
+<td>N</td>
+<td>User name</td>
+</tr>
+<tr>
+<td>phone</td>
+<td>N</td>
+<td>User phone number</td>
+</tr>
+<tr>
+<td>address</td>
+<td>N</td>
+<td>User address</td>
+</tr>
+</tbody></table>
+<h2 id='delete-user-from-site'>Delete user from site</h2><div class="highlight"><pre class="highlight shell tab-shell"><code>curl <span class="s2">"https://app.sclab.io/api/1/user/delete"</span> <span class="se">\</span>
+  <span class="nt">-X</span> DELETE <span class="se">\</span>
+  <span class="nt">-H</span> <span class="s2">"Authorization: APITokenHere"</span> <span class="se">\</span>
+  <span class="nt">-H</span> <span class="s2">"Content-Type: application/json"</span> <span class="se">\</span>
+  <span class="nt">-d</span> <span class="s2">"{</span><span class="se">\"</span><span class="s2">_userId</span><span class="se">\"</span><span class="s2">: </span><span class="se">\"</span><span class="s2">user id</span><span class="se">\"</span><span class="s2">}"</span>
+</code></pre></div><div class="highlight"><pre class="highlight javascript tab-javascript"><code></code></pre></div>
+<blockquote>
+<p>The above command returns JSON structured like this:</p>
+</blockquote>
+<div class="highlight"><pre class="highlight json tab-json"><code><span class="p">{</span><span class="w">
+  </span><span class="nl">"result"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+    </span><span class="nl">"status"</span><span class="p">:</span><span class="w"> </span><span class="s2">"user removed"</span><span class="w">
+  </span><span class="p">}</span><span class="w">
+</span><span class="p">}</span><span class="w">
+</span></code></pre></div>
+<p>This endpoint remove user from your site, but user account is not removed.</p>
+<h3 id='http-request-5'>HTTP Request</h3>
+<p><code>DELETE https://app.sclab.io/api/1/user/delete</code></p>
+<h3 id='json-parameters-4'>JSON Parameters</h3>
+<table><thead>
+<tr>
+<th>Parameter</th>
+<th>Required</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>_userId</td>
+<td>Y</td>
+<td>User id</td>
 </tr>
 </tbody></table>
 <h1 id='errors'>Errors</h1>

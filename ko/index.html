@@ -331,7 +331,16 @@
             <a href="#5a43460684" class="toc-h1 toc-link" data-title="계정 관리">계정 관리</a>
               <ul class="toc-list-h2">
                   <li>
+                    <a href="#3e358cd87b" class="toc-h2 toc-link" data-title="회원정보 가져오기">회원정보 가져오기</a>
+                  </li>
+                  <li>
                     <a href="#e16e56fa1d" class="toc-h2 toc-link" data-title="신규 계정 생성">신규 계정 생성</a>
+                  </li>
+                  <li>
+                    <a href="#88b3940645" class="toc-h2 toc-link" data-title="회원 정보 수정">회원 정보 수정</a>
+                  </li>
+                  <li>
+                    <a href="#adedaea94e" class="toc-h2 toc-link" data-title="사이트 회원삭제">사이트 회원삭제</a>
                   </li>
               </ul>
           </li>
@@ -418,7 +427,52 @@ You must replace <code>APITokenHere</code> with your personal API Token.
 <td>SCLAB Studio 에서 생성한 ID 값</td>
 </tr>
 </tbody></table>
-<h1 id='5a43460684'>계정 관리</h1><h2 id='e16e56fa1d'>신규 계정 생성</h2><div class="highlight"><pre class="highlight shell tab-shell"><code>curl <span class="s2">"https://app.sclab.io/api/1/user/create"</span> <span class="se">\</span>
+<h1 id='5a43460684'>계정 관리</h1><h2 id='3e358cd87b'>회원정보 가져오기</h2><div class="highlight"><pre class="highlight shell tab-shell"><code>curl <span class="s2">"https://app.sclab.io/api/1/user/get?_userId=jJpp2WfD7yp7y2cEk"</span> <span class="se">\</span>
+  <span class="nt">-H</span> <span class="s2">"Authorization: APITokenHere"</span> <span class="se">\</span>
+  <span class="nt">-H</span> <span class="s2">"Content-Type: application/json"</span>
+
+or
+
+curl <span class="s2">"https://app.sclab.io/api/1/user/get?email=test@sclab.io"</span> <span class="se">\</span>
+  <span class="nt">-H</span> <span class="s2">"Authorization: APITokenHere"</span> <span class="se">\</span>
+  <span class="nt">-H</span> <span class="s2">"Content-Type: application/json"</span>
+</code></pre></div><div class="highlight"><pre class="highlight javascript tab-javascript"><code></code></pre></div>
+<blockquote>
+<p>The above command returns JSON structured like this:</p>
+</blockquote>
+<div class="highlight"><pre class="highlight json tab-json"><code><span class="p">{</span><span class="w">
+  </span><span class="nl">"result"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+    </span><span class="nl">"_userId"</span><span class="p">:</span><span class="w"> </span><span class="s2">"jJpp2WfD7yp7y2cEk"</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"email"</span><span class="p">:</span><span class="w"> </span><span class="s2">"test@sclab.io"</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"tester"</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"phone"</span><span class="p">:</span><span class="w"> </span><span class="s2">"01012341234"</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"address"</span><span class="p">:</span><span class="w"> </span><span class="s2">"seoul"</span><span class="w">
+  </span><span class="p">}</span><span class="w">
+</span><span class="p">}</span><span class="w">
+</span></code></pre></div>
+<p>이 엔드포인트는 회원정보를 가져옵니다.</p>
+<h3 id='http-2'>HTTP 요청</h3>
+<p><code>GET https://app.sclab.io/api/1/user/get</code></p>
+<h3 id='json-parameters'>JSON Parameters</h3>
+<table><thead>
+<tr>
+<th>키</th>
+<th>필수</th>
+<th>설명</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>_userId</td>
+<td>N</td>
+<td>회원 아이디</td>
+</tr>
+<tr>
+<td>email</td>
+<td>N</td>
+<td>이메일</td>
+</tr>
+</tbody></table>
+<h2 id='e16e56fa1d'>신규 계정 생성</h2><div class="highlight"><pre class="highlight shell tab-shell"><code>curl <span class="s2">"https://app.sclab.io/api/1/user/create"</span> <span class="se">\</span>
   <span class="nt">-X</span> POST <span class="se">\</span>
   <span class="nt">-H</span> <span class="s2">"Authorization: APITokenHere"</span> <span class="se">\</span>
   <span class="nt">-H</span> <span class="s2">"Content-Type: application/json"</span> <span class="se">\</span>
@@ -435,9 +489,9 @@ You must replace <code>APITokenHere</code> with your personal API Token.
 </span><span class="p">}</span><span class="w">
 </span></code></pre></div>
 <p>이 엔드포인트는 신규 사이트 사용자 계정을 생성합니다.</p>
-<h3 id='http-2'>HTTP 요청</h3>
+<h3 id='http-3'>HTTP 요청</h3>
 <p><code>POST https://app.sclab.io/api/1/user/create</code></p>
-<h3 id='json-parameters'>JSON Parameters</h3>
+<h3 id='json-parameters-2'>JSON Parameters</h3>
 <table><thead>
 <tr>
 <th>키</th>
@@ -469,6 +523,85 @@ You must replace <code>APITokenHere</code> with your personal API Token.
 <td>address</td>
 <td>N</td>
 <td>주소</td>
+</tr>
+</tbody></table>
+<h2 id='88b3940645'>회원 정보 수정</h2><div class="highlight"><pre class="highlight shell tab-shell"><code>curl <span class="s2">"https://app.sclab.io/api/1/user/update"</span> <span class="se">\</span>
+  <span class="nt">-X</span> POST <span class="se">\</span>
+  <span class="nt">-H</span> <span class="s2">"Authorization: APITokenHere"</span> <span class="se">\</span>
+  <span class="nt">-H</span> <span class="s2">"Content-Type: application/json"</span> <span class="se">\</span>
+  <span class="nt">-d</span> <span class="s2">"{</span><span class="se">\"</span><span class="s2">name</span><span class="se">\"</span><span class="s2">: </span><span class="se">\"</span><span class="s2">user name</span><span class="se">\"</span><span class="s2">}"</span>
+</code></pre></div><div class="highlight"><pre class="highlight javascript tab-javascript"><code></code></pre></div>
+<blockquote>
+<p>The above command returns JSON structured like this:</p>
+</blockquote>
+<div class="highlight"><pre class="highlight json tab-json"><code><span class="p">{</span><span class="w">
+  </span><span class="nl">"result"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+    </span><span class="nl">"status"</span><span class="p">:</span><span class="w"> </span><span class="s2">"user updated"</span><span class="w">
+  </span><span class="p">}</span><span class="w">
+</span><span class="p">}</span><span class="w">
+</span></code></pre></div>
+<p>이 엔드포인트는 사이트 회원의 프로필정보를 수정 합니다. [이름, 전화번호, 주소]</p>
+<h3 id='http-4'>HTTP 요청</h3>
+<p><code>POST https://app.sclab.io/api/1/user/create</code></p>
+<h3 id='json-parameters-3'>JSON Parameters</h3>
+<table><thead>
+<tr>
+<th>키</th>
+<th>필수</th>
+<th>설명</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>_userId</td>
+<td>Y</td>
+<td>회원아이디</td>
+</tr>
+<tr>
+<td>name</td>
+<td>N</td>
+<td>이름</td>
+</tr>
+<tr>
+<td>phone</td>
+<td>N</td>
+<td>전화번호</td>
+</tr>
+<tr>
+<td>address</td>
+<td>N</td>
+<td>주소</td>
+</tr>
+</tbody></table>
+<h2 id='adedaea94e'>사이트 회원삭제</h2><div class="highlight"><pre class="highlight shell tab-shell"><code>curl <span class="s2">"https://app.sclab.io/api/1/user/delete"</span> <span class="se">\</span>
+  <span class="nt">-X</span> DELETE <span class="se">\</span>
+  <span class="nt">-H</span> <span class="s2">"Authorization: APITokenHere"</span> <span class="se">\</span>
+  <span class="nt">-H</span> <span class="s2">"Content-Type: application/json"</span> <span class="se">\</span>
+  <span class="nt">-d</span> <span class="s2">"{</span><span class="se">\"</span><span class="s2">_userId</span><span class="se">\"</span><span class="s2">: </span><span class="se">\"</span><span class="s2">user id</span><span class="se">\"</span><span class="s2">}"</span>
+</code></pre></div><div class="highlight"><pre class="highlight javascript tab-javascript"><code></code></pre></div>
+<blockquote>
+<p>The above command returns JSON structured like this:</p>
+</blockquote>
+<div class="highlight"><pre class="highlight json tab-json"><code><span class="p">{</span><span class="w">
+  </span><span class="nl">"result"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+    </span><span class="nl">"status"</span><span class="p">:</span><span class="w"> </span><span class="s2">"user removed"</span><span class="w">
+  </span><span class="p">}</span><span class="w">
+</span><span class="p">}</span><span class="w">
+</span></code></pre></div>
+<p>사이트 회원은 삭제 되지만, 회원 계정은 삭제되지 않습니다.</p>
+<h3 id='http-5'>HTTP 요청</h3>
+<p><code>DELETE https://app.sclab.io/api/1/user/delete</code></p>
+<h3 id='json-parameters-4'>JSON Parameters</h3>
+<table><thead>
+<tr>
+<th>키</th>
+<th>필수</th>
+<th>설명</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>_userId</td>
+<td>Y</td>
+<td>회원 아이디</td>
 </tr>
 </tbody></table>
 <h1 id='82dac39707'>에러</h1>
