@@ -228,6 +228,7 @@ _userId | Y | 회원아이디
 name | N | 이름
 phone | N | 전화번호
 address | N | 주소
+password | N | 비밀번호
 
 ## 사이트 회원삭제
 

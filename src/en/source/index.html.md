@@ -187,7 +187,7 @@ Parameter | Required | Description
 -- | -- | -- | 
 email | Y | User email address
 password | Y | User password
-name | Y | User name
+name | Y | User's name
 phone | N | User phone number
 address | N | User address
 
@@ -225,9 +225,10 @@ This endpoint update site user account profile [name, phone, address].
 Parameter | Required | Description
 -- | -- | -- |
 _userId | Y | User id
-name | N | User name
+name | N | User's name
 phone | N | User phone number
 address | N | User address
+password | N | User's password
 
 
 ## Delete user from site
