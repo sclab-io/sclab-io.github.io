@@ -387,6 +387,8 @@
   Before you start, you must create your client api on the SCLAB Studio.</p>
 
 <p><img src="images/api_action_client_screen_shot-41d94323.png" alt="Client API Page Screen Shot" /></p>
+
+<p>We implemented API Action, API Event using <a href="https://developer.mozilla.org/en-US/docs/Web/API/Window/postMessage">window.postMessage()</a>.</p>
 <h2 id='run-action'>Run Action</h2>
 <p>Run single action from your iframe.</p>
 <div class="highlight"><pre class="highlight html tab-html"><code><span class="nt">&lt;button</span> <span class="na">onclick=</span><span class="s">"window.parent.postMessage('clientAPIIdHere')"</span><span class="nt">&gt;</span>A<span class="nt">&lt;/button&gt;</span>

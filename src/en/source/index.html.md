@@ -37,6 +37,8 @@ meta:
 
 ![Client API Page Screen Shot](./images/api_action_client_screen_shot.png)
 
+  We implemented API Action, API Event using [window.postMessage()](https://developer.mozilla.org/en-US/docs/Web/API/Window/postMessage).
+
 ## Run Action
 
 Run single action from your iframe.
