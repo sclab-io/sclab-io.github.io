@@ -4,11 +4,12 @@ title: SCLAB API Reference
 language_tabs: # must be one of https://git.io/vQNgJ
   - shell
   - javascript
+  - html
 
 toc_footers:
   - <a href='https://app.sclab.io'>Sign Up for a Developer token</a>
   - <a href='https://www.npmjs.com/package/sclabjs'>NPM - sclabjs</a>
-  - <a href='https://github.com/sclab-io'>github</a>
+  - <a href='https://github.com/sclab-io'>SCLAB github</a>
 
 includes:
   - errors
@@ -24,18 +25,68 @@ meta:
 
 # Introduction
 
-Welcome to the SCLAB API! You can use our API to access SCLAB API endpoints.
+  Welcome to the SCLAB API! You can use our API to access SCLAB API endpoints.
+  
+  We have language bindings in Shell, Javascript! You can view code examples in the dark area to the right, and you can switch the programming language of the examples with the tabs in the top right.
 
-We have language bindings in Shell, Javascript! You can view code examples in the dark area to the right, and you can switch the programming language of the examples with the tabs in the top right.
+# API Action - Client
 
-# Get Started
+  API Action - Client is API for between SCLAB and iframe layout.
+  This Action is only affected current browser.
+  Before you start, you must create your client api on the SCLAB Studio.
 
-1. create site in SCLAB Studio
-2. get api token from SCLAB Studio API page
-3. copy the api token
+![Client API Page Screen Shot](./images/api_action_client_screen_shot.png)
+
+## Run Action
+
+Run single action from your iframe.
+
+```html
+<button onclick="window.parent.postMessage('clientAPIIdHere')">A</button>
+```
+
+```javascript
+window.parent.postMessage('clientAPIIdHere');
+```
+
+> You must replace <code>clientAPIIdHere</code> your api ID "sW47bBZjYyWGjcfaF"
+
+## API Event
+
+  When you want to call your function from SCLAB layout, you can add API Event Action in layout setting and map elements setting.
+
+![Layout Setting Screent Shot](./images/layout_API_EVENT_screen_shot.png)
 
 ```shell
-npm install sclabjs
+```
+
+```javascript
+window.addEventListener("message", (event)=>{
+  if(event.origin !== 'https://yoursitecode.sclab.io'){
+    return;
+  }
+
+  if(event.data === "MY_DATA") {
+    console.log('data received');
+  }
+});
+```
+
+```html
+<script>
+  window.addEventListener("message", (event)=>{
+    if(event.origin !== 'https://yoursitecode.sclab.io'){
+      return;
+    }
+    
+    if(event.data === "MY_DATA") {
+      document.getElementById("msg").innerHTML = "clicked";
+    }
+  });
+</script>
+<div id="msg">
+  HI
+</div>
 ```
 
 # Authentication
@@ -63,13 +114,13 @@ import { Sclab } from 'sclabjs';
 
 > Make sure to replace `APITokenHere` with your API Token.
 
-SCLAB uses API JWT to allow access to the API. You can register a new SCLAB API key at our [SCLAB Studio](http://app.sclab.io).
-
-SCLAB expects for the API token to be included in all API requests to the server in a header that looks like the following:
+  SCLAB uses API JWT to allow access to the API. You can register a new SCLAB API key at our [SCLAB Studio](http://app.sclab.io).
+  
+  SCLAB expects for the API token to be included in all API requests to the server in a header that looks like the following:
 
 `Authorization: APITokenHere`
 
-And also you can use query string or JSON key and value for POST request.
+  And also you can use query string or JSON key and value for POST request.
 
 <aside class="notice">
 You must replace <code>APITokenHere</code> with your personal API Token.
@@ -77,10 +128,10 @@ You must replace <code>APITokenHere</code> with your personal API Token.
 
 ![API Page Screen Shot](./images/token_screen_shot.png)
 
-# API Action
+# API Action - Server
 
-API action is a function to collectively change the screen of users who are connected to a specific situation (emergency, etc.) in an external service.
-Actions only work after publishing, and endpoints that do not have actions registered do not work.
+  API Action - Server is a function to collectively change the screen of users who are connected to a specific situation (emergency, etc.) in an external service.
+  Actions only work after publishing, and endpoints that do not have actions registered do not work.
 
 ## Run Action
 
@@ -100,9 +151,9 @@ curl "https://app.sclab.io/api/1/<ID>" \
 }
 ```
 
-This endpoint run single API Action. 
-When this end point got the response successfully, 
-then every user who browse your published site will be affected this action.
+  This endpoint run single API Action. 
+  When this end point got the response successfully, 
+  then every user who browse your published site will be affected this action.
 
 ### HTTP Request
 
@@ -278,3 +329,17 @@ This endpoint remove user from your site, but user account is not removed.
 Parameter | Required | Description
 -- | -- | -- |
 _userId | Y | User id
+
+# SCLABjs
+
+  When you use sclab into your HTML using iframe, you can use sclabjs for login and logout.
+  sclabjs using module system. 
+  For this reason you need use module compiler like typescript, babel.
+
+## NPM - sclabjs
+
+<a href='https://www.npmjs.com/package/sclabjs'>NPM - sclabjs</a>
+
+```shell
+npm install sclabjs
+```
