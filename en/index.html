@@ -317,6 +317,9 @@
             <a href="#introduction" class="toc-h1 toc-link" data-title="Introduction">Introduction</a>
           </li>
           <li>
+            <a href="#get-started" class="toc-h1 toc-link" data-title="Get Started">Get Started</a>
+          </li>
+          <li>
             <a href="#authentication" class="toc-h1 toc-link" data-title="Authentication">Authentication</a>
           </li>
           <li>
@@ -359,7 +362,14 @@
 <p>Welcome to the SCLAB API! You can use our API to access SCLAB API endpoints.</p>
 
 <p>We have language bindings in Shell, Javascript! You can view code examples in the dark area to the right, and you can switch the programming language of the examples with the tabs in the top right.</p>
-<h1 id='authentication'>Authentication</h1>
+<h1 id='get-started'>Get Started</h1>
+<ol>
+<li>create site in SCLAB Studio</li>
+<li>get api token from SCLAB Studio API page</li>
+<li>copy the api token</li>
+</ol>
+<div class="highlight"><pre class="highlight shell tab-shell"><code>npm <span class="nb">install </span>sclabjs
+</code></pre></div><h1 id='authentication'>Authentication</h1>
 <blockquote>
 <p>To authorize, use this code:</p>
 </blockquote>
@@ -375,7 +385,8 @@ curl <span class="s2">"api_endpoint_here"</span> <span class="se">\</span>
   <span class="nt">-H</span> <span class="s2">"Content-Type: application/json"</span> <span class="se">\</span>
   <span class="nt">-X</span> POST <span class="se">\</span>
   <span class="nt">-d</span> <span class="s2">"{</span><span class="se">\"</span><span class="s2">token</span><span class="se">\"</span><span class="s2">: </span><span class="se">\"</span><span class="s2">APITokenHere</span><span class="se">\"</span><span class="s2">}"</span>
-</code></pre></div><div class="highlight"><pre class="highlight javascript tab-javascript"><code></code></pre></div>
+</code></pre></div><div class="highlight"><pre class="highlight javascript tab-javascript"><code><span class="k">import</span> <span class="p">{</span> <span class="nx">Sclab</span> <span class="p">}</span> <span class="k">from</span> <span class="dl">'</span><span class="s1">sclabjs</span><span class="dl">'</span><span class="p">;</span>
+</code></pre></div>
 <blockquote>
 <p>Make sure to replace <code>APITokenHere</code> with your API Token.</p>
 </blockquote>

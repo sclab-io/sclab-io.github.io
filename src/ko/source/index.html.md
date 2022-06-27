@@ -26,6 +26,16 @@ meta:
 
 쉘, 자바스크립트로 되어있는 예제를 오른쪽의 검은 영역에서 확인 하실 수 있고, 탭을 선택해서 언어간에 전환할 수 있습니다.
 
+# 시작하기
+
+1. 스크랩 스튜디오에서 사이트를 생성
+2. 스크랩 스튜디오 API 페이지에서 토근 확인
+3. API 토큰 복사
+
+```shell
+npm install sclabjs
+```
+
 # 인증
 
 > 인증을 위해서 아래 코드를 사용해주세요:
@@ -46,6 +56,7 @@ curl "api_endpoint_here" \
 ```
 
 ```javascript
+import { Sclab } from 'sclabjs';
 ```
 
 > `APITokenHere` 라고 되어있는 부분을 변경해서 사용해주세요.

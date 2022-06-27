@@ -26,6 +26,16 @@ Welcome to the SCLAB API! You can use our API to access SCLAB API endpoints.
 
 We have language bindings in Shell, Javascript! You can view code examples in the dark area to the right, and you can switch the programming language of the examples with the tabs in the top right.
 
+# Get Started
+
+1. create site in SCLAB Studio
+2. get api token from SCLAB Studio API page
+3. copy the api token
+
+```shell
+npm install sclabjs
+```
+
 # Authentication
 
 > To authorize, use this code:
@@ -46,6 +56,7 @@ curl "api_endpoint_here" \
 ```
 
 ```javascript
+import { Sclab } from 'sclabjs';
 ```
 
 > Make sure to replace `APITokenHere` with your API Token.
