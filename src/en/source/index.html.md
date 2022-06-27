@@ -7,6 +7,8 @@ language_tabs: # must be one of https://git.io/vQNgJ
 
 toc_footers:
   - <a href='https://app.sclab.io'>Sign Up for a Developer token</a>
+  - <a href='https://www.npmjs.com/package/sclabjs'>NPM - sclabjs</a>
+  - <a href='https://github.com/sclab-io'>github</a>
 
 includes:
   - errors
