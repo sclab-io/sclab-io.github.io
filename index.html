@@ -295,7 +295,7 @@
     </script>
   </head>
 
-  <body class="index" data-languages="[&quot;shell&quot;,&quot;javascript&quot;,&quot;html&quot;]">
+  <body class="index" data-languages="[]">
     <a href="#" id="nav-button">
       <span>
         NAV
@@ -304,11 +304,6 @@
     </a>
     <div class="toc-wrapper">
       <img src="images/logo-e235cc2e.png" class="logo" alt="" />
-        <div class="lang-selector">
-              <a href="#" data-language-name="shell">shell</a>
-              <a href="#" data-language-name="javascript">javascript</a>
-              <a href="#" data-language-name="html">html</a>
-        </div>
         <div class="search">
           <input type="text" class="search" id="input-search" placeholder="Search">
         </div>
@@ -355,6 +350,9 @@
                     <a href="#delete-user-from-site" class="toc-h2 toc-link" data-title="Delete user from site">Delete user from site</a>
                   </li>
               </ul>
+          </li>
+          <li>
+            <a href="#how-to-create-custom-chart" class="toc-h1 toc-link" data-title="How to create custom chart">How to create custom chart</a>
           </li>
           <li>
             <a href="#sclabjs" class="toc-h1 toc-link" data-title="SCLABjs">SCLABjs</a>
@@ -675,6 +673,33 @@ curl <span class="s2">"https://app.sclab.io/api/1/user/get?email=test@sclab.io"<
 <td>User id</td>
 </tr>
 </tbody></table>
+<h1 id='how-to-create-custom-chart'>How to create custom chart</h1>
+<p>You can make custom chart using iframe.
+  You have to select data before using this feature.</p>
+
+<p><img src="images/iframe_popup-e6283dbb.png" alt="Iframe popup screen shot" /></p>
+<div class="highlight"><pre class="highlight html tab-html"><code><span class="nt">&lt;div</span> <span class="na">id=</span><span class="s">'container'</span><span class="nt">&gt;</span>
+  Loading...
+<span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;script </span><span class="na">defer</span><span class="nt">&gt;</span>
+  <span class="kd">function</span> <span class="nx">render</span><span class="p">(</span><span class="nx">data</span><span class="p">){</span>
+    <span class="nb">document</span><span class="p">.</span><span class="nx">getElementById</span><span class="p">(</span><span class="dl">'</span><span class="s1">container</span><span class="dl">'</span><span class="p">).</span><span class="nx">innerHTML</span> <span class="o">=</span> <span class="nx">data</span><span class="p">.</span><span class="nx">rows</span><span class="p">[</span><span class="mi">0</span><span class="p">].</span><span class="nx">toString</span><span class="p">();</span>
+  <span class="p">}</span>
+  <span class="p">(</span><span class="kd">function</span><span class="p">(){</span>
+    <span class="nb">window</span><span class="p">.</span><span class="nx">addEventListener</span><span class="p">(</span><span class="dl">"</span><span class="s2">message</span><span class="dl">"</span><span class="p">,</span> <span class="p">(</span><span class="nx">event</span><span class="p">)</span><span class="o">=&gt;</span><span class="p">{</span>
+      <span class="k">if</span><span class="p">(</span><span class="nx">event</span><span class="p">.</span><span class="nx">data</span> <span class="o">&amp;&amp;</span> <span class="nx">event</span><span class="p">.</span><span class="nx">data</span><span class="p">.</span><span class="nx">type</span> <span class="o">===</span> <span class="dl">"</span><span class="s2">IFRAME_DATA_RES</span><span class="dl">"</span><span class="p">){</span>
+        <span class="nx">render</span><span class="p">(</span><span class="nx">event</span><span class="p">.</span><span class="nx">data</span><span class="p">);</span>
+      <span class="p">}</span>
+    <span class="p">});</span>
+
+    <span class="c1">//window.parent.postMessage("IFRAME_DATA_REQ,D7sRjaQRr2yo3zvoL");</span>
+    <span class="nb">window</span><span class="p">.</span><span class="nx">parent</span><span class="p">.</span><span class="nx">postMessage</span><span class="p">(</span><span class="dl">"</span><span class="s2">IFRAME_DATA_REQ,__IFRAME_ID_HERE__</span><span class="dl">"</span><span class="p">);</span>
+  <span class="p">})();</span>
+<span class="nt">&lt;/script&gt;</span>
+</code></pre></div>
+<blockquote>
+<p>change ID to your iframe id</p>
+</blockquote>
 <h1 id='sclabjs'>SCLABjs</h1>
 <p>When you use sclab into your HTML using iframe, you can use sclabjs for login and logout.
   sclabjs using module system. 
@@ -719,11 +744,6 @@ curl <span class="s2">"https://app.sclab.io/api/1/user/get?email=test@sclab.io"<
 
       </div>
       <div class="dark-box">
-          <div class="lang-selector">
-                <a href="#" data-language-name="shell">shell</a>
-                <a href="#" data-language-name="javascript">javascript</a>
-                <a href="#" data-language-name="html">html</a>
-          </div>
       </div>
     </div>
   </body>

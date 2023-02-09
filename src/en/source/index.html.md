@@ -2,9 +2,6 @@
 title: SCLAB API Reference
 
 language_tabs: # must be one of https://git.io/vQNgJ
-  - shell
-  - javascript
-  - html
 
 toc_footers:
   - <a href='https://app.sclab.io'>Sign Up for a Developer token</a>
@@ -331,6 +328,35 @@ This endpoint remove user from your site, but user account is not removed.
 Parameter | Required | Description
 -- | -- | -- |
 _userId | Y | User id
+
+# How to create custom chart
+
+  You can make custom chart using iframe.
+  You have to select data before using this feature.
+
+![Iframe popup screen shot](./images/iframe_popup.png)
+
+```html
+<div id='container'>
+  Loading...
+</div>
+<script defer>
+  function render(data){
+    document.getElementById('container').innerHTML = data.rows[0].toString();
+  }
+  (function(){
+    window.addEventListener("message", (event)=>{
+      if(event.data && event.data.type === "IFRAME_DATA_RES"){
+        render(event.data);
+      }
+    });
+    
+    //window.parent.postMessage("IFRAME_DATA_REQ,D7sRjaQRr2yo3zvoL");
+    window.parent.postMessage("IFRAME_DATA_REQ,__IFRAME_ID_HERE__");
+  })();
+</script>
+```  
+> change ID to your iframe id
 
 # SCLABjs
 
