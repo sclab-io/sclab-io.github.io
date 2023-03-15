@@ -7,7 +7,6 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 /** @type {import('@docusaurus/types').Config} */
 const config = {
   title: 'SCLAB Documents',
-  tagline: 'SCLAB',
   favicon: 'img/favicon.ico',
 
   // Set the production url of your site here
@@ -72,9 +71,17 @@ const config = {
         items: [
           {
             type: 'doc',
-            docId: 'intro',
+            docId: 'guide/intro',
             position: 'left',
-            label: 'Tutorial',
+            label: 'User guide',
+            sidebarId: 'guide'
+          },
+          {
+            type: 'doc',
+            docId: 'api/intro',
+            position: 'left',
+            label: 'API',
+            sidebarId: 'api',
           },
           {to: '/blog', label: 'Blog', position: 'left'},
           {
@@ -92,11 +99,15 @@ const config = {
         style: 'dark',
         links: [
           {
-            title: 'Docs',
+            title: 'Documents',
             items: [
               {
-                label: 'Tutorial',
-                to: '/docs/intro',
+                label: 'User guide',
+                to: '/docs/guide/intro',
+              },
+              {
+                label: 'API',
+                to: '/docs/api/intro',
               },
             ],
           },

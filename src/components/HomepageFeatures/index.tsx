@@ -10,32 +10,29 @@ type FeatureItem = {
 
 const FeatureList: FeatureItem[] = [
   {
-    title: 'Easy to Use',
+    title: 'GUI Editor',
     Svg: require('@site/static/img/undraw_docusaurus_mountain.svg').default,
     description: (
       <>
-        No-coding data visualization production service platform.
-        Create integrated data visualization without coding by linking IoT, API, CSV, and GIS data.
+        Our platform provides a no-coding solution for data visualization production services.
       </>
     ),
   },
   {
-    title: 'Focus on What Matters',
+    title: 'Connect to your data',
     Svg: require('@site/static/img/undraw_docusaurus_tree.svg').default,
     description: (
       <>
-        Docusaurus lets you focus on your docs, and we&apos;ll do the chores. Go
-        ahead and move your docs into the <code>docs</code> directory.
+        We support many data sources like CSV, API, IoT, Kafka, and databases such as MySQL, Trino, etc.
       </>
     ),
   },
   {
-    title: 'Powered by React',
+    title: 'SaaS or OnPremise',
     Svg: require('@site/static/img/undraw_docusaurus_react.svg').default,
     description: (
       <>
-        Extend or customize your website layout by reusing React. Docusaurus can
-        be extended while reusing the same header and footer.
+        We provide both SaaS (Software as a Service) and On-Premise servies.
       </>
     ),
   },
@@ -44,9 +41,9 @@ const FeatureList: FeatureItem[] = [
 function Feature({title, Svg, description}: FeatureItem) {
   return (
     <div className={clsx('col col--4')}>
-      <div className="text--center">
+      {/* <div className="text--center">
         <Svg className={styles.featureSvg} role="img" />
-      </div>
+      </div> */}
       <div className="text--center padding-horiz--md">
         <h3>{title}</h3>
         <p>{description}</p>
