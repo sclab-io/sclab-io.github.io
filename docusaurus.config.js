@@ -42,14 +42,16 @@ const config = {
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
           editUrl:
-            'https://github.com/sclab-io/sclab-io.github.io/tree/main/packages/create-docusaurus/templates/shared/',
+            'https://github.com/sclab-io/sclab-io.github.io/tree/main/',
+          editLocalizedFiles: true
         },
         blog: {
           showReadingTime: true,
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
           editUrl:
-            'https://github.com/sclab-io/sclab-io.github.io/tree/main/packages/create-docusaurus/templates/shared/',
+            'https://github.com/sclab-io/sclab-io.github.io/tree/main/',
+          editLocalizedFiles: true
         },
         theme: {
           customCss: require.resolve('./src/css/custom.css'),
