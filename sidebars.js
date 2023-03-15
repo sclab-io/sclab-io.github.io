@@ -48,6 +48,7 @@ const sidebars = {
         'api/rest-api/errors',
       ],
     },
+    'api/sclabjs'
   ],
 };
 
