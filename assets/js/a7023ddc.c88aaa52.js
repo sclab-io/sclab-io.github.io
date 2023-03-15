@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunksclab_docs=self.webpackChunksclab_docs||[]).push([[1713],{3457:s=>{s.exports=JSON.parse('[{"label":"greetings","permalink":"/blog/tags/greetings","count":1}]')}}]);
