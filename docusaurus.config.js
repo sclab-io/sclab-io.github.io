@@ -19,6 +19,7 @@ const config = {
   // If you aren't using GitHub pages, you don't need these.
   organizationName: 'sclab-io', // Usually your GitHub org/user name.
   projectName: 'sclab-io.github.io', // Usually your repo name.
+  trailingSlash: false,
 
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
@@ -126,6 +127,10 @@ const config = {
               {
                 label: 'Blog',
                 to: '/blog',
+              },
+              {
+                label: 'SCLAB Studio',
+                href: 'https://www.sclab.io',
               },
               {
                 label: 'GitHub',
