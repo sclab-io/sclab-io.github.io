@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunksclab_docs=self.webpackChunksclab_docs||[]).push([[6885],{6307:e=>{e.exports=JSON.parse('{"title":"Iframe","slug":"/category/iframe","permalink":"/docs/category/iframe","navigation":{"previous":{"title":"Introduction","permalink":"/docs/api/intro"},"next":{"title":"API Action - Client","permalink":"/docs/api/iframe/api-action-client"}}}')}}]);
