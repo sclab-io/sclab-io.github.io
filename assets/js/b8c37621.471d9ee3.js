@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunksclab_docs=self.webpackChunksclab_docs||[]).push([[920],{3908:s=>{s.exports=JSON.parse('{"label":"Guide","permalink":"/docs/tags/guide","allTagsPath":"/docs/tags","count":1,"items":[{"id":"guide/intro","title":"Started with SCLAB Studio","description":"Intro","permalink":"/docs/guide/intro"}]}')}}]);
