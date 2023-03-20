@@ -1,9 +1,10 @@
 ---
-title: Started with SCLAB Studio
+title: Started with SCLAB Studio
 tags:
   - Guide
 ---
 
-(./1.png)
-https://www.sclab.io/p/SCLAB_ENG
+![Intro](./1.jpg)
+
+https://www.sclab.io/p/SCLAB_ENG<br/>
 Access the SCLAB website address.
