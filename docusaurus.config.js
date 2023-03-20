@@ -74,7 +74,7 @@ const config = {
         items: [
           {
             type: 'doc',
-            docId: 'guide/intro',
+            docId: 'guide/Started with SCLAB Studio',
             position: 'left',
             label: 'User guide',
             sidebarId: 'guide'
@@ -106,7 +106,7 @@ const config = {
             items: [
               {
                 label: 'User guide',
-                to: '/docs/guide/intro',
+                to: '/docs/guide/Started with SCLAB Studio',
               },
               {
                 label: 'API',

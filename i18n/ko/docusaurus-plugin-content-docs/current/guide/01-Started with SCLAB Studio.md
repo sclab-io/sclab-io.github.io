@@ -1,5 +1,5 @@
 ---
-title: Introduction
+title: Started with SCLAB Studio
 tags:
   - Guide
 ---
