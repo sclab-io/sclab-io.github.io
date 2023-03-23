@@ -1,0 +1,50 @@
+{
+  "version.label": {
+    "message": "Next",
+    "description": "The label for version current"
+  },
+  "sidebar.guide.category.User Interface": {
+    "message": "사용자 인터페이스",
+    "description": "The label for category Uesr Interface in sidebar guide"
+  },
+  "sidebar.guide.category.Load Data": {
+    "message": "데이터 가져오기",
+    "description": "The label for category Load Data in sidebar guide"
+  },
+  "sidebar.guide.category.Creating visualizations": {
+    "message": "시각화 만들기",
+    "description": "The label for category Creating visualizations in sidebar guide"
+  },
+  "sidebar.guide.category.Map editor interface": {
+    "message": "맵 에디터",
+    "description": "The label for category Map editor interface in sidebar guide"
+  },
+  "sidebar.guide.category.Create Map": {
+    "message": "지도 제작",
+    "description": "The label for category Create Map in sidebar guide"
+  },
+  "sidebar.guide.category.Page editor interface": {
+    "message": "페이지 에디터",
+    "description": "The label for category Page editor interface in sidebar guide"
+  },
+  "sidebar.guide.category.Layout": {
+    "message": "레이아웃",
+    "description": "The label for category Layout in sidebar guide"
+  },
+  "sidebar.guide.category.Form": {
+    "message": "폼",
+    "description": "The label for category Form in sidebar guide"
+  },
+  "sidebar.guide.category.Mobile Editor": {
+    "message": "모바일 에디터",
+    "description": "The label for category Mobile Editor in sidebar guide"
+  },
+  "sidebar.api.category.Iframe": {
+    "message": "아이프레임",
+    "description": "The label for category Iframe in sidebar api"
+  },
+  "sidebar.api.category.REST API": {
+    "message": "REST API",
+    "description": "The label for category REST API in sidebar api"
+  }
+}
