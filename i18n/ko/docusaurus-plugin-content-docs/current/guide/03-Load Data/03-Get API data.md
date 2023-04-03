@@ -14,3 +14,7 @@ tags:
 - 분단위로 폴링 주기를 선택할 수 있다. 폴링 안함은 데이터를 한 번만 가져오는 것이다.
 - API 이름을 입력해 주고 저장을 누르면 API 데이터가 생성되어 청록색 육각형이 하나 더 생긴 것을 알 수 있다.
 <br/><br/>
+
+<iframe width="100%" height="640" src="https://www.youtube.com/embed/ZTcO_Gdhtmk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
+<br/><br/>

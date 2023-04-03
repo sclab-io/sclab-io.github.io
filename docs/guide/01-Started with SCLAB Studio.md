@@ -51,4 +51,8 @@ In SCLAB Studio, tooltips are exposed when you mouse over each menu for easy und
 - When the configuration is complete, click the Publish button at the far right of the TOP menu to share it with others. If you want to modify it later, you must click the Publish button again so that other people can see the modified screen.
 <br/><br/>
 
+<iframe width="100%" height="640" src="https://www.youtube.com/embed/wKqf7-a1Dko" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
+<br/><br/>
+
 https://app.sclab.io/<br/>

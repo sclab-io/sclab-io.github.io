@@ -14,3 +14,7 @@ tags:
 - You can select the polling cycle in minutes. No polling means fetching data only once.
 - If you enter the API name and press SAVE, you can see that API data is generated and one more turquoise hexagon is created.
 <br/><br/>
+
+<iframe width="100%" height="640" src="https://www.youtube.com/embed/39EXX0toy4s" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
+<br/><br/>

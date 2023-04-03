@@ -7,7 +7,9 @@ tags:
 
 - Drag the CSV icon to load the Chicago Fire Station location information CSV file.
 - In the generated CSV hexagon, first click the inverted water droplet-shaped icon on the right hexagon to create location data.
+<br/>
 ![CSV location data](./16.png)
+<br/>
 - Add a new location icon by clicking the Upload Location Icon button or select one location icon in the Location list and proceed to the next step.
 <br/><br/>
 

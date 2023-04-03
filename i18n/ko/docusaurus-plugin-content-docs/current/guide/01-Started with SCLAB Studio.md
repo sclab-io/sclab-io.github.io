@@ -8,7 +8,7 @@ tags:
 
 https://www.sclab.io/p/SCLAB_KOR<br/>
 스크랩 홈페이지 주소로 접속한다.
-
+ 
 
 ![Content](./2.jpg) 
 SCLAB에 로그인하거나 계정을 생성하려면 홈페이지 또는 다양한 콘텐츠 페이지의 오른쪽 상단에 있는 '지금 시작하세요!' 또는 '로그인' 버튼을 클릭해 준다.
@@ -51,6 +51,10 @@ SCLAB Studio에서는 사용자들이 알기 쉽도록 각각의 메뉴들을 �
 ![Apply and share content](./83.png)
 - 기존에 레이아웃 구성을 설정했는데 원하는 레이아웃 위치에 원하는 종류의 맵, 차트, iframe, Youtube, 웹페이지 등의 데이터를 드래그 앤 드롭으로 가져다 놓는다.
 - 구성이 완료되면 TOP 메뉴 가장 오른쪽에 있는 발행하기 버튼을 클릭하여 다른 사람들과 공유할 수 있도록 해 준다. 추후에 수정하거나 할 경우 다시 발행하기 버튼을 눌러야 다른 사람들이 수정된 화면을 볼 수 있다.
+<br/><br/>
+
+<iframe width="100%" height="640" src="https://www.youtube.com/embed/wKqf7-a1Dko" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
 <br/><br/>
 
 https://app.sclab.io/<br/>

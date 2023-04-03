@@ -6,7 +6,9 @@ tags:
 ---
 
 - Click the left icon that looks like a graph from the right hexagon of the blue hexagon icon of the CSV data you created.
+<br/>
 ![CSV Create chart](./19.png)
+<br/>
 - Select the chart type you want to create and click Next Step. Here, we select Bar Chart (White version).
 <br/><br/>
 
