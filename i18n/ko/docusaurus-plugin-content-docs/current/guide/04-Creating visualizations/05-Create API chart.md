@@ -6,6 +6,7 @@ tags:
 ---
 
 ![Create API Chart](./23.png)
+<br/>
 - API 육각형 아이콘 오른쪽 육각형 아이콘에서 왼쪽 차트 모양 클릭
 - Bar Chart(White version)를 선택한다.
 - 행데이터에 표시될 글자수 설정, 열 데이터, 행 데이터에 적용될 데이터를 선택한다.
