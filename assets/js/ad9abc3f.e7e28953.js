@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunksclab_docs=self.webpackChunksclab_docs||[]).push([[9584],{843:a=>{a.exports=JSON.parse('{"label":"Digital Transformation","permalink":"/blog/tags/digital-transformation","allTagsPath":"/blog/tags","count":1}')}}]);

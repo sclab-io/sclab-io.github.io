@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunksclab_docs=self.webpackChunksclab_docs||[]).push([[2535],{5641:s=>{s.exports=JSON.parse('{"title":"Recent posts","items":[{"title":"Grettings","permalink":"/ko/blog/grettings"}]}')}}]);

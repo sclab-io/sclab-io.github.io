@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunksclab_docs=self.webpackChunksclab_docs||[]).push([[2062],{1185:a=>{a.exports=JSON.parse('{"label":"Environmental Monitoring","permalink":"/blog/tags/environmental-monitoring","allTagsPath":"/blog/tags","count":1}')}}]);

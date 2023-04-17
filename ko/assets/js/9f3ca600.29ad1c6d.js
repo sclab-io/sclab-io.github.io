@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunksclab_docs=self.webpackChunksclab_docs||[]).push([[9367],{1010:a=>{a.exports=JSON.parse('{"label":"Smart Factory","permalink":"/ko/blog/tags/smart-factory","allTagsPath":"/ko/blog/tags","count":1}')}}]);
