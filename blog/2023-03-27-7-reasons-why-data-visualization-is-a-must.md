@@ -7,6 +7,7 @@ tags:
   - Dashboard
   - SaaS
   - Data
+image: ./b03.jpg
 ---
 
 ![Code](./b03.jpg)

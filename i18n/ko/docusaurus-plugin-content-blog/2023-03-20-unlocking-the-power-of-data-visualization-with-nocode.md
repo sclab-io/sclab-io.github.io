@@ -7,6 +7,7 @@ tags:
   - Data Visualization
   - Digital Transformation
   - AI
+image: ./b02.jpg
 ---
 
 # 데이터 시각화 혁명

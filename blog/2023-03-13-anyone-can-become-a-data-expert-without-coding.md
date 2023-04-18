@@ -7,6 +7,7 @@ tags:
   - Dashboard
   - GIS
   - SaaS
+image: ./b01.jpg
 ---
 
 Companies must find better solutions for managing and visualizing their data to drive digital innovation and improve business productivity. Data continues to be generated every hour, and companies and institutions face challenges monitoring and managing this data. One of the biggest challenges is integrating data visualization and management effectively. Additionally, companies are becoming increasingly dependent on outsourcing data management due to the shortage of in-house data experts and the high cost of hiring and training these experts. This is leading to more extended construction periods and reduced business efficiency.
