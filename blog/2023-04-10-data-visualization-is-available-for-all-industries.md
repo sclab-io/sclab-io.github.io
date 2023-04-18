@@ -7,6 +7,7 @@ tags:
   - No Code
   - Environmental Monitoring
   - Dashboard
+image: ./b05.png
 ---
 
 Data visualization is essential for industries that require data analysis, decision-making, and stakeholder communication, and successful digital transformation can be achieved in various data visualization industries.

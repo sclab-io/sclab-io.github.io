@@ -7,6 +7,7 @@ tags:
   - No Code
   - Environmental Monitoring
   - Dashboard
+image: ./b05.png
 ---
 
 데이터 시각화는 데이터 분석, 의사 결정 및 이해 관계자 커뮤니케이션이 필요한 산업에 필수이며 데이터 시각화의 다양산 산업에서 성공적인 디지털 전환(Digital Transformation)을 할 수 있습니다.

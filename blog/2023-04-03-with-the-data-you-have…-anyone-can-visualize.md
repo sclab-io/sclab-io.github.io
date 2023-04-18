@@ -7,6 +7,7 @@ tags:
   - Dashboard
   - SaaS
   - Data
+image: ./b04.jpg
 ---
 
 Data visualization is a very effective tool to help you understand and analyze your data more efficiently. But just because you have data doesn’t mean you can blindly visualize it.

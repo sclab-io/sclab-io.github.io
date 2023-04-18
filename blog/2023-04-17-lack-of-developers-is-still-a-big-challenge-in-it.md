@@ -7,6 +7,7 @@ tags:
   - Data Visualization
   - Dashboard
   - SaaS
+image: ./b06_1.jpg
 ---
 
 The need for more skilled developers is becoming a growing problem in the IT industry. One of the main reasons for this problem is the rapid expansion of the technology sector and the ever-increasing need for software development across industries. Recent studies show that demand for developers exceeds supply, leading to hiring challenges, longer development times, and higher costs.
