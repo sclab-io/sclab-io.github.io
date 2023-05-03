@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunksclab_docs=self.webpackChunksclab_docs||[]).push([[5618],{1666:s=>{s.exports=JSON.parse('{"label":"MySQL","permalink":"/ko/docs/tags/my-sql","allTagsPath":"/ko/docs/tags","count":1,"items":[{"id":"tutorial/Connectors/MySQL","title":"MySQL Connector","description":"\uc18c\uac1c","permalink":"/ko/docs/tutorial/Connectors/MySQL"}]}')}}]);
