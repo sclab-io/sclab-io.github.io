@@ -81,6 +81,13 @@ const config = {
           },
           {
             type: 'doc',
+            docId: 'tutorial/intro',
+            position: 'left',
+            label: 'Tutorial',
+            sidebarId: 'tutorial'
+          },
+          {
+            type: 'doc',
             docId: 'api/intro',
             position: 'left',
             label: 'API',
