@@ -23,6 +23,7 @@ tags:
 ## Mobile page setting
 ![Mobile page setting](./79.png)
 - If you click the left 'Pages' menu and add a page from the page list, you can add and configure a mobile page.
+- When creating a mobile page, if you set the page name to be the same as the page name in the PC editor, you can make the screen displayed on the PC and the screen displayed on the mobile device look different by using a single address depending on the device.
 <br/><br/>
 
 ## Mobile report
