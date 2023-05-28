@@ -1,5 +1,5 @@
 ---
-title: CSV data integration
+title: CSV
 tags:
   - DATA
   - CSV
@@ -14,3 +14,6 @@ tags:
 ![CSV Polycon](./14.png)
 - If you click the hexagon on the left, four icons appear. The first icon is a title modification, the second is a deletion, the third is a file download button, and the fourth is a reupload button.
 <br/><br/>
+
+## CSV Data Flow
+![CSV Data flow](./CSV.png)

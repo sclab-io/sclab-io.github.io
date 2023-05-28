@@ -1,5 +1,5 @@
 ---
-title: CSV 데이터 연동 
+title: CSV 
 tags:
   - DATA
   - CSV
@@ -16,3 +16,6 @@ tags:
 ![CSV Polycon](./14.png)
 - 왼쪽 육각형을 클릭하면 네 개의 아이콘이 뜨는데 첫 아이콘은 제목 수정, 둘째는 삭제, 셋째는 파일 다운로드 버튼, 넷째는 재 업로드 버튼이다.
 <br/><br/>
+
+## CSV Data Flow
+![CSV Data flow](./CSV.png)

@@ -18,7 +18,7 @@ This connector provides functionality for retrieving data using Presto/Trino in 
 - Create REST API endpoint with SQL Query
 - JWT for HTTP authorization
 - Processing of result data into JSON format
-- SQL Injection filter (default off)
+- SQL Injection filter (default on)
 
 
 By adding a query in the format of "QUERY_1=mqtt;query;topic;interval ms" to the .env file, SQL is automatically executed to connect and retrieve data from SCLAB.
@@ -100,7 +100,7 @@ ORIGIN=your.domain.com
 CREDENTIALS=true
 
 # SQL INJECTION
-#SQL_INJECTION=1
+SQL_INJECTION=1
 ~~~
 
 ### start
