@@ -1,16 +1,16 @@
 ---
-title: MySQL Connector
+title: ORACLE Connector
 tags:
   - Connector
   - DB
-  - MySQL
+  - ORACLE
 ---
 
 ## 소개
-This connector provides functionality for retrieving data using MySQL in SCLAB Studio.
+This connector provides functionality for retrieving data using ORACLE in SCLAB Studio.
 
 ## 기능
-- MySQL 에 커넥션 풀을 이용하여 연결
+- ORACLE 에 커넥션 풀을 이용하여 연결
 - SQL 쿼리를 사용하여 일정 간격으로 MQTT 메시지 발행하기
 - SQL 쿼리로 REST API 엔드포인트 생성하기
 - HTTP 인증을 위한 JWT
@@ -30,13 +30,13 @@ QUERY_#=api;SQL Query;Endpoint URL
 ## 설치방법
 
 ### 사전 준비사항
-- MySQL 또는 MariaDB
+- 오라클 데이터 베이스
 - 접속 정보
 - docker 또는 nodejs 설치
 
 ### 소스 받기
 ~~~bash
-$ git clone https://github.com/sclab-io/sclab-mysql-connector
+$ git clone https://github.com/sclab-io/sclab-oracle-connector
 ~~~
 
 ### API 보안을 위한 JWT 키파일 생성
@@ -51,12 +51,15 @@ $ openssl rsa -in ./jwt/jwtRS256.key -pubout -outform PEM -out ./jwt/jwtRS256.ke
 ~~~bash
 $ vi .env.production.local
 
-# MySQL Connection
-MYSQL_HOST=host
-MYSQL_USER=user
-MYSQL_PASSWORD=password
-MYSQL_DATABASE=databaseName
-MYSQL_POOL_SIZE=5
+# ORACLE Connection
+ORACLE_USER="C##USER"
+ORACLE_PASSWORD=pasword
+# https://node-oracledb.readthedocs.io/en/latest/user_guide/connection_handling.html#connection-strings
+ORACLE_CONNECTION_STRING=host:1521/SID
+ORACLE_POOL_MAX_SIZE=10
+ORACLE_POOL_MIN_SIZE=4
+ORACLE_POOL_INCREMENT_SIZE=1
+ORACLE_MAX_ROW_SIZE=1000
 
 # SCLAB IoT
 # MQTT_TOPIC=yourtopic/
@@ -67,10 +70,10 @@ MYSQL_POOL_SIZE=5
 
 # QUERY_#=mqtt;query;topic;interval ms
 # QUERY_#=api;query;endPoint
-QUERY_1=api;SELECT ROUND( RAND() * 100 ) AS value, NOW() AS datetime;/api/1
-QUERY_2=api;SELECT ${field} from ${table} where name="${name}";/api/2
-# QUERY_3=mqtt;SELECT ROUND( RAND() * 100 ) AS value, NOW() AS datetime;test0;1000
-# QUERY_4=mqtt;SELECT ROUND( RAND() * 1000 ) AS value, NOW() AS datetime;test1;5000
+QUERY_1=api;SELECT DBMS_RANDOM.VALUE(1, 100) AS random_number, SYSDATE AS current_time FROM dual;/api/1
+QUERY_2=api;SELECT ${field} FROM ${table} where name="${name}";/api/2
+# QUERY_3=mqtt;SELECT DBMS_RANDOM.VALUE(1, 100) AS random_number, SYSDATE AS current_time FROM dual;test0;1000
+# QUERY_4=mqtt;SELECT DBMS_RANDOM.VALUE(1, 1000) AS random_number, SYSDATE AS current_time FROM dual;test1;5000
 
 # PORT
 PORT=3000

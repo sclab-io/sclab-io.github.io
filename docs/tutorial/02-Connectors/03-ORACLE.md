@@ -1,25 +1,21 @@
 ---
-title: Presto/Trino Connector
+title: ORACLE Connector
 tags:
   - Connector
   - DB
-  - Presto
-  - Trino
+  - ORACLE
 ---
 
 ## Introduction
-This connector provides functionality for retrieving data using Presto/Trino in SCLAB Studio.
+This connector provides functionality for retrieving data using ORACLE Database in SCLAB Studio.
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/LLNV-QlyW58" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-
-## Features
-- Connect to Presto/Trino
+### Features
+- Connect to ORACLE DB with connection pool
 - MQTT message publish using SQL Query with interval
 - Create REST API endpoint with SQL Query
 - JWT for HTTP authorization
 - Processing of result data into JSON format
 - SQL Injection filter (default off)
-
 
 By adding a query in the format of "QUERY_1=mqtt;query;topic;interval ms" to the .env file, SQL is automatically executed to connect and retrieve data from SCLAB.
 
@@ -34,13 +30,13 @@ QUERY_#=api;SQL Query;Endpoint URL
 ## Installation
 
 ### Prerequisites
-- trino or presto (https://trino.io/docs/current/installation.html)
+- ORACLE Database
 - connection information
 - Install docker or nodejs
 
 ### clone source
 ~~~bash
-$ git clone https://github.com/sclab-io/sclab-presto-connector
+$ git clone https://github.com/sclab-io/sclab-oracle-connector
 ~~~
 
 ### create JWT key file for API
@@ -55,33 +51,29 @@ $ openssl rsa -in ./jwt/jwtRS256.key -pubout -outform PEM -out ./jwt/jwtRS256.ke
 ~~~bash
 $ vi .env.production.local
 
-# Presto/Trino Connection
-PRESTO_HOST=172.17.0.1
-PRESTO_PORT=8080
-PRESTO_USER=sclab-trino-client
+# ORACLE Connection
+ORACLE_USER="C##USER"
+ORACLE_PASSWORD=pasword
+# https://node-oracledb.readthedocs.io/en/latest/user_guide/connection_handling.html#connection-strings
+ORACLE_CONNECTION_STRING=host:1521/SID
+ORACLE_POOL_MAX_SIZE=10
+ORACLE_POOL_MIN_SIZE=4
+ORACLE_POOL_INCREMENT_SIZE=1
+ORACLE_MAX_ROW_SIZE=1000
 
-# BASIC AUTH
-PRESTO_AUTH=BASIC
-PRESTO_BASIC_USER=user
-#PRESTO_BASIC_PASSWORD=password
-
-# CUSTOM AUTH
-#PRESTO_AUTH=CUSTOM
-#PRESTO_CUSTOM_AUTH=Sets HTTP Authorization header with the provided string.
-
-# SCLAB IoT (Remove this environment if you do not need to use MQTT)
-MQTT_TOPIC=yourtopic/
-MQTT_HOST=yourhost
-MQTT_CLIENT_ID=your-client-id/1
-MQTT_ID=your-id
-MQTT_PASSWORD=your-password
+# SCLAB IoT
+# MQTT_TOPIC=yourtopic/
+# MQTT_HOST=yourhost
+# MQTT_CLIENT_ID=your-client-id/1
+# MQTT_ID=your-id
+# MQTT_PASSWORD=your-password
 
 # QUERY_#=mqtt;query;topic;interval ms
 # QUERY_#=api;query;endPoint
-QUERY_1=api;SELECT ROUND( RAND() * 100 ) AS value, NOW() AS datetime;/api/1
-QUERY_2=api;SELECT ${field} from ${table} where name="${name}";/api/2
-# QUERY_3=mqtt;SELECT ROUND( RAND() * 100 ) AS value, NOW() AS datetime;test0;1000
-# QUERY_4=mqtt;SELECT ROUND( RAND() * 1000 ) AS value, NOW() AS datetime;test1;5000
+QUERY_1=api;SELECT DBMS_RANDOM.VALUE(1, 100) AS random_number, SYSDATE AS current_time FROM dual;/api/1
+QUERY_2=api;SELECT ${field} FROM ${table} where name="${name}";/api/2
+# QUERY_3=mqtt;SELECT DBMS_RANDOM.VALUE(1, 100) AS random_number, SYSDATE AS current_time FROM dual;test0;1000
+# QUERY_4=mqtt;SELECT DBMS_RANDOM.VALUE(1, 1000) AS random_number, SYSDATE AS current_time FROM dual;test1;5000
 
 # PORT
 PORT=3000
@@ -121,7 +113,7 @@ $ npm run deploy:prod
 $ ./stop.sh
 
 # pm2
-$ ./node_modules/.bin/pm2 stop 0
+$ ./node_modules/pm2/bin/pm2 stop 0
 ~~~
 
 ### logs

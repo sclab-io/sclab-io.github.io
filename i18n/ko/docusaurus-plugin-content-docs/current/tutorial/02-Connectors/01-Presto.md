@@ -18,6 +18,7 @@ tags:
 - SQL 쿼리로 REST API 엔드포인트 생성하기
 - HTTP 인증을 위한 JWT
 - 결과 데이터를 JSON 형식으로 처리하기
+- SQL Injection 차단 (기본 off)
 
 
 .env 파일에 "QUERY_1=mqtt;query;topic;interval ms" 형식으로 쿼리를 추가하면, SQL을 사용하여 데이터 가져오고 SCLAB과 연결합니다.
@@ -31,6 +32,11 @@ QUERY_#=mqtt;SQL Query;topic;interval MS
 QUERY_#=api;SQL Query;Endpoint URL
 
 ## 설치방법
+
+### 사전 준비사항
+- trino 또는 presto (https://trino.io/docs/current/installation.html)
+- 접속 정보
+- docker 또는 nodejs 설치
 
 ### 소스 받기
 ~~~bash
@@ -92,6 +98,9 @@ LOG_DIR=../logs
 # CORS
 ORIGIN=your.domain.com
 CREDENTIALS=true
+
+# SQL INJECTION
+#SQL_INJECTION=1
 ~~~
 
 ### 시작
