@@ -7,7 +7,7 @@ tags:
 ---
 
 ## 소개
-This connector provides functionality for retrieving data using MySQL in SCLAB Studio.
+이 커넥터는 MySQL, MariaDB 등에 연결하고, API와 IoT 형식으로 SCLAB 쪽에 데이터를 연결할 수 있게 해줍니다.
 
 ## 기능
 - MySQL 에 커넥션 풀을 이용하여 연결
