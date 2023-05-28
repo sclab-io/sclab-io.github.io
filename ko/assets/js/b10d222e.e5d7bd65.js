@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunksclab_docs=self.webpackChunksclab_docs||[]).push([[2841],{2852:s=>{s.exports=JSON.parse('{"label":"ORACLE","permalink":"/ko/docs/tags/oracle","allTagsPath":"/ko/docs/tags","count":1,"items":[{"id":"tutorial/Connectors/ORACLE","title":"ORACLE Connector","description":"\uc18c\uac1c","permalink":"/ko/docs/tutorial/Connectors/ORACLE"}]}')}}]);
