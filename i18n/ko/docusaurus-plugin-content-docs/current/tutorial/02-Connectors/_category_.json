@@ -1,0 +1,7 @@
+{
+    "label": "Connectors",
+    "link": {
+      "type": "generated-index",
+      "description": "SCLAB 커넥터를 이용해서 다양한 데이터소스와 연동이 가능합니다."
+    }
+  }
