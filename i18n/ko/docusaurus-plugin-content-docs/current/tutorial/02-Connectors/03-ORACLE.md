@@ -61,6 +61,8 @@ ORACLE_POOL_MIN_SIZE=4
 ORACLE_POOL_INCREMENT_SIZE=1
 ORACLE_MAX_ROW_SIZE=1000
 
+# ORACLE_CLIENT_DIR=./client/instantclient_21_10
+
 # SCLAB IoT
 # MQTT_TOPIC=yourtopic/
 # MQTT_HOST=yourhost
@@ -176,3 +178,19 @@ name | Variable | Bike
 ### 6. 데이터가 들어온 경우 패스설정을 통해 필드와 레이블 값을 매핑해줍니다.
 ### 7. SAVE 버튼을 눌러서 데이터를 저장합니다.
 ### 8. 이후 차트나 테이블등의 형식으로 데이터를 시각화를 진행하면 됩니다.
+
+## Oracle Client mode
+
+### Thin mode (nodejs default)
+- 지원 Oracle Database 버전 최소 12.1
+
+### Thick mode (docker-compose default)
+- 지원 Oracle Database 버전 21, 19, 18, 12, and 11.2
+- 도커를 이용해서 실하시는 경우 기본적으로 thick 모드로 실행되니까, 별도로 클라이언트를 설치하지 않으셔도 됩니다.
+
+#### Thick mode install
+- download client
+- https://www.oracle.com/database/technologies/instant-client/downloads.html
+- unzip client
+- uncomment ORACLE_CLIENT_DIR with your client path
+- more detail in https://node-oracledb.readthedocs.io/en/latest/user_guide/installation.html#install-oracle-client-to-use-thick-mode

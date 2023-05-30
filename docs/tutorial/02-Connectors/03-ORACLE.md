@@ -61,6 +61,8 @@ ORACLE_POOL_MIN_SIZE=4
 ORACLE_POOL_INCREMENT_SIZE=1
 ORACLE_MAX_ROW_SIZE=1000
 
+# ORACLE_CLIENT_DIR=./client/instantclient_21_10
+
 # SCLAB IoT
 # MQTT_TOPIC=yourtopic/
 # MQTT_HOST=yourhost
@@ -175,3 +177,19 @@ name | Variable | Bike
 ### 6. If the data is received, map the field and label values through the Pass Configuration.
 ### 7. Click the SAVE button to save the data.
 ### 8. Then, proceed to visualize the data in chart or table format.
+
+## Oracle Client mode
+
+### Thin mode (nodejs default)
+- Support Oracle Database version 12.1 or later
+
+### Thick mode (docker-compose default)
+- Support Oracle Database version 21, 19, 18, 12, and 11.2
+- If you use docker compose client will run thick mode. You don't have to download client.
+
+#### Thick mode install
+- download client
+- https://www.oracle.com/database/technologies/instant-client/downloads.html
+- unzip client
+- uncomment ORACLE_CLIENT_DIR with your client path
+- more detail in https://node-oracledb.readthedocs.io/en/latest/user_guide/installation.html#install-oracle-client-to-use-thick-mode
