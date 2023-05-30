@@ -185,7 +185,7 @@ name | Variable | Bike
 
 ### Thick mode (docker-compose default)
 - Support Oracle Database version 21, 19, 18, 12, and 11.2
-- If you use docker compose client will run thick mode. You don't have to download client.
+- If you are using Docker, it runs by default in thick mode, so you don't need to install client.
 
 #### Thick mode install
 - download client
