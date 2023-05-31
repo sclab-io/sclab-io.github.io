@@ -146,6 +146,5 @@ To create a combine, click the ‘Create combine function’ button, and a pop-u
 <br/><br/> 
 
 
-<iframe width="100%" height="640" src="https://youtu.be/39EXX0toy4s?t=684" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-
+<iframe width="100%" height="640" src="https://www.youtube.com/embed/39EXX0toy4s?start=684" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 <br/><br/>

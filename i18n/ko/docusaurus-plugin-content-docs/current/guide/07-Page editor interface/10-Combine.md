@@ -144,6 +144,6 @@ REST API와 연동된 차트에 대한 탭, 드롭다운, 달력 메뉴를 생�
 <br/><br/> 
 
 
-<iframe width="100%" height="640" src="https://youtu.be/ZTcO_Gdhtmk?t=684" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+<iframe width="100%" height="640" src="https://www.youtube.com/embed/ZTcO_Gdhtmk?start=684" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
 <br/><br/>
