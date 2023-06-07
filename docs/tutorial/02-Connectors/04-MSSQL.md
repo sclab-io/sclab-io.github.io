@@ -71,10 +71,10 @@ MSSQL_IDLE_TIMEOUT_MS=30000
 
 # QUERY_#=mqtt;query;topic;interval ms
 # QUERY_#=api;query;endPoint
-QUERY_1=api;SELECT DBMS_RANDOM.VALUE(1, 100) AS random_number, SYSDATE AS current_time FROM dual;/api/1
-QUERY_2=api;SELECT ${field} FROM ${table} where name="${name}";/api/2
-# QUERY_3=mqtt;SELECT DBMS_RANDOM.VALUE(1, 100) AS random_number, SYSDATE AS current_time FROM dual;test0;1000
-# QUERY_4=mqtt;SELECT DBMS_RANDOM.VALUE(1, 1000) AS random_number, SYSDATE AS current_time FROM dual;test1;5000
+QUERY_0=api;SELECT TOP 1 number FROM (SELECT ABS(CHECKSUM(NEWID())) % 100 + 1 AS number FROM sys.objects) AS random_numbers;/api/1
+QUERY_1=api;SELECT * FROM employees;/api/2
+# QUERY_3=mqtt;SELECT TOP 1 number FROM (SELECT ABS(CHECKSUM(NEWID())) % 100 + 1 AS number FROM sys.objects) AS random_numbers;test0;1000
+# QUERY_4=mqtt;SELECT TOP 1 number FROM (SELECT ABS(CHECKSUM(NEWID())) % 1000 + 1 AS number FROM sys.objects) AS random_numbers;test1;5000
 
 # PORT
 PORT=3000
