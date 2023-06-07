@@ -1,16 +1,17 @@
 ---
-title: ORACLE Connector
+title: SQL Server Connector
 tags:
   - Connector
   - DB
-  - ORACLE
+  - MSSQL
+  - SQL Server
 ---
 
 ## 소개
-이 커넥터는 OracleDB에 연결하고, API와 IoT 형식으로 SCLAB 쪽에 데이터를 연결할 수 있게 해줍니다.
+이 커넥터는 SQL Server 데이터베이스에 연결하고, API와 IoT 형식으로 SCLAB 쪽에 데이터를 연결할 수 있게 해줍니다.
 
 ## 기능
-- ORACLE 에 커넥션 풀을 이용하여 연결
+- SQL Server 에 커넥션 풀을 이용하여 연결
 - SQL 쿼리를 사용하여 일정 간격으로 MQTT 메시지 발행하기
 - SQL 쿼리로 REST API 엔드포인트 생성하기
 - HTTP 인증을 위한 JWT
@@ -30,7 +31,7 @@ QUERY_#=api;SQL Query;Endpoint URL
 ## 설치방법
 
 ### 사전 준비사항
-- 오라클 데이터베이스
+- SQL Server 데이터베이스
 - 접속 정보
 - docker 또는 nodejs 설치
 
@@ -51,17 +52,15 @@ $ openssl rsa -in ./jwt/jwtRS256.key -pubout -outform PEM -out ./jwt/jwtRS256.ke
 ~~~bash
 $ vi .env.production.local
 
-# ORACLE Connection
-ORACLE_USER="C##USER"
-ORACLE_PASSWORD=pasword
-# https://node-oracledb.readthedocs.io/en/latest/user_guide/connection_handling.html#connection-strings
-ORACLE_CONNECTION_STRING=host:1521/SID
-ORACLE_POOL_MAX_SIZE=10
-ORACLE_POOL_MIN_SIZE=4
-ORACLE_POOL_INCREMENT_SIZE=1
-ORACLE_MAX_ROW_SIZE=1000
-
-# ORACLE_CLIENT_DIR=./client/instantclient_21_10
+# SQL Server Connection
+MSSQL_DB_USER=sa
+MSSQL_DB_PASSWORD=yourpassword
+MSSQL_DB_NAME=dbname
+MSSQL_SERVER=localhost
+MSSQL_PORT=1433
+MSSQL_POOL_MIN=1
+MSSQL_POOL_MAX=10
+MSSQL_IDLE_TIMEOUT_MS=30000
 
 # SCLAB IoT
 # MQTT_TOPIC=yourtopic/
@@ -178,19 +177,3 @@ name | Variable | Bike
 ### 6. 데이터가 들어온 경우 패스설정을 통해 필드와 레이블 값을 매핑해줍니다.
 ### 7. SAVE 버튼을 눌러서 데이터를 저장합니다.
 ### 8. 이후 차트나 테이블등의 형식으로 데이터를 시각화를 진행하면 됩니다.
-
-## Oracle Client mode
-
-### Thin mode (nodejs default)
-- 지원 Oracle Database 버전 최소 12.1
-
-### Thick mode (docker-compose default)
-- 지원 Oracle Database 버전 21, 19, 18, 12, and 11.2
-- 도커를 이용해서 실하시는 경우 기본적으로 thick 모드로 실행되니까, 별도로 클라이언트를 설치하지 않으셔도 됩니다.
-
-#### Thick mode install
-- download client
-- https://www.oracle.com/database/technologies/instant-client/downloads.html
-- unzip client
-- uncomment ORACLE_CLIENT_DIR with your client path
-- more detail in https://node-oracledb.readthedocs.io/en/latest/user_guide/installation.html#install-oracle-client-to-use-thick-mode

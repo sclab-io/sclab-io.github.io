@@ -1,16 +1,17 @@
 ---
-title: ORACLE Connector
+title: SQL Server Connector
 tags:
   - Connector
   - DB
-  - ORACLE
+  - MSSQL
+  - SQL Server
 ---
 
 ## Introduction
-This connector provides functionality for retrieving data using ORACLE Database in SCLAB Studio.
+This connector provides functionality for retrieving data using SQL Server Database in SCLAB Studio.
 
 ### Features
-- Connect to ORACLE DB with connection pool
+- Connect to SQL Server DB with connection pool
 - MQTT message publish using SQL Query with interval
 - Create REST API endpoint with SQL Query
 - JWT for HTTP authorization
@@ -30,13 +31,13 @@ QUERY_#=api;SQL Query;Endpoint URL
 ## Installation
 
 ### Prerequisites
-- ORACLE Database
+- SQL Server Database
 - connection information
 - Install docker or nodejs
 
 ### clone source
 ~~~bash
-$ git clone https://github.com/sclab-io/sclab-oracle-connector
+$ git clone https://github.com/sclab-io/sclab-sqlserver-connector
 ~~~
 
 ### create JWT key file for API
@@ -51,17 +52,15 @@ $ openssl rsa -in ./jwt/jwtRS256.key -pubout -outform PEM -out ./jwt/jwtRS256.ke
 ~~~bash
 $ vi .env.production.local
 
-# ORACLE Connection
-ORACLE_USER="C##USER"
-ORACLE_PASSWORD=pasword
-# https://node-oracledb.readthedocs.io/en/latest/user_guide/connection_handling.html#connection-strings
-ORACLE_CONNECTION_STRING=host:1521/SID
-ORACLE_POOL_MAX_SIZE=10
-ORACLE_POOL_MIN_SIZE=4
-ORACLE_POOL_INCREMENT_SIZE=1
-ORACLE_MAX_ROW_SIZE=1000
-
-# ORACLE_CLIENT_DIR=./client/instantclient_21_10
+# SQL Server Connection
+MSSQL_DB_USER=sa
+MSSQL_DB_PASSWORD=yourpassword
+MSSQL_DB_NAME=dbname
+MSSQL_SERVER=localhost
+MSSQL_PORT=1433
+MSSQL_POOL_MIN=1
+MSSQL_POOL_MAX=10
+MSSQL_IDLE_TIMEOUT_MS=30000
 
 # SCLAB IoT
 # MQTT_TOPIC=yourtopic/
@@ -177,19 +176,3 @@ name | Variable | Bike
 ### 6. If the data is received, map the field and label values through the Pass Configuration.
 ### 7. Click the SAVE button to save the data.
 ### 8. Then, proceed to visualize the data in chart or table format.
-
-## Oracle Client mode
-
-### Thin mode (nodejs default)
-- Support Oracle Database version 12.1 or later
-
-### Thick mode (docker-compose default)
-- Support Oracle Database version 21, 19, 18, 12, and 11.2
-- If you are using Docker, it runs by default in thick mode, so you don't need to install client.
-
-#### Thick mode install
-- download client
-- https://www.oracle.com/database/technologies/instant-client/downloads.html
-- unzip client
-- uncomment ORACLE_CLIENT_DIR with your client path
-- more detail in https://node-oracledb.readthedocs.io/en/latest/user_guide/installation.html#install-oracle-client-to-use-thick-mode
