@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunksclab_docs=self.webpackChunksclab_docs||[]).push([[3219],{6842:s=>{s.exports=JSON.parse('{"label":"MSSQL","permalink":"/docs/tags/mssql","allTagsPath":"/docs/tags","count":1,"items":[{"id":"tutorial/Connectors/MSSQL","title":"SQL Server Connector","description":"Introduction","permalink":"/docs/tutorial/Connectors/MSSQL"}]}')}}]);
