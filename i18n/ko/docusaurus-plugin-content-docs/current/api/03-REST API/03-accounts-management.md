@@ -85,7 +85,7 @@ name | Y | User's name
 phone | N | User phone number
 address | N | User address
 
-## Update account profile
+## 회원정보 수정
 
 ```shell
 curl "https://app.sclab.io/api/1/user/update" \
