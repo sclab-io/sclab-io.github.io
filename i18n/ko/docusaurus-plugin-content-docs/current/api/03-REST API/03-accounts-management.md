@@ -5,7 +5,9 @@ tags:
   - Action
 ---
 
-## Get user information
+API로 생성된 계정만 API로 관리가 가능합니다.
+
+## 회원정보 가져오기
 
 ```shell
 curl "https://app.sclab.io/api/1/user/get?_userId=jJpp2WfD7yp7y2cEk" \
@@ -46,7 +48,7 @@ Parameter | Required | Description
 _userId | N | User id
 email | N | Email
 
-## Create new account
+## 신규 회원 생성
 
 ```shell
 curl "https://app.sclab.io/api/1/user/create" \
@@ -120,7 +122,7 @@ address | N | User address
 password | N | User's password
 
 
-## Delete user from site
+## 회원 삭제
 
 ```shell
 curl "https://app.sclab.io/api/1/user/delete" \

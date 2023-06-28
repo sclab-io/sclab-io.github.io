@@ -5,6 +5,8 @@ tags:
   - Action
 ---
 
+Only accounts created through the API can be managed via the API.
+
 ## Get user information
 
 ```shell
