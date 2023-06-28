@@ -90,7 +90,7 @@ curl "https://app.sclab.io/api/1/user/update" \
   -X POST \
   -H "Authorization: APITokenHere" \
   -H "Content-Type: application/json" \
-  -d "{\"name\": \"user name\"}"
+  -d "{\"_userId\": \"userid\", \"name\": \"user name\"}"
 ```
 
 > The above command returns JSON structured like this:
@@ -107,7 +107,7 @@ This endpoint update site user account profile [name, phone, address].
 
 ### HTTP Request
 
-`POST https://app.sclab.io/api/1/user/create`
+`POST https://app.sclab.io/api/1/user/update`
 
 ### JSON Parameters
 
