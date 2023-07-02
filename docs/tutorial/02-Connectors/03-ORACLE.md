@@ -16,6 +16,7 @@ This connector provides functionality for retrieving data using ORACLE Database 
 - JWT for HTTP authorization
 - Processing of result data into JSON format
 - SQL Injection filter (default on)
+- Mapping with Mybatis
 
 By adding a query in the format of "QUERY_1=mqtt;query;topic;interval ms" to the .env file, SQL is automatically executed to connect and retrieve data from SCLAB.
 
@@ -76,9 +77,15 @@ QUERY_1=api;SELECT DBMS_RANDOM.VALUE(1, 100) AS random_number, SYSDATE AS curren
 QUERY_2=api;SELECT ${field} FROM ${table} where name="${name}";/api/2
 # QUERY_3=mqtt;SELECT DBMS_RANDOM.VALUE(1, 100) AS random_number, SYSDATE AS current_time FROM dual;test0;1000
 # QUERY_4=mqtt;SELECT DBMS_RANDOM.VALUE(1, 1000) AS random_number, SYSDATE AS current_time FROM dual;test1;5000
+# QUERY_mybatis_1=mybatis;sample;test;{};/api/mybatistest
+# QUERY_mybatis_2=mybatis;sample2;test;{"p_id": {"type": "number", "dir": "in"}, "p_name": {"dir": "out", "type": "string"}, "p_view_count": {"dir": "out", "type": "number"}};/api/mybatistest2
+# QUERY_mybatis_3=mybatis;sample3;test;{"p_id": {"type": "number", "dir": "in"}, "p_cursor": {"dir": "out", "type": "cursor"}};/api/mybatistest3
 
 # PORT
 PORT=3000
+
+# MyBatis
+MY_BATIS_FILE_FOLDER=./mybatis
 
 # TOKEN
 SECRET_KEY=secretKey
@@ -193,3 +200,79 @@ name | Variable | Bike
 - unzip client
 - uncomment ORACLE_CLIENT_DIR with your client path
 - more detail in https://node-oracledb.readthedocs.io/en/latest/user_guide/installation.html#install-oracle-client-to-use-thick-mode
+
+## Mapping with Mybatis
+- Mybatis uses the format supported by https://github.com/OldBlackJoe/mybatis-mapper/tree/master.
+- Exceptionally, you can pass bindJSON values to use PL/SQL.
+- To use it, please create a "mybatis" folder.
+
+### if문 사용 예제 
+- mybatis 폴더에 아래와 같은 형식으로 입력하시면 됩니다.
+
+~~~xml title="./mybatis/sample.xml"
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="sample">  
+  <select id="test">
+    SELECT
+      *
+    FROM
+      POST
+    WHERE
+      1=1
+      <if test="id != null and id != ''">
+      AND id = #{id}
+      </if>
+  </select>
+</mapper>
+~~~
+- The above example uses an if condition to search by the "id" condition only if the "id" value is passed as a parameter. Otherwise, it returns all data.
+- After adding the XML file, add the configuration to the environment variables.
+~~~bash title=".env.production.local"
+QUERY_mybatis_1=mybatis;sample;test;{};/api/mybatistest
+~~~
+- After adding the environment variable, restart, and you will be able to make a query and retrieve data by accessing the corresponding endpoint.
+
+### Example of using a Stored Procedure
+- To use a Stored Procedure, add the Mybatis file.
+~~~xml title="./mybatis/sample2.xml"
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="sample2">  
+  <sql id="test">
+  BEGIN
+    myproc(
+      :p_id,
+      :p_name,
+      :p_view_count
+    );
+  END;  
+  </sql>
+</mapper>
+~~~
+
+- The above example is a simple Stored Procedure that takes input and output.
+- "p_id" is an input that accepts a numeric value, and "p_name" and "p_view_count" are outputs of string and numeric types, respectively.
+- To use the above example, add the following configuration to the environment variables.
+~~~bash title=".env.production.local"
+QUERY_mybatis_2=mybatis;sample2;test;{"p_id": {"type": "number", "dir": "in"}, "p_name": {"dir": "out", "type": "string"}, "p_view_count": {"dir": "out", "type": "number"}};/api/mybatistest2
+~~~
+
+- The bind information in the 4th value is bound to the input/output values of the Stored Procedure.
+- Currently, only three types of binding are supported: string, number, and cursor.
+- "dir" supports only two values: "in" and "out".
+
+### Example of a Stored Procedure with a Cursor
+~~~xml title="./mybatis/sample3.xml"
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="sample3">  
+  <sql id="test">
+  BEGIN myproc2(:p_id, :p_cursor); END;
+  </sql>
+</mapper>
+~~~
+
+~~~bash title=".env.production.local"
+QUERY_mybatis_3=mybatis;sample3;test;{"p_id": {"type": "number", "dir": "in"}, "p_cursor": {"dir": "out", "type": "cursor"}};/api/mybatistest3
+~~~

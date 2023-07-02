@@ -16,6 +16,7 @@ tags:
 - HTTP 인증을 위한 JWT
 - 결과 데이터를 JSON 형식으로 처리하기
 - SQL Injection 차단 (기본 on)
+- Mybatis 매핑
 
 .env 파일에 "QUERY_1=mqtt;query;topic;interval ms" 형식으로 쿼리를 추가하면, SQL을 사용하여 데이터 가져오고 SCLAB과 연결합니다.
 
@@ -72,13 +73,20 @@ ORACLE_MAX_ROW_SIZE=1000
 
 # QUERY_#=mqtt;query;topic;interval ms
 # QUERY_#=api;query;endPoint
+# QUERY_#=mybatis;namespace;queryid;bindJSON;endpoint
 QUERY_1=api;SELECT DBMS_RANDOM.VALUE(1, 100) AS random_number, SYSDATE AS current_time FROM dual;/api/1
 QUERY_2=api;SELECT ${field} FROM ${table} where name="${name}";/api/2
 # QUERY_3=mqtt;SELECT DBMS_RANDOM.VALUE(1, 100) AS random_number, SYSDATE AS current_time FROM dual;test0;1000
 # QUERY_4=mqtt;SELECT DBMS_RANDOM.VALUE(1, 1000) AS random_number, SYSDATE AS current_time FROM dual;test1;5000
+# QUERY_mybatis_1=mybatis;sample;test;{};/api/mybatistest
+# QUERY_mybatis_2=mybatis;sample2;test;{"p_id": {"type": "number", "dir": "in"}, "p_name": {"dir": "out", "type": "string"}, "p_view_count": {"dir": "out", "type": "number"}};/api/mybatistest2
+# QUERY_mybatis_3=mybatis;sample3;test;{"p_id": {"type": "number", "dir": "in"}, "p_cursor": {"dir": "out", "type": "cursor"}};/api/mybatistest3
 
 # PORT
 PORT=3000
+
+# MyBatis
+MY_BATIS_FILE_FOLDER=./mybatis
 
 # TOKEN
 SECRET_KEY=secretKey
@@ -194,3 +202,79 @@ name | Variable | Bike
 - unzip client
 - uncomment ORACLE_CLIENT_DIR with your client path
 - more detail in https://node-oracledb.readthedocs.io/en/latest/user_guide/installation.html#install-oracle-client-to-use-thick-mode
+
+## Mybatis 매핑 하기
+- Mybatis는 https://github.com/OldBlackJoe/mybatis-mapper/tree/master 를 이용하고 있고 여기서 지원하는 형식만 가능합니다.
+- 예외적으로 PL/SQL을 사용하기 위해 bindJSON 값을 넘겨줄 수 있습니다.
+- 사용하기 위해서는 mybatis 폴더를 만들어주세요.
+
+### if문 사용 예제 
+- mybatis 폴더에 아래와 같은 형식으로 입력하시면 됩니다.
+
+~~~xml title="./mybatis/sample.xml"
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="sample">  
+  <select id="test">
+    SELECT
+      *
+    FROM
+      POST
+    WHERE
+      1=1
+      <if test="id != null and id != ''">
+      AND id = #{id}
+      </if>
+  </select>
+</mapper>
+~~~
+- 위 예제는 if 조건문을 이용하여 id 값이 파라미터로 넘어온 경우에만 id 조건으로 검색하고 그렇지 않은 경우는 모든 데이터를 반환하는 예제입니다.
+- xml파일을 추가한 뒤 환경 변수에 설정을 추가합니다.
+~~~bash title=".env.production.local"
+QUERY_mybatis_1=mybatis;sample;test;{};/api/mybatistest
+~~~
+- 환경 변수를 추가한 뒤 재시작 하면 해당 엔드포인트로 요청 시 mybatis 폴더의 sample.test 화 연결이 되어 쿼리를 만들고 데이터를 가져올 수 있습니다.
+
+### Stored procedure 사용 예제
+- Stored procedure를 사용하기 위해서 mybatis 파일을 추가합니다.
+~~~xml title="./mybatis/sample2.xml"
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="sample2">  
+  <sql id="test">
+  BEGIN
+    myproc(
+      :p_id,
+      :p_name,
+      :p_view_count
+    );
+  END;  
+  </sql>
+</mapper>
+~~~
+
+- 위 예제는 간단하게 입력과 출력을 가져오는 Stored procedure 입니다.
+- p_id 는 숫자 값을 입력으로 받고, p_name, p_view_count는 각각 문자와 숫자형 출력입니다.
+- 위 예제를 사용하기 위해서 환경변수를 아래와 같이 추가해 줍니다.
+~~~bash title=".env.production.local"
+QUERY_mybatis_2=mybatis;sample2;test;{"p_id": {"type": "number", "dir": "in"}, "p_name": {"dir": "out", "type": "string"}, "p_view_count": {"dir": "out", "type": "number"}};/api/mybatistest2
+~~~
+
+- 4번째 값에 들어간 bind 정보는 Stored procedure에 입/출력 값과 바인딩 됩니다.
+- 현재 바인딩 타입은 string, number, cursor 3가지만 지원합니다.
+- dir 값은 in, out 두가지만 지원 합니다.
+
+### Cursor가 있는 Stored procedure 예제
+~~~xml title="./mybatis/sample3.xml"
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="sample3">  
+  <sql id="test">
+  BEGIN myproc2(:p_id, :p_cursor); END;
+  </sql>
+</mapper>
+~~~
+
+~~~bash title=".env.production.local"
+QUERY_mybatis_3=mybatis;sample3;test;{"p_id": {"type": "number", "dir": "in"}, "p_cursor": {"dir": "out", "type": "cursor"}};/api/mybatistest3
+~~~
