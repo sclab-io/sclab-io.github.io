@@ -19,7 +19,7 @@ This connector provides functionality for retrieving data using Presto/Trino in 
 - JWT for HTTP authorization
 - Processing of result data into JSON format
 - SQL Injection filter (default on)
-
+- Mybatis 매핑
 
 By adding a query in the format of "QUERY_1=mqtt;query;topic;interval ms" to the .env file, SQL is automatically executed to connect and retrieve data from SCLAB.
 
@@ -85,6 +85,9 @@ QUERY_2=api;SELECT ${field} from ${table} where name="${name}";/api/2
 
 # PORT
 PORT=3000
+
+# MyBatis
+MY_BATIS_FILE_FOLDER=./mybatis
 
 # TOKEN
 SECRET_KEY=secretKey
@@ -183,3 +186,87 @@ name | Variable | Bike
 ### 6. If the data is received, map the field and label values through the Pass Configuration.
 ### 7. Click the SAVE button to save the data.
 ### 8. Then, proceed to visualize the data in chart or table format.
+
+## Mapping with Mybatis
+- Mybatis utilizes https://github.com/OldBlackJoe/mybatis-mapper/tree/master, and only the supported formats from there are applicable.
+- To use it, please create a mybatis folder.
+
+### Example of using if statement
+- You can input the following format in the mybatis folder.
+
+~~~xml title="./mybatis/sample.xml"
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="sample">  
+  <select id="test">
+    SELECT
+      *
+    FROM
+      POST
+    WHERE
+      1=1
+      <if test="id != null and id != ''">
+      AND id = #{id}
+      </if>
+  </select>
+</mapper>
+~~~
+- The above example uses an if statement to search by the id condition only if the id value is passed as a parameter. Otherwise, it returns all the data.
+- After adding the XML file, add the configuration to the environment variable as follows:
+~~~bash title=".env.production.local"
+QUERY_mybatis_1=mybatis;sample;test;/api/mybatistest
+~~~
+- After adding the environment variable, restart the system. Once restarted, when making a request to the corresponding endpoint, it will be connected to sample.test in the mybatis folder, allowing you to create queries and retrieve data.
+
+### Example of using a date range query
+~~~xml title="./mybatis/sample2.xml"
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="sample2">  
+  <select id="test">
+    SELECT 
+      DATE_FORMAT(date_parse(date, '%Y%m%d'), '%Y') AS year, 
+      DATE_FORMAT(date_parse(date, '%Y%m%d'), '%m') AS month, 
+      SUM(newusercount) AS total_new_user_count 
+    FROM mycatalog.mydb.statistics 
+    WHERE 
+      date_parse(date, '%Y%m%d') BETWEEN 
+      date_parse(${startDate}, '%Y%m%d') AND 
+      date_parse(${endDate}, '%Y%m%d') 
+    GROUP BY 
+      DATE_FORMAT(date_parse(date, '%Y%m%d'), '%Y'), 
+      DATE_FORMAT(date_parse(date, '%Y%m%d'), '%m') 
+    ORDER BY year, month
+  </select>
+</mapper>
+~~~
+
+- The above query retrieves the number of new members who joined during a specific period from a statistics table.
+- The data in the table is stored with the format 'YYYYMMDD' for the date.
+- To extract data on a monthly basis, the query calculates the new member count for each month.
+- Since only daily data is stored, it uses SUM to calculate the total, and GROUP BY retrieves the data in the format of year and month.
+
+~~~bash title=".env.production.local"
+QUERY_mybatis_2=mybatis;sample2;test;/api/mybatistest2
+~~~
+
+- After adding the environment variable, restart the system.
+
+~~~bash
+curl "http://localhost:9180/api/mybatistest2?startDate=20200101&endDate=20231223" -H 'authorization: TOKEN'
+~~~
+
+- By making a request like the above, you can retrieve the number of new members who joined on a monthly basis from January 2023 to June 2023.
+
+~~~json
+{
+  "rows":[
+    {"year":"2023","month":"01","total_new_user_count":3567},
+    {"year":"2023","month":"02","total_new_user_count":3416},
+    {"year":"2023","month":"03","total_new_user_count":4345},
+    {"year":"2023","month":"04","total_new_user_count":4025},
+    {"year":"2023","month":"05","total_new_user_count":4488},
+    {"year":"2023","month":"06","total_new_user_count":4453}
+  ]
+}⏎
+~~~

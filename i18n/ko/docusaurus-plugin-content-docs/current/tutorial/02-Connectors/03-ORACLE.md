@@ -233,7 +233,7 @@ name | Variable | Bike
 ~~~bash title=".env.production.local"
 QUERY_mybatis_1=mybatis;sample;test;{};/api/mybatistest
 ~~~
-- 환경 변수를 추가한 뒤 재시작 하면 해당 엔드포인트로 요청 시 mybatis 폴더의 sample.test 화 연결이 되어 쿼리를 만들고 데이터를 가져올 수 있습니다.
+- 환경 변수를 추가한 뒤 재시작 하면 해당 엔드포인트로 요청 시 mybatis 폴더의 'sample.test' 와 연결이 되어 쿼리를 만들고 데이터를 가져올 수 있습니다.
 
 ### Stored procedure 사용 예제
 - Stored procedure를 사용하기 위해서 mybatis 파일을 추가합니다.

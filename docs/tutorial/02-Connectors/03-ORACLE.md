@@ -231,7 +231,7 @@ name | Variable | Bike
 ~~~bash title=".env.production.local"
 QUERY_mybatis_1=mybatis;sample;test;{};/api/mybatistest
 ~~~
-- After adding the environment variable, restart, and you will be able to make a query and retrieve data by accessing the corresponding endpoint.
+- After adding the environment variables, restart the system. Once restarted, when making a request to the corresponding endpoint, it will be connected to the 'sample.test' in the mybatis folder, allowing you to create queries and retrieve data.
 
 ### Example of using a Stored Procedure
 - To use a Stored Procedure, add the Mybatis file.
