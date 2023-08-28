@@ -18,11 +18,11 @@ API Action, API Event는 [window.postMessage()](https://developer.mozilla.org/en
 스크랩 스튜디오가 부모이고 당신의 웹 서비스가 아이프레임으로 추가된 상태에서, 액션을 실행하는 예제 입니다.
 
 ```html
-<button onclick="window.parent.postMessage('clientAPIIdHere')">A</button>
+<button onclick="window.parent.postMessage('clientAPIIdHere', '*')">A</button>
 ```
 
 ```javascript
-window.parent.postMessage('clientAPIIdHere');
+window.parent.postMessage('clientAPIIdHere', '*');
 ```
 
 :::info
@@ -50,7 +50,7 @@ window.parent.postMessage({
         myHeaderKy: "myValue"
     },
     body: JSON.stringify({key: "value"})
-});
+}, '*');
 ```
 
 ![APIVariableAction.png](./APIVariableAction.png)
@@ -61,7 +61,7 @@ window.parent.postMessage({
     param: {
         date: "2022-05"
     }
-});
+}, '*');
 ```
 
 ## API 이벤트
@@ -78,7 +78,7 @@ window.addEventListener("message", (event)=>{
   if(event.data === "MY_DATA") {
     console.log('data received');
   }
-});
+}, '*');
 ```
 
 ```html

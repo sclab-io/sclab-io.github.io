@@ -18,11 +18,11 @@ API Actions and API Events are implemented using [window.postMessage()](https://
 Running a single action from your iframe. This is an example of running an action when the SCLAB Studio is the parent and your web service is added as an iframe.
 
 ```html
-<button onclick="window.parent.postMessage('clientAPIIdHere')">A</button>
+<button onclick="window.parent.postMessage('clientAPIIdHere', '*')">A</button>
 ```
 
 ```javascript
-window.parent.postMessage('clientAPIIdHere');
+window.parent.postMessage('clientAPIIdHere', '*');
 ```
 
 :::info
@@ -50,7 +50,7 @@ window.parent.postMessage({
         myHeaderKy: "myValue"
     },
     body: JSON.stringify({key: "value"})
-});
+}, '*');
 ```
 
 ![APIVariableAction.png](./APIVariableAction.png)
@@ -61,7 +61,7 @@ window.parent.postMessage({
     param: {
         date: "2022-05"
     }
-});
+}, '*');
 ```
 
 ## API Event
