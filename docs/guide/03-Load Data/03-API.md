@@ -28,11 +28,11 @@ tags:
 
 ~~~json
 {
-"format": "yyyy-MM",
-"add": {
-"days": 1
-},
-"startOf": "day"
+  "format": "yyyy-MM",
+  "add": {
+    "days": 1
+  },
+  "startOf": "day"
 }
 ~~~
 
