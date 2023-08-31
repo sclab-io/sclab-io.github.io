@@ -23,12 +23,12 @@ tags:
 - "Date" represents a date value and can be used to generate values.
 
 ### Date Format
-- Dates can be formatted as yyyy-MM or any other date format, and the API will be called with the corresponding date.
+- Dates can be formatted as YYYY-MM or any other date format, and the API will be called with the corresponding date.
 - JSON format allows for more diverse date formats.
 
 ~~~json
 {
-  "format": "yyyy-MM",
+  "format": "YYYY-MM",
   "add": {
     "days": 1
   },
@@ -36,13 +36,14 @@ tags:
 }
 ~~~
 
-| Key | Format | Description |
-|--- | --- |-------------------------------------|
-| format | String | {"format": "YYYY-MM-DD"} Date format |
-| add | Object | {"days": -1} -> Yesterday |
-| startOf | String | {"startOf": "month"} -> Start of the month |
-| endOf | String | {"endOf": "month"} -> End of the month |
-| utc | Boolean | Use UTC |
+| Key | Format  | Required | Description                          |
+|--- |---------|:--------:|--------------------------------------|
+| format | String  |    Y     | {"format": "YYYY-MM-DD"} Date format |
+| add | Object  |    N     | {"days": -1} -> Yesterday                  |
+| startOf | String  |    N     | {"startOf": "month"} -> Start of the month |
+| endOf | String |    N     | {"endOf": "month"} -> End of the month |
+| utc | Boolean |    N     | Use UTC  |
+
 <iframe width="100%" height="640" src="https://www.youtube.com/embed/39EXX0toy4s" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
 <br/><br/>

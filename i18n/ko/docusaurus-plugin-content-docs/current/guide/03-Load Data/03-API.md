@@ -23,12 +23,12 @@ tags:
 - "Date"는 날짜 형식의 값으로 값을 만들어 낼 수 있습니다.
 
 ### 날짜 포맷
-- 날짜는 포맷은 yyyy-MM 과 같이 그냥 데이트 형식을 지정하면 해당 날짜로 치환되어 API를 호출 합니다.
+- 날짜는 포맷은 YYYY-MM 과 같이 그냥 데이트 형식을 지정하면 해당 날짜로 치환되어 API를 호출 합니다.
 - JSON 형식으로 보다 다양한 날짜 형식을 만들어 낼 수 있습니다.
 
 ~~~json
 {
-  "format": "yyyy-MM",
+  "format": "YYYY-MM",
   "add": {
     "days": 1
   },
@@ -36,13 +36,13 @@ tags:
 }
 ~~~
 
-| 키 | 포멧 | 설명                                  |
-|--- | --- |-------------------------------------|
-| format | String | {"format": "YYYY-MM-DD"} 날짜 포맷      |
-| add | Object | {"days": -1} -> 어제                  |
-| startOf | String | {"startOf": "month"} -> 해당 월의 시작 시점 |
-| endOf | String | {"endOf": "month"} -> 해당 월의 종료 시점   |
-| utc | Boolean | UTC 사용 여부                           |
+| 키 | 포멧        | 필수  | 설명                                  |
+|--- |-----------|:---:|-------------------------------------|
+| format | String    |  Y  | {"format": "YYYY-MM-DD"} 날짜 포맷         |
+| add | Object    |  N  | {"days": -1} -> 어제                  |
+| startOf | String    |  N  | {"startOf": "month"} -> 해당 월의 시작 시점 |
+| endOf | String    |  N  | {"endOf": "month"} -> 해당 월의 종료 시점 |
+| utc | Boolean |  N  | UTC 사용 여부 |
 
 <iframe width="100%" height="640" src="https://www.youtube.com/embed/ZTcO_Gdhtmk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
