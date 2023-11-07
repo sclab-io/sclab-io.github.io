@@ -44,6 +44,42 @@ tags:
 | endOf | String |    N     | {"endOf": "month"} -> End of the month |
 | utc | Boolean |    N     | Use UTC  |
 
+#### supported add types
+| Key          | Description |
+|--------------|-------------|
+| years        | year        |
+| quarters     | quarter          |
+| months       | month           |
+| weeks        | week           |
+| days         | day           |
+| hours        | hour          |
+| minutes      | minute           |
+| seconds      | second           |
+| milliseconds | millisecond   |
+
+#### supported startOf, endOf types
+| Key    | Description |
+|--------|-------------|
+| year   | year        |
+| quarter | quarter          |
+| month  | month           |
+| week   | week           |
+| day    | day           |
+| hour   | hour          |
+| minute | minute           |
+| second | second           |
+| millisecond | millisecond   |
+
+#### Date Format Samples
+~~~
+// Yesterday 
+{"format": "YYYY-MM-DD", "add": {"days": -1}}
+// Tomorrow
+{"format": "YYYY-MM-DD", "add": {"days": 1}}
+// 1 month ago
+{"format": "YYYY-MM-DD", "add": {"months": -1}}
+~~~
+
 <iframe width="100%" height="640" src="https://www.youtube.com/embed/39EXX0toy4s" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
 <br/><br/>

@@ -44,6 +44,42 @@ tags:
 | endOf | String    |  N  | {"endOf": "month"} -> 해당 월의 종료 시점 |
 | utc | Boolean |  N  | UTC 사용 여부 |
 
+#### 지원 add 타입
+| 키            | 내용        |
+|--------------|-----------|
+| years        | 년         |
+| quarters     | 분기        |
+| months       | 월         |
+| weeks        | 주         |
+| days         | 일         |
+| hours        | 시간        |
+| minutes      | 분         |
+| seconds      | 초         |
+| milliseconds | 1000분의 1초 |
+
+#### 지원 startOf, endOf 타입
+| 키      | 내용        |
+|--------|-----------|
+| year   | 년         |
+| quarter | 분기        |
+| month  | 월         |
+| week   | 주         |
+| day    | 일         |
+| hour   | 시간        |
+| minute | 분         |
+| second | 초         |
+| millisecond | 1000분의 1초 |
+
+#### 날짜 포맷 예제
+~~~
+// 어제 
+{"format": "YYYY-MM-DD", "add": {"days": -1}}
+// 내일
+{"format": "YYYY-MM-DD", "add": {"days": 1}}
+// 1달전
+{"format": "YYYY-MM-DD", "add": {"months": -1}}
+~~~
+
 <iframe width="100%" height="640" src="https://www.youtube.com/embed/ZTcO_Gdhtmk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
 <br/><br/>
