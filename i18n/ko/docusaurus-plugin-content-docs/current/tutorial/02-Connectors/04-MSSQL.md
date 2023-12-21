@@ -37,7 +37,7 @@ QUERY_#=api;SQL Query;Endpoint URL
 
 ### 소스 받기
 ~~~bash
-$ git clone https://github.com/sclab-io/sclab-oracle-connector
+$ git clone https://github.com/sclab-io/sclab-sqlserver-connector
 ~~~
 
 ### API 보안을 위한 JWT 키파일 생성
