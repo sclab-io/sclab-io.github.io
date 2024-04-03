@@ -258,15 +258,16 @@ name | Variable | Bike
     SELECT
       *
     FROM
-      POST
+      resume
     WHERE
       1=1
       <if test="id != null and id != ''">
-      AND id = #{id}
+      AND id = ${id}
       </if>
+    
     <if test="limit != null and limit != ''">
       LIMIT ${limit}
-    </if>  
+    </if>
   </select>
 </mapper>
 ~~~
