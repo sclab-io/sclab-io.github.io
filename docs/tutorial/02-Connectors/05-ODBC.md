@@ -109,7 +109,43 @@ Database = tibero
 * Node.js 16
 * Node.js 18
 
+### install nodejs 14
+~~~bash
+curl -sL https://rpm.nodesource.com/setup_14.x | sudo bash -
+sudo yum install nodejs
+~~~
+
 ---
+
+### How to troubleshoot issues related to gcc
+The gcc library is required to connect with unixODBC, but errors may occur occasionally on older operating systems.
+Below are the solutions for this.
+
+#### CentOS 7 - 64bit
+* /lib64/libstdc++.so.6: version `CXXABI_1.3.9' not found
+~~~
+# check libstdc++
+# if 1.3.9 is absent upgrade libstdc++
+strings /lib64/libstdc++.so.6 | grep CXXABI
+
+# centos7 upgrade process
+cd gcc
+
+# use prebuild lib if this doesn't work you have to build gcc
+./centos7_setup_gcc9.2.0.sh
+
+# check again
+strings /lib64/libstdc++.so.6 | grep CXXABI
+
+# restart
+cd ..
+./stop.sh
+./run.sh
+
+# if connector has no error, you don't have to run this script
+# or build lib (you can change gcc version in ./centos7_build_gcc9.2.0.sh file's GCC_VERSION=9.2.0)
+./centos7_build_gcc9.2.0.sh
+~~~
 
 ### clone source
 ~~~bash
@@ -200,12 +236,6 @@ authorization: yourkey
 You can find your key information through the logs.
 
 ## Build source
-### install nodejs
-~~~bash
-curl -sL https://rpm.nodesource.com/setup_14.x | sudo bash -
-sudo yum install nodejs
-~~~
-
 ### build source
 ~~~bash
 $ npm install
