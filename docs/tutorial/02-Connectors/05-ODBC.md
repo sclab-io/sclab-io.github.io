@@ -1,19 +1,16 @@
 ---
-title: Presto/Trino Connector
+title: ODBC Connector
 tags:
   - Connector
   - DB
-  - Presto
-  - Trino
+  - ODBC
 ---
 
 ## Introduction
-This connector provides functionality for retrieving data using Presto/Trino in SCLAB Studio.
-
-<iframe width="560" height="315" src="https://www.youtube.com/embed/LLNV-QlyW58" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+This connector provides functionality for retrieving data using ODBC in SCLAB Studio.
 
 ## Features
-- Connect to Presto/Trino
+- Connect to Database using unixODBC
 - MQTT message publish using SQL Query with interval
 - Create REST API endpoint with SQL Query
 - JWT for HTTP authorization
@@ -33,14 +30,34 @@ QUERY_#=api;SQL Query;Endpoint URL
 
 ## Installation
 
-### Prerequisites
-- trino or presto (https://trino.io/docs/current/installation.html)
-- connection information
-- Install docker or nodejs
+---
+
+### Requirements
+* install nodejs
+* unixODBC binaries and development libraries for module compilation
+  * on Ubuntu/Debian `sudo apt-get install unixodbc unixodbc-dev`
+  * on RedHat/CentOS `sudo yum install unixODBC unixODBC-devel`
+  * on OSX
+    * using macports.org `sudo port unixODBC`
+    * using brew `brew install unixODBC`
+  * on FreeBSD from ports `cd /usr/ports/databases/unixODBC; make install`
+  * on IBM i `yum install unixODBC unixODBC-devel` (requires [yum](http://ibm.biz/ibmi-rpms))
+* ODBC drivers for target database
+* properly configured odbc.ini and odbcinst.ini.
+* print config info `odbcinst -j`
+---
+
+### Node.js Version Support
+* Node.js 12
+* Node.js 14
+* Node.js 16
+* Node.js 18
+
+---
 
 ### clone source
 ~~~bash
-$ git clone https://github.com/sclab-io/sclab-presto-connector
+$ git clone https://github.com/sclab-io/sclab-odbc-connector-node
 ~~~
 
 ### create JWT key file for API
@@ -55,26 +72,16 @@ $ openssl rsa -in ./jwt/jwtRS256.key -pubout -outform PEM -out ./jwt/jwtRS256.ke
 ~~~bash
 $ vi .env.production.local
 
-# Presto/Trino Connection
-PRESTO_HOST=172.17.0.1
-PRESTO_PORT=8080
-PRESTO_USER=sclab-trino-client
-
-# BASIC AUTH
-PRESTO_AUTH=BASIC
-PRESTO_BASIC_USER=user
-#PRESTO_BASIC_PASSWORD=password
-
-# CUSTOM AUTH
-#PRESTO_AUTH=CUSTOM
-#PRESTO_CUSTOM_AUTH=Sets HTTP Authorization header with the provided string.
+# ODBC Connection string
+CONNECTION_STRING="DSN=MyDB"
+MAX_POOL_SIZE=5
 
 # SCLAB IoT (Remove this environment if you do not need to use MQTT)
-MQTT_TOPIC=yourtopic/
-MQTT_HOST=yourhost
-MQTT_CLIENT_ID=your-client-id/1
-MQTT_ID=your-id
-MQTT_PASSWORD=your-password
+# MQTT_TOPIC=yourtopic/
+# MQTT_HOST=yourhost
+# MQTT_CLIENT_ID=your-client-id/1
+# MQTT_ID=your-id
+# MQTT_PASSWORD=your-password
 
 # QUERY_#=mqtt;query;topic;interval ms
 # QUERY_#=api;query;endPoint
@@ -82,6 +89,7 @@ QUERY_1=api;SELECT ROUND( RAND() * 100 ) AS value, NOW() AS datetime;/api/1
 QUERY_2=api;SELECT ${field} from ${table} where name="${name}";/api/2
 # QUERY_3=mqtt;SELECT ROUND( RAND() * 100 ) AS value, NOW() AS datetime;test0;1000
 # QUERY_4=mqtt;SELECT ROUND( RAND() * 1000 ) AS value, NOW() AS datetime;test1;5000
+# QUERY_mybatis_1=mybatis;sample;test;/api/mybatistest
 
 # PORT
 PORT=3000
@@ -108,9 +116,6 @@ SQL_INJECTION=1
 
 ### start
 ~~~bash
-# docker compose
-$ ./run.sh
-
 # nodejs
 $ npm run start
 
@@ -120,11 +125,8 @@ $ npm run deploy:prod
 
 ### stop
 ~~~bash
-# docker compose
-$ ./stop.sh
-
 # pm2
-$ ./node_modules/.bin/pm2 stop 0
+$ ./stop.sh
 ~~~
 
 ### logs
