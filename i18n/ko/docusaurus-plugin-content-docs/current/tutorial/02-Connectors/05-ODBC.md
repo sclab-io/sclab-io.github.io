@@ -45,6 +45,7 @@ QUERY_#=api;SQL Query;Endpoint URL
 * ODBC drivers for target database
 * properly configured odbc.ini and odbcinst.ini.
 * print config info `odbcinst -j`
+* test dsn `isql -v mydsn myusername mypassword`
 ---
 
 ### Node.js 지원 정보
