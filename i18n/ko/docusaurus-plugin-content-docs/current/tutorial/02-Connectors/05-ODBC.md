@@ -77,14 +77,14 @@ FileUsage = 1
 ### Sample ~/.odbc.ini
 ~~~
 [ODBC Data Sources]
-My = MySQL
+MyDB = MySQL
 MyTB = Tibero 7
 
 [ODBC]
 Trace = yes
 TraceFile = /home/odbc.log
 
-[My]
+[MyDB]
 Driver = MySQL
 server = 127.0.0.1
 port = 3306
