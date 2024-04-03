@@ -48,6 +48,60 @@ QUERY_#=api;SQL Query;Endpoint URL
 * test dsn `isql -v mydsn myusername mypassword`
 ---
 
+### Sample /etc/odbcinst.ini
+~~~
+[PostgreSQL]
+Description     = ODBC for PostgreSQL
+Driver          = /usr/lib/psqlodbcw.so
+Setup           = /usr/lib/libodbcpsqlS.so
+Driver64        = /usr/lib64/psqlodbcw.so
+Setup64         = /usr/lib64/libodbcpsqlS.so
+FileUsage       = 1
+
+[MySQL]
+Description     = ODBC for MySQL
+Driver          = /usr/lib/libmyodbc5.so
+Setup           = /usr/lib/libodbcmyS.so
+Driver64        = /usr/lib64/libmyodbc5.so
+Setup64         = /usr/lib64/libodbcmyS.so
+FileUsage       = 1
+
+[Tibero]
+Description = ODBC for Tibero
+Driver = /home/tibero/tibero7/client/lib/libtbodbc.so
+Setup = /home/tibero/tibero7/client/lib/libtbodbc.so
+Setup = 1
+FileUsage = 1
+~~~
+
+### Sample ~/.odbc.ini
+~~~
+[ODBC Data Sources]
+My = MySQL
+MyTB = Tibero 7
+
+[ODBC]
+Trace = yes
+TraceFile = /home/odbc.log
+
+[My]
+Driver = MySQL
+server = 127.0.0.1
+port = 3306
+user = myuser
+database = mydb
+password = password
+
+[MyTB]
+driver = Tibero
+server = 127.0.0.1
+port = 8629
+SID = tibero
+user = sys
+password = tibero
+Database = tibero
+~~~
+
 ### Node.js 지원 정보
 * Node.js 12
 * Node.js 14
