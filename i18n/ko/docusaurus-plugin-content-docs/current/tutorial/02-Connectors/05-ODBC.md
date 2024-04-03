@@ -114,38 +114,6 @@ curl -sL https://rpm.nodesource.com/setup_14.x | sudo bash -
 sudo yum install nodejs
 ~~~
 
----
-
-### gcc 관련 문제 해결 방법
-unixODBC 와 연결을 위해 gcc 라이브러리가 필요한데 간혹 오래된 os에서는 에러가 날 수 있습니다.
-아래는 그에 대한 해결 방법 입니다.
-
-#### CentOS 7 - 64bit
-* /lib64/libstdc++.so.6: version `CXXABI_1.3.9' not found
-~~~
-# check libstdc++
-# if 1.3.9 is absent upgrade libstdc++
-strings /lib64/libstdc++.so.6 | grep CXXABI
-
-# centos7 upgrade process
-cd gcc
-
-# use prebuild lib if this doesn't work you have to build gcc
-./centos7_setup_gcc9.2.0.sh
-
-# check again
-strings /lib64/libstdc++.so.6 | grep CXXABI
-
-# restart
-cd ..
-./stop.sh
-./run.sh
-
-# if connector has no error, you don't have to run this script
-# or build lib (you can change gcc version in ./centos7_build_gcc9.2.0.sh file's GCC_VERSION=9.2.0)
-./centos7_build_gcc9.2.0.sh
-~~~
-
 ### 소스 받기
 ~~~bash
 $ git clone https://github.com/sclab-io/sclab-odbc-connector-node
@@ -360,4 +328,36 @@ curl "http://localhost:9180/api/mybatistest2?startDate=20230101&endDate=20230630
     {"year":"2023","month":"06","total_new_user_count":4453}
   ]
 }⏎
+~~~
+
+---
+
+### gcc 관련 문제 해결 방법
+unixODBC 와 연결을 위해 gcc 라이브러리가 필요한데 간혹 오래된 os에서는 에러가 날 수 있습니다.
+아래는 그에 대한 해결 방법 입니다.
+
+#### CentOS 7 - 64bit
+* /lib64/libstdc++.so.6: version `CXXABI_1.3.9' not found
+~~~
+# check libstdc++
+# if 1.3.9 is absent upgrade libstdc++
+strings /lib64/libstdc++.so.6 | grep CXXABI
+
+# centos7 upgrade process
+cd gcc
+
+# use prebuild lib if this doesn't work you have to build gcc
+./centos7_setup_gcc9.2.0.sh
+
+# check again
+strings /lib64/libstdc++.so.6 | grep CXXABI
+
+# restart
+cd ..
+./stop.sh
+./run.sh
+
+# if connector has no error, you don't have to run this script
+# or build lib (you can change gcc version in ./centos7_build_gcc9.2.0.sh file's GCC_VERSION=9.2.0)
+./centos7_build_gcc9.2.0.sh
 ~~~
