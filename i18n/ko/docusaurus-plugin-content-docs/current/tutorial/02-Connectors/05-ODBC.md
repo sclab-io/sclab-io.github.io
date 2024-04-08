@@ -175,11 +175,8 @@ SQL_INJECTION=1
 
 ### 시작
 ~~~bash
-# nodejs
-$ npm run start
-
 # pm2
-$ npm run deploy:prod
+$ ./run.sh
 ~~~
 
 ### 중지
