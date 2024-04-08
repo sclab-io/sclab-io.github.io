@@ -134,7 +134,7 @@ You can find your key information through the logs.
 ## Build source
 ### install nodejs
 ~~~bash
-curl -sL https://rpm.nodesource.com/setup_14.x | sudo bash -
+curl -sL https://rpm.nodesource.com/setup_18.x | sudo bash -
 sudo yum install nodejs
 ~~~
 

@@ -109,9 +109,9 @@ Database = tibero
 * Node.js 16
 * Node.js 18
 
-### install nodejs 14
+### install nodejs 18
 ~~~bash
-curl -sL https://rpm.nodesource.com/setup_14.x | sudo bash -
+curl -sL https://rpm.nodesource.com/setup_18.x | sudo bash -
 sudo yum install nodejs
 ~~~
 

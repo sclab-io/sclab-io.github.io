@@ -134,7 +134,7 @@ yourkey 부분에 들어갈 내용은 로그에서 확인이 가능합니다.
 ## 소스 빌드 방법
 ### nodejs 설치
 ~~~bash
-curl -sL https://rpm.nodesource.com/setup_14.x | sudo bash -
+curl -sL https://rpm.nodesource.com/setup_18.x | sudo bash -
 sudo yum install nodejs
 ~~~
 
