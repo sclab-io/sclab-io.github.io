@@ -38,10 +38,10 @@ tags:
 
 | 키 | 포멧        | 필수  | 설명                                  |
 |--- |-----------|:---:|-------------------------------------|
-| format | String    |  Y  | {"format": "YYYY-MM-DD"} 날짜 포맷         |
-| add | Object    |  N  | {"days": -1} -> 어제                  |
-| startOf | String    |  N  | {"startOf": "month"} -> 해당 월의 시작 시점 |
-| endOf | String    |  N  | {"endOf": "month"} -> 해당 월의 종료 시점 |
+| format | String    |  Y  | \{"format": "YYYY-MM-DD"\} 날짜 포맷         |
+| add | Object    |  N  | \{"days": -1\} -> 어제                  |
+| startOf | String    |  N  | \{"startOf": "month"\} -> 해당 월의 시작 시점 |
+| endOf | String    |  N  | \{"endOf": "month"\} -> 해당 월의 종료 시점 |
 | utc | Boolean |  N  | UTC 사용 여부 |
 
 #### 지원 add 타입
