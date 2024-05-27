@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunksclab_docs=self.webpackChunksclab_docs||[]).push([[1750],{7966:s=>{s.exports=JSON.parse('{"tag":{"label":"Form","permalink":"/docs/tags/form","allTagsPath":"/docs/tags","count":1,"items":[{"id":"guide/Form/Form","title":"Form","description":"Mobile Form","permalink":"/docs/guide/Form/Form"}],"unlisted":false}}')}}]);

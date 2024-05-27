@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunksclab_docs=self.webpackChunksclab_docs||[]).push([[9771],{1735:a=>{a.exports=JSON.parse('{"tag":{"label":"Kafka","permalink":"/docs/tags/kafka","allTagsPath":"/docs/tags","count":1,"items":[{"id":"guide/Load Data/Kafka","title":"Kafka","description":"Kafka Data Flow","permalink":"/docs/guide/Load Data/Kafka"}],"unlisted":false}}')}}]);

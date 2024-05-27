@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunksclab_docs=self.webpackChunksclab_docs||[]).push([[3185],{6326:s=>{s.exports=JSON.parse('{"permalink":"/blog/tags/smart-city-solutions","page":1,"postsPerPage":10,"totalPages":1,"totalCount":1,"blogDescription":"Blog","blogTitle":"Blog"}')}}]);

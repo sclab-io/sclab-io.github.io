@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunksclab_docs=self.webpackChunksclab_docs||[]).push([[3433],{6370:a=>{a.exports=JSON.parse('{"label":"SaaS","permalink":"/blog/tags/saa-s","allTagsPath":"/blog/tags","count":4}')}}]);

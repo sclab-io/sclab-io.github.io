@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunksclab_docs=self.webpackChunksclab_docs||[]).push([[8559],{5808:s=>{s.exports=JSON.parse('{"permalink":"/blog/tags/data-visualization","page":1,"postsPerPage":10,"totalPages":1,"totalCount":5,"blogDescription":"Blog","blogTitle":"Blog"}')}}]);

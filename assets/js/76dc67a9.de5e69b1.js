@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunksclab_docs=self.webpackChunksclab_docs||[]).push([[8906],{6227:s=>{s.exports=JSON.parse('{"label":"ODBC","permalink":"/docs/tags/odbc","allTagsPath":"/docs/tags","count":1,"items":[{"id":"tutorial/Connectors/ODBC","title":"ODBC Connector","description":"Introduction","permalink":"/docs/tutorial/Connectors/ODBC"}]}')}}]);

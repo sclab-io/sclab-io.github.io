@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunksclab_docs=self.webpackChunksclab_docs||[]).push([[5617],{2333:t=>{t.exports=JSON.parse('{"label":"Tutorial","permalink":"/docs/tags/tutorial","allTagsPath":"/docs/tags","count":1,"items":[{"id":"tutorial/intro","title":"Introduction","description":"Hello SCLAB Studio users!","permalink":"/docs/tutorial/intro"}]}')}}]);

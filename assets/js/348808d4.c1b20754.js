@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunksclab_docs=self.webpackChunksclab_docs||[]).push([[9967],{7099:o=>{o.exports=JSON.parse('{"label":"Trino","permalink":"/docs/tags/trino","allTagsPath":"/docs/tags","count":1,"items":[{"id":"tutorial/Connectors/Presto","title":"Presto/Trino Connector","description":"Introduction","permalink":"/docs/tutorial/Connectors/Presto"}]}')}}]);
