@@ -38,10 +38,10 @@ tags:
 
 | Key | Format  | Required | Description                          |
 |--- |---------|:--------:|--------------------------------------|
-| format | String  |    Y     | {"format": "YYYY-MM-DD"} Date format |
-| add | Object  |    N     | {"days": -1} -> Yesterday                  |
-| startOf | String  |    N     | {"startOf": "month"} -> Start of the month |
-| endOf | String |    N     | {"endOf": "month"} -> End of the month |
+| format | String  |    Y     | \{"format": "YYYY-MM-DD"\} Date format |
+| add | Object  |    N     | \{"days": -1\} -> Yesterday                  |
+| startOf | String  |    N     | \{"startOf": "month"\} -> Start of the month |
+| endOf | String |    N     | \{"endOf": "month"\} -> End of the month |
 | utc | Boolean |    N     | Use UTC  |
 
 #### supported add types
