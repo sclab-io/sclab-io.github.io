@@ -105,7 +105,7 @@ curl "https://app.sclab.io/api/1/user/update" \
 }
 ```
 
-This endpoint update site user account profile [name, phone, address].
+This endpoint update site user account profile [name, phone, address, password].
 
 ### HTTP Request
 
@@ -142,7 +142,7 @@ curl "https://app.sclab.io/api/1/user/delete" \
 }
 ```
 
-This endpoint remove user from your site, but user account is not removed.
+This endpoint remove user from your site.
 
 ### HTTP Request
 
@@ -153,3 +153,6 @@ This endpoint remove user from your site, but user account is not removed.
 Parameter | Required | Description
 -- | -- | -- |
 _userId | Y | User id
+
+## SCLAB User API login sample flow
+![SCLAB User API login sample flow](./user_api_login_sample.png)

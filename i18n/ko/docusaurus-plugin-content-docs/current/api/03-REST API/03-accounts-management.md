@@ -21,7 +21,7 @@ curl "https://app.sclab.io/api/1/user/get?email=test@sclab.io" \
   -H "Content-Type: application/json"
 ```
 
-> The above command returns JSON structured like this:
+> 위 명령을 실행하면 아래의 JSON 응답을 반환 합니다.:
 
 ```json
 {
@@ -35,7 +35,7 @@ curl "https://app.sclab.io/api/1/user/get?email=test@sclab.io" \
 }
 ```
 
-This endpoint get user information.
+이 엔드포인트는 회원정보를 가져옵니다.
 
 ### HTTP Request
 
@@ -58,7 +58,7 @@ curl "https://app.sclab.io/api/1/user/create" \
   -d "{\"email\": \"email@address.com\", \"password\": \"password string\", \"name\": \"user name\"}"
 ```
 
-> The above command returns JSON structured like this:
+> 위 명령을 실행하면 아래의 JSON 응답을 반환 합니다.:
 
 ```json
 {
@@ -69,7 +69,7 @@ curl "https://app.sclab.io/api/1/user/create" \
 }
 ```
 
-This endpoint creates new site user account.
+이 엔드포인트는 사이트의 회원을 생성합니다.
 
 ### HTTP Request
 
@@ -95,7 +95,7 @@ curl "https://app.sclab.io/api/1/user/update" \
   -d "{\"_userId\": \"userid\", \"name\": \"user name\"}"
 ```
 
-> The above command returns JSON structured like this:
+> 위 명령을 실행하면 아래의 JSON 응답을 반환 합니다.:
 
 ```json
 {
@@ -105,7 +105,7 @@ curl "https://app.sclab.io/api/1/user/update" \
 }
 ```
 
-This endpoint update site user account profile [name, phone, address].
+이 엔드포인트는 사이트 회원정보를 업데이트 합니다. [name, phone, address, password].
 
 ### HTTP Request
 
@@ -132,7 +132,7 @@ curl "https://app.sclab.io/api/1/user/delete" \
   -d "{\"_userId\": \"user id\"}"
 ```
 
-> The above command returns JSON structured like this:
+> 위 명령을 실행하면 아래의 JSON 응답을 반환 합니다.:
 
 ```json
 {
@@ -142,7 +142,7 @@ curl "https://app.sclab.io/api/1/user/delete" \
 }
 ```
 
-This endpoint remove user from your site, but user account is not removed.
+이 엔드포인트는 사이트 회원을 삭제합니다.
 
 ### HTTP Request
 
@@ -153,3 +153,6 @@ This endpoint remove user from your site, but user account is not removed.
 Parameter | Required | Description
 -- | -- | -- |
 _userId | Y | User id
+
+## SCLAB User API 로그인 샘플 프로
+![SCLAB User API login sample flow](./user_api_login_sample.png)

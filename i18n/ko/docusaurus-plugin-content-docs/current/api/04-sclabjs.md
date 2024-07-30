@@ -6,9 +6,9 @@ tags:
   - sclab login
 ---
 
-When you use SCLAB into your HTML using iframe, you can use sclabjs for login and logout.
-sclabjs using module system. 
-For this reason you need use module compiler like typescript, babel.
+HTML에 SCLAB을 iframe으로 사용할 때, 로그인과 로그아웃을 위해 sclabjs를 사용할 수 있습니다.
+sclabjs는 모듈 시스템을 사용합니다.
+이 때문에 typescript, babel과 같은 모듈 컴파일러를 사용해야 합니다.
 
 ## Install
 
@@ -98,3 +98,6 @@ callback function when logout complete
 ### kill()
 
 clear Sclab
+
+## Source code
+https://github.com/sclab-io/sclabjs

@@ -98,3 +98,6 @@ callback function when logout complete
 ### kill()
 
 clear Sclab
+
+## Source code
+https://github.com/sclab-io/sclabjs
