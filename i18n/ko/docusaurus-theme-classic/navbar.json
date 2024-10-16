@@ -7,6 +7,10 @@
     "message": "사용자 가이드",
     "description": "사용자 가이드"
   },
+  "item.label.Tutorial": {
+    "message": "튜토리얼",
+    "description": "튜토리얼"
+  },
   "item.label.API": {
     "message": "API",
     "description": "API 사용법"
@@ -14,6 +18,10 @@
   "item.label.Blog": {
     "message": "블로그",
     "description": "블로그"
+  },
+  "item.label.History": {
+    "message": "역사",
+    "description": "업데이트 내역"
   },
   "item.label.GitHub": {
     "message": "GitHub",

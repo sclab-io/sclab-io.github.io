@@ -95,6 +95,13 @@ const config = {
           },
           {to: '/blog', label: 'Blog', position: 'left'},
           {
+            type: 'doc',
+            docId: 'history/SCLAB Studio SaaS',
+            position: 'left',
+            label: 'History',
+            sidebarId: 'history',
+          },
+          {
             type: 'localeDropdown',
             position: 'right'
           },
