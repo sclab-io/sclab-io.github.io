@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunksclab_docs=self.webpackChunksclab_docs||[]).push([[9144],{7237:a=>{a.exports=JSON.parse('{"tag":{"label":"IOT","permalink":"/docs/tags/iot","allTagsPath":"/docs/tags","count":1,"items":[{"id":"guide/Load Data/SCLAB Agent","title":"SCLAB Agent","description":"SCLAB Agent","permalink":"/docs/guide/Load Data/SCLAB Agent"}],"unlisted":false}}')}}]);

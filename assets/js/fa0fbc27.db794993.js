@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunksclab_docs=self.webpackChunksclab_docs||[]).push([[2398],{5108:e=>{e.exports=JSON.parse('{"tag":{"label":"Agent","permalink":"/docs/tags/agent","allTagsPath":"/docs/tags","count":1,"items":[{"id":"guide/Load Data/SCLAB Agent","title":"SCLAB Agent","description":"SCLAB Agent","permalink":"/docs/guide/Load Data/SCLAB Agent"}],"unlisted":false}}')}}]);
