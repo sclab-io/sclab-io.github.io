@@ -4,6 +4,14 @@ tags:
   - History
 ---
 
+## Release v1.0, 2024-10-24
+
+### Bug Fixes
+
+* Reset API variables when navigating between pages
+* Fix date combine bug
+* Modify the number chart to display empty values when there is no data.
+
 ## Release v1.0, 2024-10-22
 
 ### New Features

@@ -4,18 +4,13 @@ tags:
   - History
 ---
 
-## Release v1.1, 2024-10-22
+## 릴리즈 v1.1, 2024-10-24
 
-### New Features
+### 버그 수정
 
-* Added functionality for combining date with hours, minutes, and seconds
-* Changed maximum size of location icon from 60px to 720px
-
-### Bug Fixes
-
-* Fixed the issue with recognizing the number of occurrences when there are multiple LIMIT clauses in agent
-* Fixed infinite loading issue when map object loading fails
-* Fixed browser crashing issue when there are too many combine items
+* 페이지 이동 시 API 변수 초기화
+* 날짜 컴바인 버그 수정
+* 숫자 차트에 값이 없는 경우 빈값으로 보이게 수정
 
 ## 릴리즈 v1.1, 2024-10-22
 
