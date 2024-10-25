@@ -4,6 +4,21 @@ tags:
   - History
 ---
 
+## Release v1.1, 2024-10-25
+
+### New Features
+
+#### Location Data
+
+* Added option to select whether to include commas in the values of number charts
+* Added function to customize the top background of GIS and location data pop-ups
+
+### Bug Fixes
+
+* Fixed an issue where performance slowed when using numerous combine options
+* Resolved a bug where parameters were duplicated in the Agent API
+* Fixed an issue in the Agent API where adding multiple semicolons caused errors
+
 ## 릴리즈 v1.1, 2024-10-24
 
 ### 버그 수정
