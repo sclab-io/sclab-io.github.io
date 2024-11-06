@@ -4,6 +4,13 @@ tags:
   - History
 ---
 
+## Release v1.0, 2024-11-05
+
+### Bug Fixes
+
+* Fixed a bug with semicolons during agent query execution.
+* Fixed a bug where table information selected in the agent wasn’t correctly passed to the SQL AI when modifying SQL.
+
 ## Release v1.0, 2024-10-25
 
 ### New Features
