@@ -11,20 +11,20 @@ tags:
 * Agent 쿼리 실행 시 세미콜론 관련 버그 수정
 * Agent 에서 SQL 수정 시 체크된 테이블 정보가 SQL AI로 정상적으로 전달되지 않는 버그 수정
 
-## Release v1.1, 2024-10-25
+## 릴리즈 v1.1, 2024-10-25
 
-### New Features
+### 신규 기능
 
-#### Location Data
+#### 위치 데이터
 
-* Added option to select whether to include commas in the values of number charts
-* Added function to customize the top background of GIS and location data pop-ups
+* 숫자 차트에 값에 콤마를 추가할지 여부를 선택할 수 있는 기능 추가
+* GIS, 위치데이터 팝업의 상단 배경 수정 기능 추가
 
-### Bug Fixes
+### 버그 수정
 
-* Fixed an issue where performance slowed when using numerous combine options
-* Resolved a bug where parameters were duplicated in the Agent API
-* Fixed an issue in the Agent API where adding multiple semicolons caused errors
+* 컴바인 옵션이 많을경우 느려지는 버그 수정
+* Agent API 에서 파라미터가 중복되는 버그 수정
+* Agent API 에서 세미콜론이 여러개 추가했을때 발생되는 버그 수정
 
 ## 릴리즈 v1.1, 2024-10-24
 
