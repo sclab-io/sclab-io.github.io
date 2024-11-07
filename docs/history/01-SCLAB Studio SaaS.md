@@ -4,6 +4,17 @@ tags:
   - History
 ---
 
+## Upcoming Next Release
+
+### New Features
+
+
+## Release v1.0, 2024-11-07
+
+* Chart action feature
+* Table action feature
+* Layout template feature
+
 ## Release v1.0, 2024-11-05
 
 ### Bug Fixes
