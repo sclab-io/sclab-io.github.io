@@ -4,8 +4,12 @@ tags:
   - History
 ---
 
-## Release v1.0, 2024-11-07
+## Release v1.0, 2024-11-15
+### New Features
+* Layout template override feature
 
+## Release v1.0, 2024-11-07
+### New Features
 * Chart action feature
 * Layout template feature
 
