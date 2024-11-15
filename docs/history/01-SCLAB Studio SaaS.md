@@ -7,12 +7,12 @@ tags:
 ## Upcoming Next Release
 
 ### New Features
-
+* Layout template override feature
+* Table action feature
 
 ## Release v1.0, 2024-11-07
 
 * Chart action feature
-* Table action feature
 * Layout template feature
 
 ## Release v1.0, 2024-11-05
