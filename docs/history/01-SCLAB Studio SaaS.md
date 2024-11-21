@@ -7,7 +7,9 @@ tags:
 ## Upcoming Next Release
 
 ### New Features
-* Table action feature
+* [#224] Table action feature
+* [#228] Basic Scatter Chart feature
+* Treemap color specification feature
 
 ## Release v1.0, 2024-11-15
 ### New Features
