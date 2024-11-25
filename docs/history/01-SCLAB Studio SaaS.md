@@ -10,6 +10,10 @@ tags:
 * [#224] Table action feature
 * [#228] Basic Scatter Chart feature
 * [#229] Treemap color specification feature
+* [#230] Post visible status manage feature
+
+### Bug Fixes
+* [#230] Fixed a bug where the status of posts registered with the photo service was not updated
 
 ## Release v1.0, 2024-11-15
 ### New Features
