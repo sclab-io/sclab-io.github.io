@@ -13,6 +13,7 @@ tags:
 * [#230] Post visible status manage feature
 * [#228] Add X/Y Axis zoom for ECharts
 * [#231] Remove like from Site
+* [#68] Add shift on/off button to the page editor
 
 ### Bug Fixes
 * [#230] Fixed a bug where the status of posts registered with the photo service was not updated
