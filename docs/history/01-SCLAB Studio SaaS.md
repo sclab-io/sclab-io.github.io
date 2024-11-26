@@ -11,6 +11,7 @@ tags:
 * [#228] Basic Scatter Chart feature
 * [#229] Treemap color specification feature
 * [#230] Post visible status manage feature
+* [#228] Add X/Y Axis zoom for ECharts
 
 ### Bug Fixes
 * [#230] Fixed a bug where the status of posts registered with the photo service was not updated
