@@ -12,11 +12,13 @@ tags:
 * [#229] Treemap color specification feature
 * [#230] Post visible status manage feature
 * [#228] Add X/Y Axis zoom for ECharts
+* [#228] ECharts theme selection feature
 * [#231] Remove like from Site
 * [#68] Add shift on/off button to the page editor
 
 ### Bug Fixes
 * [#230] Fixed a bug where the status of posts registered with the photo service was not updated
+* [#68] Display pin icon bug fix
 
 ## Release v1.0, 2024-11-15
 ### New Features
