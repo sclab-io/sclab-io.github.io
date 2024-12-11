@@ -8,17 +8,34 @@ tags:
 
 ### New Features
 * [#224] Table action feature
-* [#228] Basic Scatter Chart feature
 * [#229] Treemap color specification feature
 * [#230] Post visible status manage feature
 * [#228] Add X/Y Axis zoom for ECharts
-* [#228] ECharts theme selection feature
 * [#231] Remove like from Site
+* [#228] ECharts theme selection feature
+* [#228] Basic Scatter Chart feature
+* [#228] ECharts Basic Line Chart feature
+* [#228] ECharts Basic Bar Chart feature
+* [#228] ECharts Basic Pie Chart feature
+* [#228] ECharts Basic Radar Chart feature
+* [#228] ECharts Basic Candle Chart feature
+* [#228] ECharts Basic Gauge Chart feature
+* [#228] ECharts Legend Scroll feature
+* [#228] Echarts IoT data connection feature
+* [#228] Add chart name i18n
 * [#68] Add shift on/off button to the page editor
+* [#233] Add post delete feature in post list
+* [#233] Add real-time update for new posts
+* [#232] Add public layout template feature
+* [#232] Add layout template upload/download feature
 
 ### Bug Fixes
 * [#230] Fixed a bug where the status of posts registered with the photo service was not updated
 * [#68] Display pin icon bug fix
+* [#68] Table CSV download bug fix
+* [#68] Pivot CSV download bug fix
+* [#68] Language initial value selection related bug
+* [#68] Survey registration related bug fix
 
 ## Release v1.0, 2024-11-15
 ### New Features
