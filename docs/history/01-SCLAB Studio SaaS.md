@@ -5,7 +5,13 @@ tags:
 ---
 
 ## Upcoming Next Release
+### New Features
+* [#232] Add public layout template feature
+* [#232] Add layout template upload/download feature
 
+### Bug Fixes
+
+## Release v1.0, 2024-12-12
 ### New Features
 * [#224] Table action feature
 * [#229] Treemap color specification feature
@@ -26,8 +32,6 @@ tags:
 * [#68] Add shift on/off button to the page editor
 * [#233] Add post delete feature in post list
 * [#233] Add real-time update for new posts
-* [#232] Add public layout template feature
-* [#232] Add layout template upload/download feature
 
 ### Bug Fixes
 * [#230] Fixed a bug where the status of posts registered with the photo service was not updated
@@ -36,6 +40,7 @@ tags:
 * [#68] Pivot CSV download bug fix
 * [#68] Language initial value selection related bug
 * [#68] Survey registration related bug fix
+* [#68] Fix bug where only one row remains and disappears when changing table iot
 
 ## Release v1.0, 2024-11-15
 ### New Features
