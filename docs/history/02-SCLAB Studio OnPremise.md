@@ -6,7 +6,6 @@ tags:
 
 ## Release v1.0, 2024-12-12
 ### New Features
-* [#224] Table action feature
 * [#229] Treemap color specification feature
 * [#230] Post visible status manage feature
 * [#228] Add X/Y Axis zoom for ECharts

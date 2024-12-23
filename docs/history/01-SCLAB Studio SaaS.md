@@ -6,14 +6,15 @@ tags:
 
 ## Upcoming Next Release
 ### New Features
+* [#224] Table action feature
 * [#232] Add public layout template feature
 * [#232] Add layout template upload/download feature
+* [#234] Add data connection feature to shapes on the map
 
 ### Bug Fixes
 
 ## Release v1.0, 2024-12-12
 ### New Features
-* [#224] Table action feature
 * [#229] Treemap color specification feature
 * [#230] Post visible status manage feature
 * [#228] Add X/Y Axis zoom for ECharts
