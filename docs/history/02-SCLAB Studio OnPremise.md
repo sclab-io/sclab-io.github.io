@@ -4,6 +4,14 @@ tags:
   - History
 ---
 
+## Release v1.0, 2024-12-24
+### New Features
+* [#232] Add public layout template feature
+* [#232] Add layout template upload/download feature
+* [#234] Add layout drag select feature
+* [#234] Add data connection feature to shapes on the map
+* [#68] Change site deletion to complete deletion
+
 ## Release v1.0, 2024-12-12
 ### New Features
 * [#229] Treemap color specification feature

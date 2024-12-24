@@ -7,11 +7,15 @@ tags:
 ## Upcoming Next Release
 ### New Features
 * [#224] Table action feature
-* [#232] Add public layout template feature
-* [#232] Add layout template upload/download feature
-* [#234] Add data connection feature to shapes on the map
 
 ### Bug Fixes
+
+## Release v1.0, 2024-12-24
+### New Features
+* [#232] Add public layout template feature
+* [#232] Add layout template upload/download feature
+* [#234] Add layout drag select feature
+* [#234] Add data connection feature to shapes on the map
 
 ## Release v1.0, 2024-12-12
 ### New Features
