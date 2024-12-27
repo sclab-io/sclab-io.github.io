@@ -10,6 +10,10 @@ tags:
 
 ### Bug Fixes
 
+## Release v1.0, 2024-12-27
+### Bug Fixes
+* [#68] Fixed a bug related to data access permissions
+
 ## Release v1.0, 2024-12-24
 ### New Features
 * [#232] Add public layout template feature
