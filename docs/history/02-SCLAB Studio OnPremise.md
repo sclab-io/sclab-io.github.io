@@ -4,6 +4,10 @@ tags:
   - History
 ---
 
+## Release v1.0, 2025-01-03
+### New Features
+* [#239] SCLAB Agent SSH tunneling feature
+
 ## Release v1.0, 2024-12-27
 ### Bug Fixes
 * [#68] Fixed a bug related to data access permissions

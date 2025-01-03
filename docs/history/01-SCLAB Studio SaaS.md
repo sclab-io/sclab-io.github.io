@@ -10,6 +10,13 @@ tags:
 
 ### Bug Fixes
 
+## Release v1.0, 2025-01-03
+### New Features
+* [#239] SCLAB Agent SSH tunneling feature
+
+### Bug Fixes
+* [#68] Fixed a bug where subscription could not be renewed if the subscription period had expired
+
 ## Release v1.0, 2024-12-27
 ### Bug Fixes
 * [#68] Fixed a bug related to data access permissions
