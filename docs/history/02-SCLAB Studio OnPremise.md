@@ -4,6 +4,14 @@ tags:
   - History
 ---
 
+## Release v1.0, 2025-01-20
+### New Features
+* [#240] Ollama model information can be used even if it is not available
+
+### Bug Fixes
+* [#68] Fixed a bug related to public layout template permissions
+* [#68] Fixed a bug related to DB Agent loading
+
 ## Release v1.0, 2025-01-03
 ### New Features
 * [#239] SCLAB Agent SSH tunneling feature
