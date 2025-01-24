@@ -4,6 +4,10 @@ tags:
   - History
 ---
 
+## Release v1.0, 2025-01-24
+### New Features
+* Added Thai language
+
 ## Release v1.0, 2025-01-20
 ### New Features
 * [#240] Ollama model information can be used even if it is not available
