@@ -4,6 +4,15 @@ tags:
   - History
 ---
 
+## Release v1.0, 2025-02-04
+### New Features
+* [#240] Inference model support feature
+* [#238] Added data access permission management
+
+## Release v1.0, 2025-01-27
+### New Features
+* [#224] Table action feature
+
 ## Release v1.0, 2025-01-24
 ### New Features
 * Added Thai language

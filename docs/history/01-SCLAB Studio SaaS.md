@@ -8,11 +8,13 @@ tags:
 ### New Features
 * [#224] Table action feature
 * [#240] Ollama model information can be used even if it is not available
+* [#241] Change free plan page view count from 100 to 1000
+* [#68] Added Thai language
+* [#238] Added data access permission management
 
 ### Bug Fixes
 * [#68] Fixed a bug related to public layout template permissions
 * [#68] Fixed a bug related to DB Agent loading
-
 
 ## Release v1.0, 2025-01-03
 ### New Features
