@@ -4,20 +4,20 @@ tags:
   - History
 ---
 
-## Release v1.0, 2025-02-04
+## Release v1.1, 2025-02-04
 ### New Features
 * [#240] Inference model support feature
 * [#238] Added data access permission management
 
-## Release v1.0, 2025-01-27
+## Release v1.1, 2025-01-27
 ### New Features
 * [#224] Table action feature
 
-## Release v1.0, 2025-01-24
+## Release v1.1, 2025-01-24
 ### New Features
 * Added Thai language
 
-## Release v1.0, 2025-01-20
+## Release v1.1, 2025-01-20
 ### New Features
 * [#240] Ollama model information can be used even if it is not available
 
@@ -25,15 +25,15 @@ tags:
 * [#68] Fixed a bug related to public layout template permissions
 * [#68] Fixed a bug related to DB Agent loading
 
-## Release v1.0, 2025-01-03
+## Release v1.1, 2025-01-03
 ### New Features
 * [#239] SCLAB Agent SSH tunneling feature
 
-## Release v1.0, 2024-12-27
+## Release v1.1, 2024-12-27
 ### Bug Fixes
 * [#68] Fixed a bug related to data access permissions
 
-## Release v1.0, 2024-12-24
+## Release v1.1, 2024-12-24
 ### New Features
 * [#232] Add public layout template feature
 * [#232] Add layout template upload/download feature
@@ -41,7 +41,7 @@ tags:
 * [#234] Add data connection feature to shapes on the map
 * [#68] Change site deletion to complete deletion
 
-## Release v1.0, 2024-12-12
+## Release v1.1, 2024-12-12
 ### New Features
 * [#229] Treemap color specification feature
 * [#230] Post visible status manage feature
@@ -71,11 +71,11 @@ tags:
 * [#68] Survey registration related bug fix
 * [#68] Fix bug where only one row remains and disappears when changing table iot
 
-## Release v1.0, 2024-11-15
+## Release v1.1, 2024-11-15
 ### New Features
 * Layout template override feature
 
-## Release v1.0, 2024-11-07
+## Release v1.1, 2024-11-07
 ### New Features
 * Chart action feature
 * Layout template feature
