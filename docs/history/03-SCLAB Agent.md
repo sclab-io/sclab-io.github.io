@@ -4,4 +4,21 @@ tags:
   - History
 ---
 
+## Release v1.0, 2025-03-05
+### New Features
+* Modified to allow execution of general queries in addition to SELECT queries
+
+## Release v1.0, 2025-02-28
+### New Features
+* Added SSL options for PostgreSQL and MySQL
+
+## Release v1.0, 2025-02-07
+### New Features
+* Added the TUNNEL_KEEP_ALIVE_INTERVAL_MS environment variable
+
+## Release v1.0, 2025-01-08
+### New Features
+* Added SSH tunneling feature
+
 ## Release v1.0, 2024-10-16
+
