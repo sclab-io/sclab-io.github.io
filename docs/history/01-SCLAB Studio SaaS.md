@@ -11,6 +11,9 @@ tags:
 * [#241] Change free plan page view count from 100 to 1000
 * [#68] Added Thai language
 * [#238] Added data access permission management
+* [#218] Added start and end icons to line location data
+* [#218] Modified the z-index of the line in line location data
+* [#218] Modified DB Agent to allow execution of queries other than SELECT statements
 
 ### Bug Fixes
 * [#68] Fixed a bug related to public layout template permissions
