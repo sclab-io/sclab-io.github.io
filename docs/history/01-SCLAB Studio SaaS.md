@@ -4,7 +4,7 @@ tags:
   - History
 ---
 
-## Upcoming Next Release
+## Release v1.0, 2025-03-07
 ### New Features
 * [#224] Table action feature
 * [#240] Ollama model information can be used even if it is not available
