@@ -4,6 +4,10 @@ tags:
   - History
 ---
 
+## Release v1.0, 2025-03-07
+### New Features
+* Added environment variable substitution feature: Replace __ENVVARIABLE__ in SQL queries with environment variables
+
 ## Release v1.0, 2025-03-05
 ### New Features
 * Modified to allow execution of general queries in addition to SELECT queries
