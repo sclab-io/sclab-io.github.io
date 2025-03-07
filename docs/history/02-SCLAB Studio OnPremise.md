@@ -4,6 +4,13 @@ tags:
   - History
 ---
 
+## Release v1.1, 2025-03-07
+### New Features
+* [#224] Table action feature
+* [#218] Added start and end icons to line location data
+* [#218] Modified the z-index of the line in line location data
+* [#218] Modified DB Agent to allow execution of queries other than SELECT statements
+
 ## Release v1.1, 2025-02-04
 ### New Features
 * [#240] Inference model support feature
