@@ -4,6 +4,10 @@ tags:
   - History
 ---
 
+## Release v1.0, 2025-03-11
+### New Features
+* AWS Secrets Manager Integration: Adding AWS SDK and Implementing Secret Value Replacement Functionality in SQL Query
+
 ## Release v1.0, 2025-03-07
 ### New Features
 * Added environment variable substitution feature: Replace __ENVVARIABLE__ in SQL queries with environment variables

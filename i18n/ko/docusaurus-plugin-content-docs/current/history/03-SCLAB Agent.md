@@ -4,6 +4,10 @@ tags:
   - History
 ---
 
+## 릴리즈 v1.0, 2025-03-11
+### 신규 기능
+* AWS Secrets Manager 통합: AWS SDK 추가 및 SQL 쿼리에서 비밀 값 치환 기능 구현
+
 ## 릴리즈 v1.0, 2025-03-07
 ### 신규 기능
 * 환경변수 치환 기능 추가: SQL 쿼리 내 __ENVVARIABLE__를 환경변수로 대체

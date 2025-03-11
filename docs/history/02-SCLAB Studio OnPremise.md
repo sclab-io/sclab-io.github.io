@@ -4,6 +4,14 @@ tags:
   - History
 ---
 
+## Release v1.1, 2025-03-11
+### New Features
+* [#218] API data JS Parser added
+* [#218] Iframe data selection box changed to searchable selection box
+
+### Bug Fixes
+* [#68] Fixed a bug where small-sized layout buttons were hidden when at the bottom
+
 ## Release v1.1, 2025-03-07
 ### New Features
 * [#224] Table action feature
