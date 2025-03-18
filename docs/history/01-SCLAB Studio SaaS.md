@@ -4,7 +4,7 @@ tags:
   - History
 ---
 
-## Upcoming Release
+## Release v1.0, 2025-03-18
 ### New Features
 * [#218] API data JS Parser added
 * [#218] Iframe data selection box changed to searchable selection box
