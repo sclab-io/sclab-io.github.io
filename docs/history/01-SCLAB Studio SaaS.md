@@ -8,9 +8,19 @@ tags:
 ### New Features
 * [#218] API data JS Parser added
 * [#218] Iframe data selection box changed to searchable selection box
+* [#218] Location icon tint changed from 1 second to maintain
+* [#218] Added selected location icon
+* [#218] Added direction selection feature to location data
 
 ### Bug Fixes
 * [#68] Fixed a bug where small-sized layout buttons were hidden when at the bottom
+* [#68] Table page disabled color change
+* [#68] Debounce cancel added (Fixed a bug where API calls were duplicated twice when DATA_REFRESH)
+* [#68] Fixed a bug where the arrow line step was not displayed in the location data, and the gradient and width step 0 were displayed
+* [#68] Fixed a bug related to tools in the latest ollama LLM model and function call bug
+* [#68] AI Service bun version update to 1.2.5
+* [#68] Fixed a bug related to date preview in combine
+* [#68] Fixed a bug related to OD visualization status maintenance
 
 ## Release v1.0, 2025-03-07
 ### New Features
