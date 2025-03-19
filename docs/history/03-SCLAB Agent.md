@@ -4,6 +4,10 @@ tags:
   - History
 ---
 
+## Release v1.0, 2025-03-19
+### Bug Fixes
+* Fixed a bug where an error occurred when connecting to ODBC
+
 ## Release v1.0, 2025-03-11
 ### New Features
 * AWS Secrets Manager Integration: Adding AWS SDK and Implementing Secret Value Replacement Functionality in SQL Query

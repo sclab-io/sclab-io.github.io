@@ -4,6 +4,10 @@ tags:
   - History
 ---
 
+## Release v1.1, 2025-03-19
+### Bug Fixes
+* [#68] Fixed a bug where an error occurred when connecting to ODBC
+
 ## Release v1.1, 2025-03-18
 ### New Features
 * [#218] Location icon tint changed from 1 second to maintain

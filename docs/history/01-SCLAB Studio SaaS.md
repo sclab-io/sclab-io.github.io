@@ -4,6 +4,12 @@ tags:
   - History
 ---
 
+## Upcoming Release
+### New Features
+
+### Bug Fixes
+* [#68] Fixed a bug where an error occurred when connecting to ODBC
+
 ## Release v1.0, 2025-03-18
 ### New Features
 * [#218] API data JS Parser added
