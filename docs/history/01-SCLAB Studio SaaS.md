@@ -6,9 +6,12 @@ tags:
 
 ## Upcoming Release
 ### New Features
+* [#218] OD visualization alignment feature
+* [#218] Add type information to DB Agent columns
 
 ### Bug Fixes
 * [#68] Fixed a bug where an error occurred when connecting to ODBC
+* [#68] OD visualization active color tint -> fixed color
 
 ## Release v1.0, 2025-03-18
 ### New Features

@@ -4,6 +4,14 @@ tags:
   - History
 ---
 
+## Release v1.1, 2025-03-25
+### New Features
+* [#218] OD visualization alignment feature
+* [#218] Add type information to DB Agent columns
+
+### Bug Fixes
+* [#68] OD visualization active color tint -> fixed color
+
 ## Release v1.1, 2025-03-19
 ### Bug Fixes
 * [#68] Fixed a bug where an error occurred when connecting to ODBC
