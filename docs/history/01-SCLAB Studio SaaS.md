@@ -8,10 +8,14 @@ tags:
 ### New Features
 * [#218] OD visualization alignment feature
 * [#218] Add type information to DB Agent columns
+* [#218] Added API loading display page setting
+* [#218] Added layout refresh action
 
 ### Bug Fixes
 * [#68] Fixed a bug where an error occurred when connecting to ODBC
 * [#68] OD visualization active color tint -> fixed color
+* [#218] Fixed a bug where empty values were sent as empty strings in combine, and null strings were sent as null, and undefined strings were sent as undefined
+* [#218] Fixed a bug where the maximum and minimum values in OD location were fixed to the values at the time of API call
 
 ## Release v1.0, 2025-03-18
 ### New Features

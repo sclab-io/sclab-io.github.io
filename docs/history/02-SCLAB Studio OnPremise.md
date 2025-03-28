@@ -4,6 +4,15 @@ tags:
   - History
 ---
 
+## Release v1.1, 2025-03-28
+### New Features
+* [#218] Added API loading display page setting
+* [#218] Added layout refresh action
+
+### Bug Fixes
+* [#218] Fixed a bug where empty values were sent as empty strings in combine, and null strings were sent as null, and undefined strings were sent as undefined
+* [#218] Fixed a bug where the maximum and minimum values in OD location were fixed to the values at the time of API call
+
 ## Release v1.1, 2025-03-25
 ### New Features
 * [#218] OD visualization alignment feature
