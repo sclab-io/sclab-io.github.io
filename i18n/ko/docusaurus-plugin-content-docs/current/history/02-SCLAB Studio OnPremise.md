@@ -4,11 +4,17 @@ tags:
   - History
 ---
 
+## 릴리즈 v1.1, 2025-03-29
+### 신규 기능
+* [#218] undo / redo 키 추가 "command+shift+z", "ctrl+shift+z", "command+z", "ctrl+z"
+
+### 버그 수정
+* [#218] API 로딩 표시 페이지 설정 오류 수정
+
 ## 릴리즈 v1.1, 2025-03-28
 ### 신규 기능
 * [#218] API 로딩 표시 페이지 설정 추가
 * [#218] 레이아웃 새로고침 액션 추가
-* [#218] undo / redo 키 추가 "command+shift+z", "ctrl+shift+z", "command+z", "ctrl+z"
 
 ### 버그 수정
 * [#218] 컴바인에 빈값인 경우 빈 문자열로 전송되게 수정 및 null 문자열을 null 로 undefined 문자열을 undefined 로 전송되게 수정

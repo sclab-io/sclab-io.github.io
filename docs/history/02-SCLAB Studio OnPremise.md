@@ -4,6 +4,13 @@ tags:
   - History
 ---
 
+## Release v1.1, 2025-03-29
+### New Features
+* [#218] Added undo / redo keys "command+shift+z", "ctrl+shift+z", "command+z", "ctrl+z"
+
+### Bug Fixes
+* [#218] Fixed a bug where the API loading display page setting was incorrect
+
 ## Release v1.1, 2025-03-28
 ### New Features
 * [#218] Added API loading display page setting
