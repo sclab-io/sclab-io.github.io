@@ -8,6 +8,7 @@ tags:
 ### New Features
 * [#218] Added API loading display page setting
 * [#218] Added layout refresh action
+* [#218] Added undo / redo keys "command+shift+z", "ctrl+shift+z", "command+z", "ctrl+z"
 
 ### Bug Fixes
 * [#218] Fixed a bug where empty values were sent as empty strings in combine, and null strings were sent as null, and undefined strings were sent as undefined

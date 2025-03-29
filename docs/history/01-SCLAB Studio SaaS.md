@@ -4,12 +4,13 @@ tags:
   - History
 ---
 
-## Upcoming Release
+## Release v1.0, 2025-03-29
 ### New Features
 * [#218] OD visualization alignment feature
 * [#218] Add type information to DB Agent columns
 * [#218] Added API loading display page setting
 * [#218] Added layout refresh action
+* [#218] Added undo / redo keys "command+shift+z", "ctrl+shift+z", "command+z", "ctrl+z"
 
 ### Bug Fixes
 * [#68] Fixed a bug where an error occurred when connecting to ODBC
