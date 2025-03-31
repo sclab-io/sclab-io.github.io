@@ -4,6 +4,10 @@ tags:
   - History
 ---
 
+## Release v1.0, 2025-04-01
+### New Features
+* add REMOVE_KEYWORD_INJECTION_CHECK for skip keyword injection check
+
 ## Release v1.0, 2025-03-31
 ### New Features
 * Updated hasSQL for safer SQL injection defense
