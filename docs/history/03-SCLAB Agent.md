@@ -4,6 +4,10 @@ tags:
   - History
 ---
 
+## Release v1.0, 2025-03-31
+### New Features
+* Updated hasSQL for safer SQL injection defense
+
 ## Release v1.0, 2025-03-19
 ### Bug Fixes
 * Fixed a bug where an error occurred when connecting to ODBC
