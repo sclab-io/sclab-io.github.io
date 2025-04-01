@@ -4,6 +4,13 @@ tags:
   - History
 ---
 
+## Upcoming Release v1.0
+### New Features
+* [#218] Added API refresh action
+* [#218] Added Refresh option to API Variable action
+* [#218] Added feature to set size for each column in the table
+* [#218] Added Number chart preview background color setting feature
+
 ## Release v1.0, 2025-03-29
 ### New Features
 * [#218] OD visualization alignment feature
