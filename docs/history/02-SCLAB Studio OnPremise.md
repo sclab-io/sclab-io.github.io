@@ -4,6 +4,13 @@ tags:
   - History
 ---
 
+## Release v1.1, 2025-04-08
+### New Features
+* [#218] Modified to adjust the screen when setting the location data to fit the screen, so that multiple location data is combined (previously adjusted to the last loaded area)
+
+### Bug Fixes
+* [#218] Fixed a bug where the public layout template restoration was not working properly
+
 ## Release v1.1, 2025-04-01
 ### New Features
 * [#218] Added API refresh action

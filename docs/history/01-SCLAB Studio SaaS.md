@@ -10,6 +10,10 @@ tags:
 * [#218] Added Refresh option to API Variable action
 * [#218] Added feature to set size for each column in the table
 * [#218] Added Number chart preview background color setting feature
+* [#218] Modified to adjust the screen when setting the location data to fit the screen, so that multiple location data is combined (previously adjusted to the last loaded area)
+
+### Bug Fixes
+* [#218] Fixed a bug where the public layout template restoration was not working properly
 
 ## Release v1.0, 2025-03-29
 ### New Features
