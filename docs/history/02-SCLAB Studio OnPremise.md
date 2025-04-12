@@ -4,6 +4,10 @@ tags:
   - History
 ---
 
+## Release v1.1, 2025-04-12
+### Bug Fixes
+* [#68] Fixed a bug where the line chart value was not displayed
+
 ## Release v1.1, 2025-04-08
 ### New Features
 * [#218] Modified to adjust the screen when setting the location data to fit the screen, so that multiple location data is combined (previously adjusted to the last loaded area)

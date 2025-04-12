@@ -6,6 +6,10 @@ tags:
 
 ## Upcoming Release v1.0
 ### New Features
+* [#242] AI Agent
+
+## Release v1.0, 2025-04-12
+### New Features
 * [#218] Added API refresh action
 * [#218] Added Refresh option to API Variable action
 * [#218] Added feature to set size for each column in the table
@@ -14,6 +18,7 @@ tags:
 
 ### Bug Fixes
 * [#218] Fixed a bug where the public layout template restoration was not working properly
+* [#68] Fixed a bug where the line chart value was not displayed
 
 ## Release v1.0, 2025-03-29
 ### New Features
