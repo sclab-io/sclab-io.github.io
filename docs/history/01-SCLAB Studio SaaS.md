@@ -7,6 +7,7 @@ tags:
 ## Upcoming Release v1.0
 ### New Features
 * [#242] AI Agent
+* [#243] GPT4.1 모델 지원
 
 ## Release v1.0, 2025-04-12
 ### New Features

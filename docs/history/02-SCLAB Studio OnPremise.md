@@ -4,6 +4,10 @@ tags:
   - History
 ---
 
+## Release v1.1, 2025-04-15
+### New Features
+* [#243] Support for GPT4.1 model
+
 ## Release v1.1, 2025-04-12
 ### Bug Fixes
 * [#68] Fixed a bug where the line chart value was not displayed
