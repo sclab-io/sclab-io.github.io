@@ -7,6 +7,7 @@ tags:
 ## Release v1.1, 2025-04-15
 ### New Features
 * [#243] Support for GPT4.1 model
+* [#218] Modified the text on the login screen and removed the explanation
 
 ## Release v1.1, 2025-04-12
 ### Bug Fixes

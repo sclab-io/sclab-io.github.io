@@ -8,6 +8,7 @@ tags:
 ### New Features
 * [#242] AI Agent
 * [#243] GPT4.1 모델 지원
+* [#218] Modified the text on the login screen and removed the explanation
 
 ## Release v1.0, 2025-04-12
 ### New Features
