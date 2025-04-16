@@ -15,6 +15,7 @@ Connect easily to the database using the SCLAB DB Agent.
 - Oracle
 - SAP HANA
 - Presto/Trino
+- ODBC
 - MQTT message publish using SQL Query with interval
 - Create REST API endpoint with SQL Query
 - JWT for HTTP authorization
