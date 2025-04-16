@@ -1,0 +1,7 @@
+{
+    "label": "Connectors (deprecated)",
+    "link": {
+      "type": "generated-index",
+      "description": "Please use SCLAB DB Agent instead of the SCLAB Connector."
+    }
+  }
