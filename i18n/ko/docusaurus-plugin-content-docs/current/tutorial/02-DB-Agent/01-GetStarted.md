@@ -36,4 +36,4 @@ https://hub.docker.com/r/sclabio/sclab-agent
 ### SCLAB DB 에이전트를 컨텐츠 사이트에 추가하기
 ![ADD SCLAB DB Agent Screenshot](./ADDAgent.png)
 
-![ADD SCLAB DB Agent Complete Screenshot](./ADDAgentComplete.png)
+![ADD SCLAB DB Agent Complete Screenshot](./ADDagentComplete.png)

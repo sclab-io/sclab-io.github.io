@@ -42,4 +42,4 @@ docker logs sclab-agent
 ### ADD SCLAB DB Agent to your content site
 ![ADD SCLAB DB Agent Screenshot](./ADDAgent.png)
 
-![ADD SCLAB DB Agent Complete Screenshot](./ADDAgentComplete.png)
+![ADD SCLAB DB Agent Complete Screenshot](./ADDagentComplete.png)
