@@ -1,5 +1,5 @@
 ---
-title: ODBC Connector
+title: ODBC 커넥터
 tags:
   - Connector
   - DB

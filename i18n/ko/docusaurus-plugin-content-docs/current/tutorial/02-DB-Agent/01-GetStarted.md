@@ -1,5 +1,5 @@
 ---
-title: Get started
+title: 시작하기
 tags:
   - Connector
   - DB

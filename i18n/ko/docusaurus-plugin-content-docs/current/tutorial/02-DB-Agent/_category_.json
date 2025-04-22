@@ -1,5 +1,5 @@
 {
-    "label": "DB Agent",
+    "label": "DB 에이전트",
     "link": {
       "type": "generated-index",
       "description": "Connect easily to the database using the SCLAB DB Agent."

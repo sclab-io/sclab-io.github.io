@@ -1,5 +1,5 @@
 ---
-title: Presto/Trino Connector
+title: Presto/Trino 커넥터
 tags:
   - Connector
   - DB

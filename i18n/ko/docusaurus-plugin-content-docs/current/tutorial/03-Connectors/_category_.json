@@ -1,5 +1,5 @@
 {
-    "label": "Connectors (deprecated)",
+    "label": "커넥터 (deprecated)",
     "link": {
       "type": "generated-index",
       "description": "SCLAB 커넥터 대신 SCLAB DB Agent를 이용해주세요."

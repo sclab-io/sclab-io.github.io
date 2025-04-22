@@ -1,5 +1,5 @@
 ---
-title: SQL Server Connector
+title: SQL Server 커넥터
 tags:
   - Connector
   - DB

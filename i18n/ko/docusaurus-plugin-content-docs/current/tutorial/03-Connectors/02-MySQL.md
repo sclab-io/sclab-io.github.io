@@ -1,5 +1,5 @@
 ---
-title: MySQL Connector
+title: MySQL 커넥터
 tags:
   - Connector
   - DB

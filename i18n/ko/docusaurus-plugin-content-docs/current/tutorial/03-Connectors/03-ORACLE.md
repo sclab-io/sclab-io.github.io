@@ -1,5 +1,5 @@
 ---
-title: ORACLE Connector
+title: ORACLE 커넥터
 tags:
   - Connector
   - DB
