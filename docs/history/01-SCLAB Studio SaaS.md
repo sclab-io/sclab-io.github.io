@@ -8,6 +8,9 @@ tags:
 ### New Features
 * [#242] AI Agent
 
+### Bug Fixes
+* [bug, #68] Date component font style and weight not applied issue fixed
+
 ## Release v1.0, 2025-04-22
 * [#243] GPT4.1 model support
 * [#218] Modified the text on the login screen and removed the explanation

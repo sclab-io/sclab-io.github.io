@@ -9,6 +9,9 @@ tags:
 * [#218] DB Agent 에 최종 SQL 쿼리 확인 탭 추가
 * [#218] DB Agent, Union Syntax 하일라이트 기능 추가
 
+### Bug Fixes
+* [bug, #68] Date component font style and weight not applied issue fixed
+
 ## 릴리즈 v1.1, 2025-04-15
 ### 신규 기능
 * [#243] GPT4.1 모델 지원
