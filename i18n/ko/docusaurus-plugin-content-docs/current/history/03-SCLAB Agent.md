@@ -4,6 +4,10 @@ tags:
   - History
 ---
 
+## 릴리즈 v1.0, 2025-04-21
+### 신규 기능
+* 응답에 최종 SQL 쿼리 반환 /manage/db/sql
+
 ## 릴리즈 v1.0, 2025-04-01
 ### 신규 기능
 * REMOVE_KEYWORD_INJECTION_CHECK 추가: 키워드 인젝션 체크를 건너뛰기 위한 설정 추가

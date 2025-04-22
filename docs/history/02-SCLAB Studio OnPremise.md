@@ -4,6 +4,11 @@ tags:
   - History
 ---
 
+## Release v1.1, 2025-04-22
+### New Features
+* [#218] Added a tab to check the final SQL query in the DB Agent
+* [#218] Added syntax highlight feature for DB Agent and Union Syntax
+
 ## Release v1.1, 2025-04-15
 ### New Features
 * [#243] Support for GPT4.1 model

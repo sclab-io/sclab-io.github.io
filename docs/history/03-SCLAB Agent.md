@@ -4,6 +4,10 @@ tags:
   - History
 ---
 
+## Release v1.0, 2025-04-21
+### New Features
+* return final SQL query in the response /manage/db/sql
+
 ## Release v1.0, 2025-04-01
 ### New Features
 * add REMOVE_KEYWORD_INJECTION_CHECK for skip keyword injection check
