@@ -7,7 +7,9 @@ tags:
 ## Upcoming Release v1.0
 ### New Features
 * [#242] AI Agent
-* [#243] GPT4.1 모델 지원
+
+## Release v1.0, 2025-04-22
+* [#243] GPT4.1 model support
 * [#218] Modified the text on the login screen and removed the explanation
 * [#218] Added a tab to check the final SQL query in the DB Agent
 * [#218] Added syntax highlight feature for DB Agent and Union Syntax
