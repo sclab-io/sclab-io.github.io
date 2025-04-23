@@ -4,6 +4,15 @@ tags:
   - History
 ---
 
+## Release v1.1, 2025-04-23
+### New Features
+* [#68] Added an option to apply [Apply Start/End to selection values] in the Combine Date settings.
+
+### Bug Fixes
+* [#68] Added exception handling to prevent errors when there is no data in the number chart.
+* [#68] Added `startOf` and `endOf` date selection options in Combine Date.
+* [#68] Fixed an issue where values were cut off when the legend position was set to the bottom and "Show Values" was checked in the bar chart.
+
 ## Release v1.1, 2025-04-22
 ### New Features
 * [#218] Added a tab to check the final SQL query in the DB Agent

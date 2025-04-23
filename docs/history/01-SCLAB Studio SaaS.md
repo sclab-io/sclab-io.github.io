@@ -7,9 +7,13 @@ tags:
 ## Upcoming Release v1.0
 ### New Features
 * [#242] AI Agent
+* [#68] Added an option to apply [Apply Start/End to selection values] in the Combine Date settings.
 
 ### Bug Fixes
 * [bug, #68] Date component font style and weight not applied issue fixed
+* [#68] Added exception handling to prevent errors when there is no data in the number chart.
+* [#68] Added `startOf` and `endOf` date selection options in Combine Date.
+* [#68] Fixed an issue where values were cut off when the legend position was set to the bottom and "Show Values" was checked in the bar chart.
 
 ## Release v1.0, 2025-04-22
 * [#243] GPT4.1 model support
