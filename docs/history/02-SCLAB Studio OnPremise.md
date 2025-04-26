@@ -4,6 +4,15 @@ tags:
   - History
 ---
 
+## Release v1.1, 2025-04-26
+### New Features
+* [#68] Added **SCLABDebugger** (You can view data transmission details by entering `SCLABDebugger.on()` in the browser console.)
+
+### Bug Fixes
+* [#68] Fixed an issue where union data was not updated during API polling.
+* [#68] Fixed a bug where time information (hours and minutes) was incorrectly included when applying start/end dates.
+* [#68] Added a feature to synchronize state values when embedding a site page URL via an iframe.
+
 ## Release v1.1, 2025-04-23
 ### New Features
 * [#68] Added an option to apply [Apply Start/End to selection values] in the Combine Date settings.
