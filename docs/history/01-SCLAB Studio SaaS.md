@@ -8,6 +8,10 @@ tags:
 ### New Features
 * [#242] AI Agent
 
+## Release v1.1, 2025-04-27
+### Bug Fixes
+* [#68] Union update bug fix
+
 ## Release v1.1, 2025-04-26
 ### New Features
 * [#68] Added **SCLABDebugger** (You can view data transmission details by entering `SCLABDebugger.on()` in the browser console.)
