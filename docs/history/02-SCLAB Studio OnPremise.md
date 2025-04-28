@@ -4,6 +4,15 @@ tags:
   - History
 ---
 
+## Release v1.1, 2025-04-28
+### New Features
+* [#245] Added a Layout Edit button (Allows direct editing of items assigned to a layout)
+* [#245] Modified the Combine search method
+* [#246] Added "Linear" option to remove curves from Line Charts
+
+### Bug Fixes
+* [#68] Fixed a bug where `SCLABDebugger.on()` did not apply the debugger to iframes
+
 ## Release v1.1, 2025-04-27
 ### Bug Fixes
 * [#68] Union update bug fix
