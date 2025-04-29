@@ -4,6 +4,10 @@ tags:
   - History
 ---
 
+## Release v1.0, 2025-04-29
+### Bug Fixes
+* IOT Update bug fix
+
 ## Release v1.0, 2025-04-21
 ### New Features
 * return final SQL query in the response /manage/db/sql

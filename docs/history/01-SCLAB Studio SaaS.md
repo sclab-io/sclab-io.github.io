@@ -7,12 +7,21 @@ tags:
 ## Upcoming Release v1.0
 ### New Features
 * [#242] AI Agent
+
+## Release v1.1, 2025-04-29
+### New Features
 * [#245] Added a Layout Edit button (Allows direct editing of items assigned to a layout)
 * [#245] Modified the Combine search method
 * [#246] Added "Linear" option to remove curves from Line Charts
+* [#218] Added DB Agent search functionality
+* [#68] Changed layout name display method
 
 ### Bug Fixes
 * [#68] Fixed a bug where `SCLABDebugger.on()` did not apply the debugger to iframes
+* [#68] Changed Combine AUTO to use a select box for search
+* [#68] Fixed a bug where initial values were not applied properly when Combine AUTO data was modified
+* [#68] Modified tooltip data order for location data to match the order selected in the location data settings
+* [#68] Fixed a bug where toggling edit on location data also incorrectly toggled visibility
 
 ## Release v1.1, 2025-04-27
 ### Bug Fixes
