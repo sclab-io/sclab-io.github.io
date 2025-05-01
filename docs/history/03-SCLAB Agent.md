@@ -4,6 +4,10 @@ tags:
   - History
 ---
 
+## Release v1.0, 2025-04-30
+### New Features
+* Add history feature
+
 ## Release v1.0, 2025-04-29
 ### Bug Fixes
 * IOT Update bug fix

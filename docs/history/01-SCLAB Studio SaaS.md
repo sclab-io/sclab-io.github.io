@@ -8,7 +8,16 @@ tags:
 ### New Features
 * [#242] AI Agent
 
-## Release v1.1, 2025-04-29
+## Release v1.0, 2025-05-01
+### New Features
+* [#218] Removed activation and transition animations when selecting items from the data list
+* [#218] Added display of API URL in chart, pivot, location, and table titles when the data source is API-based
+
+### Bug Fixes
+* [#68] Fixed an issue where changing the text chart value did not update the rows.
+* [#68] Fixed an issue where the `value` name in OD visualization did not reflect label changes made on the API side.
+
+## Release v1.0, 2025-04-29
 ### New Features
 * [#245] Added a Layout Edit button (Allows direct editing of items assigned to a layout)
 * [#245] Modified the Combine search method
@@ -23,11 +32,11 @@ tags:
 * [#68] Modified tooltip data order for location data to match the order selected in the location data settings
 * [#68] Fixed a bug where toggling edit on location data also incorrectly toggled visibility
 
-## Release v1.1, 2025-04-27
+## Release v1.0, 2025-04-27
 ### Bug Fixes
 * [#68] Union update bug fix
 
-## Release v1.1, 2025-04-26
+## Release v1.0, 2025-04-26
 ### New Features
 * [#68] Added **SCLABDebugger** (You can view data transmission details by entering `SCLABDebugger.on()` in the browser console.)
 

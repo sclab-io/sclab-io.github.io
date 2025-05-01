@@ -4,6 +4,15 @@ tags:
   - History
 ---
 
+## Release v1.1, 2025-05-01
+### New Features
+* [#218] Removed activation and transition animations when selecting items from the data list
+* [#218] Added display of API URL in chart, pivot, location, and table titles when the data source is API-based
+
+### Bug Fixes
+* [#68] Fixed an issue where changing the text chart value did not update the rows.
+* [#68] Fixed an issue where the `value` name in OD visualization did not reflect label changes made on the API side.
+
 ## Release v1.1, 2025-04-29
 ### New Features
 * [#218] Added DB Agent search functionality
