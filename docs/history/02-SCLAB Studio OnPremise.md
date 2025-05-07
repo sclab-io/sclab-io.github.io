@@ -4,6 +4,10 @@ tags:
   - History
 ---
 
+## Release v1.1 – 2025-05-07
+### Bug Fixes
+* [#68] Fixed an issue where the same API was being called multiple times during union data generation.
+
 ## Release v1.1, 2025-05-01
 ### New Features
 * [#218] Removed activation and transition animations when selecting items from the data list
