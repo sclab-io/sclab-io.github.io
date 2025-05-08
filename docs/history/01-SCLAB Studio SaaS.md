@@ -10,6 +10,7 @@ tags:
 
 ### Bug Fixes
 * [#68] Fixed an issue where the same API was being called multiple times during union data generation.
+* [#68] Fixed an issue where an error would occur even when there was no data in the union
 
 ## Release v1.0, 2025-05-01
 ### New Features

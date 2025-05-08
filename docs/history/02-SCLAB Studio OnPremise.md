@@ -4,7 +4,11 @@ tags:
   - History
 ---
 
-## Release v1.1 – 2025-05-07
+## Release v1.1.2, 2025-05-08
+### Bug Fixes
+* [#68] Fixed an issue where an error would occur even when there was no data in the union
+
+## Release v1.1.1 – 2025-05-07
 ### Bug Fixes
 * [#68] Fixed an issue where the same API was being called multiple times during union data generation.
 
