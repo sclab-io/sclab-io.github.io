@@ -8,7 +8,16 @@ tags:
 ### New Features
 * [#242] AI Agent
 
+## Release v1.0 – 2025-05-09
+### New Features
+* [#244] Added option to display values on bar and pie charts
+* [#245] Added edit button to layout list
+* [#245] Added table tab to layout list
+* [#245] Added password reset feature for users in admin panel
+
 ### Bug Fixes
+* [#68] Fixed issue where values overlapped on line charts, making them unreadable when value display option is enabled
+* [#68] Fixed WebGL context bug in donut chart (WebGL removed)
 * [#68] Fixed an issue where the same API was being called multiple times during union data generation.
 * [#68] Fixed an issue where an error would occur even when there was no data in the union
 
