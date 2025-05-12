@@ -4,6 +4,13 @@ tags:
   - History
 ---
 
+## Release v1.1.4 - 2025-05-12
+### Bug Fixes
+- [#68] Fixed a bug in chart actions.
+- [#68] Fixed a Safari browser bug related to center alignment in number charts.
+- [#247] Fixed bugs related to the Action page (including page permission fixes).
+- [#247] Updated log IP formatting and login log structure.
+
 ## Release v1.1.3 – 2025-05-09
 ### New Features
 * [#244] Added option to display values on bar and pie charts

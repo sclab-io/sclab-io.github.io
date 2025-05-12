@@ -4,9 +4,16 @@ tags:
   - History
 ---
 
-## Upcoming Release v1.0
+## Upcoming Release v1.2
 ### New Features
 * [#242] AI Agent
+
+## Release v1.1.4 - 2025-05-12
+### Bug Fixes
+- [#68] Fixed a bug in chart actions.
+- [#68] Fixed a Safari browser bug related to center alignment in number charts.
+- [#247] Fixed bugs related to the Action page (including page permission fixes).
+- [#247] Updated log IP formatting and login log structure.
 
 ## Release v1.0 – 2025-05-09
 ### New Features
