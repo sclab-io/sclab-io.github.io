@@ -4,12 +4,20 @@ tags:
   - History
 ---
 
+## Release v1.1.5, 2025-05-19
+### New Features
+* [#244] Added unit display when showing chart values
+
+### Bug Fixes
+* [#68] Fixed the hh:mm:ss notation error when combining dates and updated the time setting method
+* [#68] Updated behavior so that when changing data formats, child elements are also changed if applicable
+
 ## Release v1.1.4 - 2025-05-12
 ### Bug Fixes
-- [#68] Fixed a bug in chart actions.
-- [#68] Fixed a Safari browser bug related to center alignment in number charts.
-- [#247] Fixed bugs related to the Action page (including page permission fixes).
-- [#247] Updated log IP formatting and login log structure.
+* [#68] Fixed a bug in chart actions.
+* [#68] Fixed a Safari browser bug related to center alignment in number charts.
+* [#247] Fixed bugs related to the Action page (including page permission fixes).
+* [#247] Updated log IP formatting and login log structure.
 
 ## Release v1.1.3 – 2025-05-09
 ### New Features
