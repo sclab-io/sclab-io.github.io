@@ -8,6 +8,14 @@ tags:
 ### New Features
 * [#242] AI Agent
 
+## Release v1.1.6, 2025-05-22
+### New Features
+* [#233] Changed Post loading method to use geohash.
+
+### Bug Fixes
+* [#68] Fixed a bug with action location key usage.
+* [#68] Updated English text for the license expiration popup.
+
 ## Release v1.1.5, 2025-05-19
 ### New Features
 * [#244] Added unit display when showing chart values

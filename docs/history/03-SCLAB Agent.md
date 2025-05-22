@@ -4,6 +4,10 @@ tags:
   - History
 ---
 
+## Release v1.0.5, 2025-05-22
+### New Features
+* Updated the History Deletion API.
+
 ## Release v1.0, 2025-04-30
 ### New Features
 * Add history feature
