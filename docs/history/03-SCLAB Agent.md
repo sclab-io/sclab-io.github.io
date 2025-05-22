@@ -4,6 +4,10 @@ tags:
   - History
 ---
 
+## Release v1.0.5, 2025-05-23
+### New Features
+* Added handling for connection test failures
+
 ## Release v1.0.5, 2025-05-22
 ### New Features
 * Updated the History Deletion API.
