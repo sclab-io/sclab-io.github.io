@@ -4,6 +4,10 @@ tags:
   - History
 ---
 
+## Release v1.0.8, 2025-05-23
+### New Features
+* lint bug fix
+
 ## Release v1.0.7, 2025-05-23
 ### New Features
 * History order bug fix
