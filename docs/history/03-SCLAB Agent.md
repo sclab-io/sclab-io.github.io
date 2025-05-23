@@ -4,7 +4,11 @@ tags:
   - History
 ---
 
-## Release v1.0.5, 2025-05-23
+## Release v1.0.7, 2025-05-23
+### New Features
+* History order bug fix
+
+## Release v1.0.6, 2025-05-23
 ### New Features
 * Added handling for connection test failures
 
