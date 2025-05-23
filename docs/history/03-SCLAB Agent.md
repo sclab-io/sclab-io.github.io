@@ -4,6 +4,10 @@ tags:
   - History
 ---
 
+## Release v1.0.9, 2025-05-23
+### New Features
+* Add Google BigQuery support
+
 ## Release v1.0.8, 2025-05-23
 ### New Features
 * lint bug fix
