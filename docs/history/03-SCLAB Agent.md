@@ -4,16 +4,24 @@ tags:
   - History
 ---
 
+## Release v1.0.12, 2025-05-23
+### Bug Fixes
+* sqlite3 -> better-sqlite3
+
+## Release v1.0.10, 2025-05-23
+### Bug Fixes
+* Change error message when database modification fails
+
 ## Release v1.0.9, 2025-05-23
-### New Features
+### Bug Fixes
 * Add Google BigQuery support
 
 ## Release v1.0.8, 2025-05-23
-### New Features
+### Bug Fixes
 * lint bug fix
 
 ## Release v1.0.7, 2025-05-23
-### New Features
+### Bug Fixes
 * History order bug fix
 
 ## Release v1.0.6, 2025-05-23
