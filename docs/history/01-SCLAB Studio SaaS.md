@@ -8,6 +8,10 @@ tags:
 ### New Features
 * [#242] AI Agent
 
+## Release v1.1.7, 2025-05-23
+### New Features
+* [#248] Added history feature for DB Agent and Union
+
 ## Release v1.1.6, 2025-05-22
 ### New Features
 * [#233] Changed Post loading method to use geohash.
