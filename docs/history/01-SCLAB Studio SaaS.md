@@ -8,6 +8,11 @@ tags:
 ### New Features
 * [#242] AI Agent
 
+## Release v1.1.9, 2025-05-29
+### Bug Fixes
+* [#244] Fix chart legend layout bug
+* [#244] Fix transpose bug
+
 ## Release v1.1.8, 2025-05-23
 ### New Features
 * [#219] Add Google BigQuery support
