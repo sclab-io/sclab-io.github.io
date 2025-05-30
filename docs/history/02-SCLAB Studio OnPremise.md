@@ -4,6 +4,10 @@ tags:
   - History
 ---
 
+## Release v1.1.10, 2025-05-30
+### Bug Fixes
+* [#68] Improved performance of AI chat messages
+
 ## Release v1.1.9, 2025-05-29
 ### Bug Fixes
 * [#244] Fix chart legend layout bug
