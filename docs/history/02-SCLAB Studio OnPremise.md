@@ -4,6 +4,10 @@ tags:
   - History
 ---
 
+## Release v1.1.11, 2025-06-09
+### Bug Fixes
+* [#244] Fix data transpose bug
+
 ## Release v1.1.10, 2025-05-30
 ### Bug Fixes
 * [#68] Improved performance of AI chat messages
