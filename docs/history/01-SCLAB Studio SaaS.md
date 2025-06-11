@@ -8,6 +8,14 @@ tags:
 ### New Features
 * [#242] AI Agent
 
+## Release v1.1.12, 2025-06-12
+### New Features
+* [#286] Modified the team selection method in user access permissions; enabled applying/removing teams via checkboxes
+* [#274] Added dynamic columns to tables and charts
+
+### Bug Fixes
+* [#68] Fix data transpose bug
+
 ## Release v1.1.11, 2025-06-09
 ### Bug Fixes
 * [#244] Fix data transpose bug
