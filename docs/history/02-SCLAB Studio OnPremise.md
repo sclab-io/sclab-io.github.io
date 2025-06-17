@@ -4,6 +4,11 @@ tags:
   - History
 ---
 
+## Release v1.1.13, 2025-06-17
+### Bug Fixes
+* [#68] Fixed type issue after data transposition
+* [#68] Fixed issue with selection indicator on text chart
+
 ## Release v1.1.12, 2025-06-12
 ### New Features
 * [#286] Modified the team selection method in user access permissions; enabled applying/removing teams via checkboxes
