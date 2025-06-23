@@ -8,6 +8,11 @@ tags:
 ### New Features
 * [#242] AI Agent
 
+## Release v1.1.14, 2025-06-23
+### Bug Fixes
+* [#68] Fixed error when updating the API JSON Tree
+* [#68] Fixed bug in automatic column addition for the API
+
 ## Release v1.1.13, 2025-06-17
 ### Bug Fixes
 * [#68] Fixed type issue after data transposition
