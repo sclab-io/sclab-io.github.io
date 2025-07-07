@@ -4,6 +4,11 @@ tags:
   - History
 ---
 
+## Release v1.1.15, 2025-07-07
+### Bug Fixes
+* [#68] remove analytic service from on-premise
+* [#68] Update to distinguish AI Data File from Data.
+
 ## Release v1.1.14, 2025-06-23
 ### Bug Fixes
 * [#68] Fixed error when updating the API JSON Tree
