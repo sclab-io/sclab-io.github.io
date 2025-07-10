@@ -8,6 +8,10 @@ tags:
 ### New Features
 * [#242] AI Agent
 
+## Release v1.1.16, 2025-07-09
+### New Features
+* Add ALTIBASE support
+
 ## Release v1.1.14, 2025-06-23
 ### Bug Fixes
 * [#68] Fixed error when updating the API JSON Tree

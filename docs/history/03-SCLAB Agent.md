@@ -4,6 +4,10 @@ tags:
   - History
 ---
 
+## Release v1.0.14, 2025-07-09
+### New Features
+* Add ALTIBASE support
+
 ## Release v1.0.12, 2025-05-23
 ### Bug Fixes
 * sqlite3 -> better-sqlite3

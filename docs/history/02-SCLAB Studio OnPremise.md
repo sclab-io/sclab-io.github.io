@@ -4,6 +4,10 @@ tags:
   - History
 ---
 
+## Release v1.1.16, 2025-07-09
+### New Features
+* Add ALTIBASE support
+
 ## Release v1.1.15, 2025-07-07
 ### Bug Fixes
 * [#68] remove analytic service from on-premise
