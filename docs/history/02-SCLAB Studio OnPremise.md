@@ -4,6 +4,10 @@ tags:
   - History
 ---
 
+## Release v1.2, 2025-07-21
+### New Features
+* [#242] AI Agent
+
 ## Release v1.1.16, 2025-07-09
 ### New Features
 * Add ALTIBASE support

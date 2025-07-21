@@ -4,7 +4,7 @@ tags:
   - History
 ---
 
-## Upcoming Release v1.2
+## Release v1.2, 2025-07-21
 ### New Features
 * [#242] AI Agent
 
