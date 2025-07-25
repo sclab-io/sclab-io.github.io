@@ -4,13 +4,17 @@ tags:
   - History
 ---
 
+## Release v1.2.1, 2025-07-25
+### Bug Fixes
+* [#68] DB Agent AI bug fix
+
 ## Release v1.2, 2025-07-21
 ### New Features
 * [#242] AI Agent
 
 ## Release v1.1.16, 2025-07-09
 ### New Features
-* Add ALTIBASE support
+* [#219] Add ALTIBASE support
 
 ## Release v1.1.14, 2025-06-23
 ### Bug Fixes
