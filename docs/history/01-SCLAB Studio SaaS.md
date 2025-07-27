@@ -4,6 +4,16 @@ tags:
   - History
 ---
 
+## Release v1.2.2, 2025-07-28
+### New Features
+* [#242] Added animation during execution
+
+### Bug Fixes
+* [#68] Fixed bug related to the API settings response tab
+* [#242] Fixed time bug in the date trigger block – added client time zone
+* [#242] Fixed error in the data fetch block
+
+
 ## Release v1.2.1, 2025-07-25
 ### Bug Fixes
 * [#68] DB Agent AI bug fix
