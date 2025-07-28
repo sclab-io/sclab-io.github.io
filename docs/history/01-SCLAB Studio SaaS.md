@@ -4,6 +4,11 @@ tags:
   - History
 ---
 
+## Release v1.2.3, 2025-07-28
+### Bug Fixes
+* [#68] Fixed AI chat message details click area
+* [#68] Fixed AI agent input text block output display error
+
 ## Release v1.2.2, 2025-07-28
 ### New Features
 * [#242] Added animation during execution
