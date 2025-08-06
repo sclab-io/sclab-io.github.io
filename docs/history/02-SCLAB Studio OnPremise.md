@@ -4,6 +4,13 @@ tags:
   - History
 ---
 
+## Release v1.2.4, 2025-08-06
+### New Features
+* [#242] Added support for MCP
+
+### Bug Fixes
+* [#242] Fixed animation malfunction
+
 ## Release v1.2.3, 2025-07-28
 ### Bug Fixes
 * [#68] Fixed AI chat message details click area
