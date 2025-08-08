@@ -4,6 +4,13 @@ tags:
   - History
 ---
 
+## Release v1.2.5, 2025-08-08
+### New Features
+* [#242] Added GPT5 support
+
+### Bug Fixes
+* [#68] Fixed error when copying post map world
+
 ## Release v1.2.4, 2025-08-06
 ### New Features
 * [#242] Added support for MCP
