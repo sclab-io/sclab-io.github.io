@@ -4,6 +4,15 @@ tags:
   - History
 ---
 
+## Release v1.2.6, 2025-08-14
+### New Features
+- [#242] Added code blocks
+- [#327] Improved axis settings
+- [#327] Added decimal precision settings
+
+### Bug Fixes
+- [#337] Fixed error when adding AI Agent variables
+
 ## Release v1.2.5, 2025-08-08
 ### New Features
 * [#242] Added GPT5 support
