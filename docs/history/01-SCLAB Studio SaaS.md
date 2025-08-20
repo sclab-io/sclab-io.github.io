@@ -4,6 +4,10 @@ tags:
   - History
 ---
 
+## Release v1.2.7, 2025-08-20
+### Bug Fixes
+* [#68] Fixed multi-axis chart bug
+
 ## Release v1.2.6, 2025-08-14
 ### New Features
 - [#242] Added code blocks
