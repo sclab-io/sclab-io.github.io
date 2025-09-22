@@ -4,6 +4,27 @@ tags:
   - History
 ---
 
+## Release v1.2.8, 2025-09-22
+### New Features
+* [#242] Added Form Trigger Block
+* [#242] Added File Upload Block
+* [#242] Added VectorDB Search Block
+* [#242] Added File Read Block
+* [#242] Added Split Block
+* [#242] Added VectorDB Save Block
+* [#242] Added Response Block
+* [#242] Added Call Other Agent Block (linked with Action Trigger Block)
+* [#242] Added EMPTY Data to SCLAB GPT
+* [#242] Added Vector Data View to SCLAB GPT
+* [#242] Increased AI Free Plan Quota from 500 to 1000
+* [#344] Added Layout Group Feature
+* [#233] Added Post Date Search Feature
+
+### Bug Fixes
+* [#68] Fixed Layout Movement Bug
+* [#68] Fixed Drag Button Bug
+* [#68] Fixed Missing Element Reference when Changing Number Chart Position
+
 ## Release v1.2.7, 2025-08-20
 ### Bug Fixes
 * [#68] Fixed multi-axis chart bug
