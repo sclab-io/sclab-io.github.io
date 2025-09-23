@@ -4,6 +4,10 @@ tags:
   - History
 ---
 
+## Release v1.2.9, 2025-09-23
+### New Features
+* [#233] Set default exposure time for posts
+
 ## Release v1.2.8, 2025-09-22
 ### New Features
 * [#242] Added Form Trigger Block
