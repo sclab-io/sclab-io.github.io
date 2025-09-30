@@ -4,6 +4,11 @@ tags:
   - History
 ---
 
+## Release v1.2.10, 2025-09-30
+### Bug Fixes
+* [#68] Fixed table bug
+* [#68] Fixed layout bug
+
 ## Release v1.2.9, 2025-09-23
 ### New Features
 * [#233] Set default exposure time for posts
