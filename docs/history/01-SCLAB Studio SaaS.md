@@ -4,6 +4,10 @@ tags:
   - History
 ---
 
+## Release v1.2.12, 2025-10-02
+### New Features
+* [#247] Added the ability to resize multiple selected layouts at once
+
 ## Release v1.2.11, 2025-09-30
 ### New Features
 * [#247] Added multi-selection layout movement functionality
