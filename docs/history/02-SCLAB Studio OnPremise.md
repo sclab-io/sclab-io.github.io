@@ -4,6 +4,11 @@ tags:
   - History
 ---
 
+## Release v1.2.13, 2025-10-17
+### New Features
+* [#345] Added multi-select combine
+* [#346] Added member variables
+
 ## Release v1.2.12, 2025-10-02
 ### New Features
 * [#247] Added the ability to resize multiple selected layouts at once
