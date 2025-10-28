@@ -4,6 +4,10 @@ tags:
   - History
 ---
 
+## Release v1.2.14, 2025-10-28
+### New Features
+* [#347] Added site-specific activity logs
+
 ## Release v1.2.13, 2025-10-17
 ### New Features
 * [#345] Added multi-select combine

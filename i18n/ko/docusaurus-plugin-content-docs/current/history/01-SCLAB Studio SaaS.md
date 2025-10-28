@@ -4,6 +4,10 @@ tags:
   - History
 ---
 
+## Release v1.2.14, 2025-10-28
+### New Features
+* [#347] Added site-specific activity logs
+
 ## 릴리즈 v1.2.13, 2025-10-17
 ### 신규 기능
 * [#345] 다중선택 컴바인 추가
