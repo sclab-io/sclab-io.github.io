@@ -4,6 +4,10 @@ tags:
   - History
 ---
 
+## Release v1.3.0, 2025-10-31
+### New Features
+* [#348] Removed SCLAB GPT display area and changed its operation method
+
 ## Release v1.2.14, 2025-10-28
 ### New Features
 * [#347] Added site-specific activity logs
