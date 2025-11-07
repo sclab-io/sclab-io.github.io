@@ -4,6 +4,10 @@ tags:
   - History
 ---
 
+## Release v1.3.2, 2025-11-07
+### Bug Fixes
+* [#68] Added exception handling for cases where related data of SCLAB GPT has been deleted.
+
 ## Release v1.3.1, 2025-11-07
 ### Bug Fixes
 * [#350] Changed the management method for vector DB collections
