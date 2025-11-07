@@ -4,6 +4,11 @@ tags:
   - History
 ---
 
+## Release v1.3.1, 2025-11-07
+### Bug Fixes
+* [#350] Changed the management method for vector DB collections
+* [#350] Change default response prompt for SCLAB GPT
+
 ## Release v1.3.0, 2025-10-31
 ### New Features
 * [#348] Removed SCLAB GPT display area and changed its operation method
