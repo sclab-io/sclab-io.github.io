@@ -4,6 +4,11 @@ tags:
   - History
 ---
 
+## Release v1.3.3, 2025-11-14
+### New Features
+* [#349] Add file library
+* [#68] Add copy feature for charts, pivots, locations, and tables
+
 ## Release v1.3.2, 2025-11-07
 ### Bug Fixes
 * [#68] Added exception handling for cases where related data of SCLAB GPT has been deleted.
