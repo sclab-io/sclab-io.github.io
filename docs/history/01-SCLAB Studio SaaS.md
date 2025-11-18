@@ -4,6 +4,10 @@ tags:
   - History
 ---
 
+## Release v1.3.4, 2025-11-18
+### Bug Fixes
+* [#349] File remove bug fix
+
 ## Release v1.3.3, 2025-11-14
 ### New Features
 * [#349] Add file library
