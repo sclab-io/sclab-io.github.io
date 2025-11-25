@@ -4,6 +4,10 @@ tags:
   - History
 ---
 
+## Release v1.0.16, 2025-11-25
+### New Features
+* Modify the ODBC table list to show only user tables and views.
+
 ## Release v1.0.14, 2025-07-09
 ### New Features
 * Add ALTIBASE support
