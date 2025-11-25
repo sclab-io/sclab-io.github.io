@@ -13,6 +13,7 @@ Connect easily to the database using the SCLAB DB Agent.
 - PostgreSQL
 - SQL Server
 - Oracle
+- Altibase
 - SAP HANA
 - Presto/Trino
 - ODBC
@@ -23,6 +24,7 @@ Connect easily to the database using the SCLAB DB Agent.
 - SQL Injection filter (default on)
 - Mapping with Mybatis
 - AI SQL query generation
+- SQL History view & restore from history
 
 ## Installation
 

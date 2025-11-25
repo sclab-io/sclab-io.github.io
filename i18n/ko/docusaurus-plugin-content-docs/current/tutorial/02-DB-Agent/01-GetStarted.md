@@ -13,6 +13,7 @@ SCLAB DB 에이전트를 이용해서 데이터 베이스에 쉽게 연결하세
 - PostgreSQL
 - SQL Server
 - Oracle
+- Altibase
 - SAP HANA
 - Presto/Trino
 - ODBC
@@ -23,6 +24,7 @@ SCLAB DB 에이전트를 이용해서 데이터 베이스에 쉽게 연결하세
 - SQL Injection 차단 (기본 on)
 - Mybatis 매핑
 - AI SQL 쿼리 생성기
+- SQL 기록 보기 및 복원
 
 ## 설치방법
 
