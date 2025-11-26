@@ -4,6 +4,10 @@ tags:
   - History
 ---
 
+## Release v1.0.17, 2025-11-26
+### Bug Fixes
+* Improve error handling by rejecting with the specific ODBC error when available.
+
 ## Release v1.0.16, 2025-11-25
 ### New Features
 * Modify the ODBC table list to show only user tables and views.
