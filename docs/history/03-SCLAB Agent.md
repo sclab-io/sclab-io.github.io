@@ -4,9 +4,10 @@ tags:
   - History
 ---
 
-## Release v1.0.17, 2025-11-26
+## Release v1.0.17, 2025-11-27
 ### Bug Fixes
 * Improve error handling by rejecting with the specific ODBC error when available.
+* Improve error handling and logging across application initialization and API registration.
 
 ## Release v1.0.16, 2025-11-25
 ### New Features
