@@ -4,6 +4,14 @@ tags:
   - History
 ---
 
+## Release v1.4.0, 2025-12-04
+### New Features
+* Updated AI agent design
+* Added an AI agent block list
+* Improved JSON tree performance
+* Added scoring for AI vector search (default: 0.6)
+* Added double-click to edit in the Data Editor and AI Agent Editor
+
 ## Release v1.3.4, 2025-11-18
 ### Bug Fixes
 * [#349] File remove bug fix
