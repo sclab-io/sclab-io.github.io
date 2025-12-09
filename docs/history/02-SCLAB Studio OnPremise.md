@@ -4,6 +4,12 @@ tags:
   - History
 ---
 
+## Release v1.4.1, 2025-12-09
+### New Features
+* Added Chart Player sorting feature
+* Added user bulk upload feature
+* Added HWP reading feature
+
 ## Release v1.4.0, 2025-12-04
 ### New Features
 * Updated AI agent design
