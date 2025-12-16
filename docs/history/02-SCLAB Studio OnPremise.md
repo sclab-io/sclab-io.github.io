@@ -4,6 +4,12 @@ tags:
   - History
 ---
 
+## Release v1.4.2, 2025-12-16
+### New Features
+* Added site variable functionality
+* Added layout alignment feature
+* Added snap line display when moving layouts
+
 ## Release v1.4.1, 2025-12-09
 ### New Features
 * Added Chart Player sorting feature
