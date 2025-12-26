@@ -4,25 +4,30 @@ tags:
   - History
 ---
 
+## Release v1.4.3, 2025-12-24
+### New Features
+* [#357] Added a settings button to the pivot player
+* [#356] Added support for AI Gemini
+
 ## Release v1.4.2, 2025-12-16
 ### New Features
-* Added site variable functionality
-* Added layout alignment feature
-* Added snap line display when moving layouts
+* [#354] Added site variable functionality
+* [#247] Added layout alignment feature
+* [#247] Added snap line display when moving layouts
 
 ## Release v1.4.1, 2025-12-09
 ### New Features
-* Added Chart Player sorting feature
-* Added user bulk upload feature
-* Added HWP reading feature
+* [#247] Added Chart Player sorting feature
+* [#346] Added user bulk upload feature
+* [#242] Added HWP reading feature
 
 ## Release v1.4.0, 2025-12-04
 ### New Features
-* Updated AI agent design
-* Added an AI agent block list
-* Improved JSON tree performance
-* Added scoring for AI vector search (default: 0.6)
-* Added double-click to edit in the Data Editor and AI Agent Editor
+* [#242] Updated AI agent design
+* [#242] Added an AI agent block list
+* [#148] Improved JSON tree performance
+* [#242] Added scoring for AI vector search (default: 0.6)
+* [#242] Added double-click to edit in the Data Editor and AI Agent Editor
 
 ## Release v1.3.4, 2025-11-18
 ### Bug Fixes
