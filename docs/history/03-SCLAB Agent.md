@@ -4,6 +4,11 @@ tags:
   - History
 ---
 
+## Release v1.0.19, 2025-12-27
+### New Features
+* Add Snowflake support
+* Add Databricks support
+
 ## Release v1.0.17, 2025-11-27
 ### Bug Fixes
 * Improve error handling by rejecting with the specific ODBC error when available.
