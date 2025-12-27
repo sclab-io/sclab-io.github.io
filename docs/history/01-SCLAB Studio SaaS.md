@@ -4,6 +4,11 @@ tags:
   - History
 ---
 
+## Release v1.4.4, 2025-12-27
+### New Features
+* Add Snowflake support
+* Add Databricks support
+
 ## Release v1.4.3, 2025-12-24
 ### New Features
 * [#357] Added a settings button to the pivot player
