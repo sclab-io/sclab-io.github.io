@@ -4,10 +4,16 @@ tags:
   - History
 ---
 
-## 릴리즈 v1.4.4, 2025-12-27
-### 신규 기능
-* Snowflake 지원 추가
-* Databricks 지원 추가
+## Release v1.4.5, 2026-01-09
+### New Features
+* [#358] Added image generation block
+* [#358] Added slide generation block
+* [#358] Added AI-generated notification messages
+
+## Release v1.4.4, 2025-12-27
+### New Features
+* [#247] Added Snowflake support
+* [#247] Added Databricks support
 
 ## 릴리즈 v1.4.3, 2025-12-24
 ### 신규 기능

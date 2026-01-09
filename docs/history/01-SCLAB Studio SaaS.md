@@ -4,10 +4,16 @@ tags:
   - History
 ---
 
+## Release v1.4.5, 2026-01-09
+### New Features
+* [#358] Added image generation block
+* [#358] Added slide generation block
+* [#358] Added AI-generated notification messages
+
 ## Release v1.4.4, 2025-12-27
 ### New Features
-* Add Snowflake support
-* Add Databricks support
+* [#247] Added Snowflake support
+* [#247] Added Databricks support
 
 ## Release v1.4.3, 2025-12-24
 ### New Features
