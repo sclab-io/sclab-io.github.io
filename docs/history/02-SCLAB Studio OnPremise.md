@@ -4,6 +4,16 @@ tags:
   - History
 ---
 
+## Release v1.5.0, 2026-01-23
+### Bug Fixes
+* [#68] Table action bug fix
+
+## Release v1.5.0, 2026-01-22
+### New Features
+* [#361] Added union variable feature
+* [#360] Added reference indicators to chat messages
+* [#362] Added CSV data viewing feature
+
 ## Release v1.4.5, 2026-01-09
 ### New Features
 * [#358] Added image generation block

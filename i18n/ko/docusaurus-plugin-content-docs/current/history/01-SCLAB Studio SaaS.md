@@ -4,16 +4,26 @@ tags:
   - History
 ---
 
-## Release v1.4.5, 2026-01-09
-### New Features
-* [#358] Added image generation block
-* [#358] Added slide generation block
-* [#358] Added AI-generated notification messages
+## 릴리즈 v1.5.1, 2026-01-23
+### 버그 수정
+* [#68] 테이블 액션 버그 수정 
 
-## Release v1.4.4, 2025-12-27
-### New Features
-* [#247] Added Snowflake support
-* [#247] Added Databricks support
+## 릴리즈 v1.5.0, 2026-01-22
+### 신규 기능
+* [#361] 유니온 변수 기능 추가
+* [#360] 체팅 메시지에 참조표시 추가
+* [#362] csv 데이터 보기 기능 추가
+
+## 릴리즈 v1.4.5, 2026-01-09
+### 신규 기능
+* [#358] 이미지 생성 블록 추가
+* [#358] 슬라이드 생성 블록 추가
+* [#358] AI 생성 알림 문구 추가
+
+## 릴리즈 v1.4.4, 2025-12-27
+### 신규 기능
+* [#247] Snowflake 지원 추가
+* [#247] Databricks 지원 추가
 
 ## 릴리즈 v1.4.3, 2025-12-24
 ### 신규 기능
