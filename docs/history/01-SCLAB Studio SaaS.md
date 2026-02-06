@@ -4,7 +4,12 @@ tags:
   - History
 ---
 
-## Release v1.5.0, 2026-01-23
+## Release v1.5.2, 2026-02-06
+### New Features
+* [#247] Added table column color settings
+* [#364] Added voice input for GPT chat
+
+## Release v1.5.1, 2026-01-23
 ### Bug Fixes
 * [#68] Table action bug fix
 
