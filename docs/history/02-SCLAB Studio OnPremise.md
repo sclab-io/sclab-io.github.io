@@ -4,6 +4,11 @@ tags:
   - History
 ---
 
+## Release v1.5.3, 2026-02-27
+* [#247] Added iframe action
+* [#68] Changed the default value of union variables to ''
+* [#365] Added Gemini 3.1 Pro
+
 ## Release v1.5.2, 2026-02-06
 ### New Features
 * [#247] Added table column color settings
