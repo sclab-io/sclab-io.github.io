@@ -4,6 +4,10 @@ tags:
   - History
 ---
 
+## Release v1.5.4, 2026-03-06
+* [#247] Apply actions in the editor (excluding layout actions)
+* [#367] Added GPT-5.4 to ai-service
+
 ## Release v1.5.3, 2026-02-27
 * [#247] Added iframe action
 * [#68] Changed the default value of union variables to ''
