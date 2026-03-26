@@ -4,6 +4,9 @@ tags:
   - History
 ---
 
+## Release v1.6.0, 2026-03-26
+* [#367] Added Site AI Agent and AI Dashboard features
+
 ## Release v1.5.4, 2026-03-06
 * [#247] Apply actions in the editor (excluding layout actions)
 * [#367] Added GPT-5.4 to ai-service
