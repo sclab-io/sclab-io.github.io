@@ -4,6 +4,10 @@ tags:
   - History
 ---
 
+## Release v1.6.1, 2026-03-27
+* [#367] Allowed site creators to access user permissions
+* [#367] Added default GPT creation when creating a site
+
 ## Release v1.6.0, 2026-03-26
 * [#367] Added Site AI Agent and AI Dashboard features
 
