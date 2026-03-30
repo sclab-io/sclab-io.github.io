@@ -4,6 +4,10 @@ tags:
   - History
 ---
 
+## Release v1.6.2, 2026-03-30
+* [#247] Added full-screen edit button for SQL
+* [#247] Added multi-layout copy/delete functionality
+
 ## Release v1.6.1, 2026-03-27
 * [#367] Allowed site creators to access user permissions
 * [#367] Added default GPT creation when creating a site
