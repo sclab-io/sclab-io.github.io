@@ -4,6 +4,9 @@ tags:
   - History
 ---
 
+## Release v1.6.3, 2026-04-03
+* [#367] Support Gemma4 models
+
 ## Release v1.6.2, 2026-03-30
 * [#247] Added full-screen edit button for SQL
 * [#247] Added multi-layout copy/delete functionality
