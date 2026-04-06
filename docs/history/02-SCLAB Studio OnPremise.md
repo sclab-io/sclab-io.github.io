@@ -4,6 +4,9 @@ tags:
   - History
 ---
 
+## Release v1.6.4, 2026-04-06
+* [#367] Support vLLM
+
 ## Release v1.6.3, 2026-04-03
 * [#367] Support Gemma4 models
 
