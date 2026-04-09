@@ -4,6 +4,9 @@ tags:
   - History
 ---
 
+## Release v1.6.5, 2026-04-09
+* [#367] Added IoT, Kafka, survey, and mobile form data sources to the AI agent data import block
+
 ## Release v1.6.2, 2026-03-30
 * [#247] Added full-screen edit button for SQL
 * [#247] Added multi-layout copy/delete functionality
