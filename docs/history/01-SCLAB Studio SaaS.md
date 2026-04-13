@@ -4,6 +4,12 @@ tags:
   - History
 ---
 
+## Release v1.6.6, 2026-04-14
+* [#68] Fixed an issue where AI data sources were displayed in the site dashboard data list
+* [#68] Fixed a bug in AI Agent chat
+* [#68] Added fallback UI when header user information is missing
+* [#68] Fixed an issue where existing chat channel list was not displayed
+
 ## Release v1.6.5, 2026-04-09
 * [#367] Added IoT, Kafka, survey, and mobile form data sources to the AI agent data import block
 * [#68] Fixed chart generation error in GPT
