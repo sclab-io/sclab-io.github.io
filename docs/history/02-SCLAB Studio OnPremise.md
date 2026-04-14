@@ -4,6 +4,9 @@ tags:
   - History
 ---
 
+## Release v1.6.7, 2026-04-14
+* [#68] Enabled image attachments in chat without requiring an OCR model
+
 ## Release v1.6.6, 2026-04-14
 * [#68] Fixed an issue where AI data sources were displayed in the site dashboard data list
 * [#68] Fixed a bug in AI Agent chat
