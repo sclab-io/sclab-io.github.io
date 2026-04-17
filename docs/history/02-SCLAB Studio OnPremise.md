@@ -4,6 +4,9 @@ tags:
   - History
 ---
 
+## Release v1.6.8, 2026-04-17
+* [#367] Changed AI Dashboard charts from Chart.js to ECharts and updated data loading method
+
 ## Release v1.6.7, 2026-04-14
 * [#68] Enabled image attachments in chat without requiring an OCR model
 
