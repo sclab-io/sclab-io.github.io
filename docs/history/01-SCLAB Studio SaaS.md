@@ -4,6 +4,9 @@ tags:
   - History
 ---
 
+## Release v1.6.9, 2026-04-18
+* [#367] Added and improved tokenizer-supported models
+
 ## Release v1.6.8, 2026-04-17
 * [#367] Changed AI Dashboard charts from Chart.js to ECharts and updated data loading method
 
