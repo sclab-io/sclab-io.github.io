@@ -4,6 +4,9 @@ tags:
   - History
 ---
 
+## Release v1.6.10, 2026-04-21
+* [#367] Added support for applying API and UNION parameters when fetching data in the AI Dashboard
+
 ## Release v1.6.9, 2026-04-18
 * [#367] Added and improved tokenizer-supported models
 
