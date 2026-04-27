@@ -14,7 +14,7 @@ tags:
 
 - You can retrieve data from the customer's database using SQL queries through scraping.
 - Even if you're not familiar with SQL, it's easy to use through AI assistance.
-- It can connect to various data sources such as MySQL, Postgres, SQL Server, SAP HANA, ORACLE, Trino, ODBC, and more.
+- It can connect to various data sources such as MySQL, Postgres, SQL Server, SAP HANA, ORACLE, Trino, ODBC, ALTIBASE, Snowflake, Databricks and more.
 
 ![SCLAB Agent](./supportdb.png)
 

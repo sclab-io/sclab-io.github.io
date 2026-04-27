@@ -14,7 +14,7 @@ tags:
 
 - 고객의 데이터 베이스에 SQL 쿼리를 이용해서 스크랩으로 데이터를 가져올 수 있습니다.
 - AI를 통해 SQL을 잘 모르더라도 쉽게 이용 가능합니다.
-- MySQL, Postgres, SQL Server, SAP HANA, ORACLE, Trino, ODBC 등 다양한 데이터 소스에 접속할 수 있습니다.
+- MySQL, Postgres, SQL Server, SAP HANA, ORACLE, Trino, ODBC, ALTIBASE, Snowflake, Databricks 등 다양한 데이터 소스에 접속할 수 있습니다.
 
 ![SCLAB Agent](./supportdb.png)
 
