@@ -4,6 +4,20 @@ tags:
   - History
 ---
 
+## 릴리즈 v1.6.11, 2026-04-28
+* [#247] 페이지 목록에 모바일이나 데스크탑만 나와야 하는 경우는 해당 목록만 나오게 수정
+* [#247] 사이트 ai agent 목록에 현재 페이지 표시
+* [#367] 데이터 context limit 오류 수정 및 readData rows 100건 제한, snapshot 생성 로직 변경
+* [#367] 추론 강도 추가
+* [#367] gpt 5.5 추가
+* [#367] ai dashboard, ai agent 인증 확인 추가
+* [#367] OPEN_AI_BASE_URL 환경 변수 추가
+* [#367] openai image 2 추가 및 예전 모델 제거, Meteor.settings.public.ai.imageModels
+* [#367] sql model gpt 5.4 로 변경
+* [#367] ai dashboard, ai agent 탭 상태 기억 기능 추가
+* [#367] mcp 서버 리슨먼저 되게 변경
+* [#367] AI대시보드 체팅 내역이 존재하면 마지막 내역이 기본 설정되게 변경
+
 ## 릴리즈 v1.6.10, 2026-04-21
 * [#367] AI Dashboard 데이터 가져올때 API, UNION 파라미터 적용기능 추가
 

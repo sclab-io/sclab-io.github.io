@@ -4,6 +4,20 @@ tags:
   - History
 ---
 
+## Release v1.6.11, 2026-04-28
+* [#247] Updated page list to display only mobile or desktop entries when applicable
+* [#247] Highlight current page in site AI agent list
+* [#367] Fixed data context limit error, limited readData rows to 100, and updated snapshot creation logic
+* [#367] Added reasoning strength option
+* [#367] Added GPT 5.5
+* [#367] Added authentication checks for AI dashboard and AI agent
+* [#367] Added OPEN_AI_BASE_URL environment variable
+* [#367] Added OpenAI Image 2 and removed legacy models, Meteor.settings.public.ai.imageModels
+* [#367] Changed SQL model to GPT 5.4
+* [#367] Added tab state persistence for AI dashboard and AI agent
+* [#367] Updated MCP server to listen first
+* [#367] If chat history exists in AI dashboard, the latest conversation is set as default
+
 ## Release v1.6.10, 2026-04-21
 * [#367] Added support for applying API and UNION parameters when fetching data in the AI Dashboard
 
