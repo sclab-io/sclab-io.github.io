@@ -4,6 +4,9 @@ tags:
   - History
 ---
 
+## Release v1.6.11, 2026-05-12
+* [#68] Changed DB Agent to convert non-breaking space characters to regular spaces before executing SQL
+
 ## Release v1.6.11, 2026-04-28
 * [#247] Updated page list to display only mobile or desktop entries when applicable
 * [#247] Highlight current page in site AI agent list
