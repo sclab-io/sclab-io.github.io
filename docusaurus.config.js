@@ -154,6 +154,19 @@ const config = {
               },
             ],
           },
+          {
+            title: 'Legal',
+            items: [
+              {
+                label: 'Privacy and Cookie Policy',
+                to: '/privacy',
+              },
+              {
+                label: 'Terms of Service',
+                to: '/terms',
+              },
+            ],
+          },
         ],
         copyright: `Copyright © ${new Date().getFullYear()} SCLAB, INC.`,
       },
