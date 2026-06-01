@@ -4,54 +4,106 @@ tags:
   - History
 ---
 
-## Release v1.6.11, 2026-05-12
+## Release v1.6.13, 2026-06-01
+
+### New Features
+* [#369, #370, #371, #372] Added LLM Agent block (Artifact storage, parallel sub_llm dispatch, hierarchical logging)
+* [#373] Added Report block - supports multiple file formats (PDF/DOCX/HWPX/HWP/PPTX/MD)
+* [#368] Added sub-agent settings tab and sub LLM model selection
+* [#368] Added Gemini 3.5 Flash and DeepSeek models
+* [#368] Added user variable picker
+
+### Improvements
+* [#368] Report block can now generate multiple file formats at once (e.g., PDF and DOCX together)
+* [#368] Switched slide and HTML report charts to inline Chart.js real-time rendering
+* [#368] SQL generation now uses table sample data and guards against non-standard functions
+* [#368] Improved report generation speed and stability (prevented response stalls)
+* [#368] Added automatic retry on file upload failure
+* [#68] Improved LLM call timeout to use idle-based limits by reasoning effort (prevents premature cancellation during long reasoning)
+
+### Bug Fixes
+* [#68] Fixed an issue where charts were not displayed in the AI chatbot (unified the chart library to ECharts)
+
+## Release v1.6.12, 2026-05-12
+
+### Bug Fixes
 * [#68] Changed DB Agent to convert non-breaking space characters to regular spaces before executing SQL
 
 ## Release v1.6.11, 2026-04-28
-* [#247] Updated page list to display only mobile or desktop entries when applicable
-* [#247] Highlight current page in site AI agent list
-* [#367] Fixed data context limit error, limited readData rows to 100, and updated snapshot creation logic
+
+### New Features
 * [#367] Added reasoning strength option
 * [#367] Added GPT 5.5
-* [#367] Added authentication checks for AI dashboard and AI agent
 * [#367] Added OPEN_AI_BASE_URL environment variable
 * [#367] Added OpenAI Image 2 and removed legacy models, Meteor.settings.public.ai.imageModels
+
+### Improvements
+* [#247] Updated page list to display only mobile or desktop entries when applicable
+* [#247] Highlight current page in site AI agent list
+* [#367] Added authentication checks for AI dashboard and AI agent
 * [#367] Changed SQL model to GPT 5.4
 * [#367] Added tab state persistence for AI dashboard and AI agent
 * [#367] Updated MCP server to listen first
 * [#367] If chat history exists in AI dashboard, the latest conversation is set as default
 
+### Bug Fixes
+* [#367] Fixed data context limit error, limited readData rows to 100, and updated snapshot creation logic
+
 ## Release v1.6.10, 2026-04-21
+
+### New Features
 * [#367] Added support for applying API and UNION parameters when fetching data in the AI Dashboard
 
 ## Release v1.6.9, 2026-04-18
+
+### New Features
 * [#367] Added and improved tokenizer-supported models
 
 ## Release v1.6.8, 2026-04-17
+
+### Improvements
 * [#367] Changed AI Dashboard charts from Chart.js to ECharts and updated data loading method
 
 ## Release v1.6.7, 2026-04-14
+
+### New Features
 * [#68] Enabled image attachments in chat without requiring an OCR model
 
 ## Release v1.6.6, 2026-04-14
+
+### Improvements
+* [#68] Added fallback UI when header user information is missing
+
+### Bug Fixes
 * [#68] Fixed an issue where AI data sources were displayed in the site dashboard data list
 * [#68] Fixed a bug in AI Agent chat
-* [#68] Added fallback UI when header user information is missing
 * [#68] Fixed an issue where existing chat channel list was not displayed
 
 ## Release v1.6.5, 2026-04-09
+
+### New Features
 * [#367] Added IoT, Kafka, survey, and mobile form data sources to the AI agent data import block
+
+### Bug Fixes
 * [#68] Fixed chart generation error in GPT
 
 ## Release v1.6.2, 2026-03-30
+
+### New Features
 * [#247] Added full-screen edit button for SQL
 * [#247] Added multi-layout copy/delete functionality
 
 ## Release v1.6.1, 2026-03-27
-* [#367] Allowed site creators to access user permissions
+
+### New Features
 * [#367] Added default GPT creation when creating a site
 
+### Improvements
+* [#367] Allowed site creators to access user permissions
+
 ## Release v1.6.0, 2026-03-26
+
+### New Features
 * [#367] Added Site AI Agent and AI Dashboard features
 
 ## Release v1.5.4, 2026-03-06
