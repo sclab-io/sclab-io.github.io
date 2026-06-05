@@ -4,6 +4,22 @@ tags:
   - History
 ---
 
+## Release v1.6.14, 2026-06-05
+
+### New Features
+* [#368] Added report themes — upload a design template (DOCX/HTML/PPTX/PDF/HWPX) and generated reports reproduce its layout, styles, and fonts across every output format
+* [#247] Added Python execution to the Code block — choose Python alongside JavaScript, running in an isolated sandbox with common data libraries (NumPy, PyTorch, etc.) preinstalled
+
+### Improvements
+* [#368] Report theme management — added theme deletion, and re-uploading a theme with the same file name now replaces the existing one instead of creating duplicates
+* [#247] Code block editor — added a per-language writing guide popup (the ? button) and a fullscreen editing toggle
+
+### Bug Fixes
+* [#368] Fixed report rendering — text alignment and font sizes are now applied correctly, leftover HTML markup is cleaned up, and `<br>` tags are converted to line breaks
+* [#368] Fixed a chart image ID collision when applying HWPX themes
+* [#368] Fixed data permission enforcement in AI Agent blocks — data access is now validated before a block runs, and the data-import block only lists data groups and lists assigned to the agent's roles
+* [#68] Fixed Ollama models running with reasoning always enabled even when reasoning strength was set to None; unsupported "xhigh" strength is now clamped to "high"
+
 ## Release v1.6.13, 2026-06-01
 
 ### New Features
