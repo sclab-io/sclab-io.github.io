@@ -10,7 +10,7 @@ tags:
 * [#374] Added LDAP authentication — users can sign in with your organization's LDAP directory
 
 ### Improvements
-* [#374] Improved the sign-in screen — social login buttons now read "{Service} Sign in" (e.g., "Google Sign in"), and the login and sign-up screens are fully translated across 12 languages
+* [#374] Improved the sign-in screen — social login buttons now show the service name followed by "Sign in" (e.g., "Google Sign in"), and the login and sign-up screens are fully translated across 12 languages
 * [#368] Shortened the add/delete buttons on report themes to prevent label overflow (all 12 languages)
 * [#368] Raised the maximum token limit for AI Agent runs to support larger reports
 
