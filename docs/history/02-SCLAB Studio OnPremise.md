@@ -4,6 +4,17 @@ tags:
   - History
 ---
 
+## Release v1.6.16, 2026-06-15
+
+### Improvements
+* [#68] Iframe blocks now handle empty content gracefully — they can be saved without content and show a loading screen until content is available
+
+### Bug Fixes
+* [#374] Fixed on-premise servers failing to start after the 1.6.15 LDAP update; sign-in and account creation now work normally
+* [#68] Fixed data permissions not being restored when recovering deleted data
+* [#68] Fixed iframe actions not running — actions are now applied after the iframe finishes rendering
+* [#368] Block output preview file links now open in a new window (previously opened inside the preview frame with no way to go back)
+
 ## Release v1.6.15, 2026-06-09
 
 ### New Features
