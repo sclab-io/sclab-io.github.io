@@ -4,6 +4,20 @@ tags:
   - History
 ---
 
+## Release v1.6.17, 2026-06-17
+
+### New Features
+* [#68] API data sources now support Basic and Digest authentication — enter the username and password in the new Auth fields instead of embedding credentials in the URL
+* [#68] AI Agent can now create report blocks directly
+
+### Improvements
+* [#68] Map settings "apply to all" now shows which items the settings were applied to, and warns which items were skipped when applying to multiple items at once
+
+### Bug Fixes
+* [#68] Fixed an error in map position settings when no value was set
+* [#68] Fixed the Change Layout action so "no data selection" can now be chosen
+* [#68] Restoring deleted data now also restores its assigned layout and action data
+
 ## Release v1.6.16, 2026-06-15
 
 ### Improvements

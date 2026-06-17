@@ -4,6 +4,30 @@ tags:
   - History
 ---
 
+## Release v1.6.17, 2026-06-17
+
+### New Features
+* [#68] API data sources now support Basic and Digest authentication — enter the username and password in the new Auth fields instead of embedding credentials in the URL
+* [#68] AI Agent can now create report blocks directly
+
+### Improvements
+* [#68] Map settings "apply to all" now shows which items the settings were applied to, and warns which items were skipped when applying to multiple items at once
+
+### Bug Fixes
+* [#68] Fixed an error in map position settings when no value was set
+* [#68] Fixed the Change Layout action so "no data selection" can now be chosen
+* [#68] Restoring deleted data now also restores its assigned layout and action data
+
+## Release v1.6.16, 2026-06-15
+
+### Improvements
+* [#68] Iframe blocks now handle empty content gracefully — they can be saved without content and show a loading screen until content is available
+
+### Bug Fixes
+* [#68] Fixed data permissions not being restored when recovering deleted data
+* [#68] Fixed iframe actions not running — actions are now applied after the iframe finishes rendering
+* [#368] Block output preview file links now open in a new window (previously opened inside the preview frame with no way to go back)
+
 ## Release v1.6.15, 2026-06-09
 
 ### Improvements
