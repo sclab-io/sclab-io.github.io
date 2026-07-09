@@ -4,6 +4,33 @@ tags:
   - History
 ---
 
+## Release v1.7.0, 2026-07-08
+
+### New Features
+* [#375] Added SCLAB Vision CCTV integration — register multiple Vision servers, select cameras in layout CCTV widgets, and play live streams through the Studio player
+* [#375] Added CCTV support to Map Editor — place cameras on maps by server, toggle camera visibility, assign actions, apply settings in bulk, and customize marker icons
+* [#376] Added multi vector DB support — manage site-scoped vector DB settings, connection status, provider migration, and external vector DB mode for read/write blocks
+* [#379] Added Tool Bank — build and manage reusable AI tools with vector DB provider selection, attachments, and automated build flow
+* [#368] Added a parallel report and slide section pipeline to improve large document generation speed
+* [#68] Added an Agent Mode toggle to LLM blocks and cleaned up text output rendering for Agent Mode runs
+
+### Improvements
+* [#368] Improved AI Agent logs with real-time running time, copy support, raw log viewing for truncated entries, automatic expansion of running blocks, and automatic scrolling
+* [#368] Improved report and slide generation quality with final review gates, safer section replacement, chart validation, date guidance, title-based file names, and stronger formatting rules for PDF/PPTX/HWPX output
+* [#368] ReportWorker output now uses a structured file-tree format, while regular JSON output continues to render as a JSON tree
+* [#247] Added new-tab edit buttons from page and block settings for maps, charts, pivots, tables, SCLAB GPT, and AI Agent pages
+* [#247] Added enlarged preview popups for charts and tables, and added a popup for viewing API data
+* [#247] Chart, table, and location tooltip column settings can now be reordered by sorting
+* [#375] Improved Vision server management with API token fields, connection tests, status indicators, server search, and immediate status refresh after adding a server
+
+### Bug Fixes
+* [#375] Fixed CCTV playback and action behavior, including HLS initialization, token refresh handling, published-map action remapping, player-only detail popup hiding, and backup/restore consistency
+* [#375] Fixed Vision data cleanup and access consistency when servers, sites, layouts, or CCTV assignments are deleted or restored
+* [#376] Fixed vector DB cleanup, migration, connection-state refresh, cross-site scoping, AOSS/OpenSearch compatibility, and stale vector/document handling
+* [#68] Fixed duplicated layout item names by assigning the first available number instead of using count-based numbering
+* [#68] Fixed API data Digest authentication for devices that bind nonces to keep-alive connections
+* [#68] Fixed popup footer button styling, multi-axis chart threshold errors, table column rendering, and chart settings list sizing
+
 ## Release v1.6.17, 2026-06-17
 
 ### New Features
