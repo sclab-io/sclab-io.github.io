@@ -4,6 +4,12 @@ tags:
   - History
 ---
 
+## Release v1.7.1, 2026-07-13
+
+### New Features
+* [#367] Added OpenAI GPT-5.6 models (Luna, Terra, and Sol) to the AI model selection
+* [#367] Added a Tool Use option (Auto / Required) to AI settings — set it to Required to make the model always call an available tool, which helps with lighter models that might otherwise answer data questions without using tools
+
 ## Release v1.7.0, 2026-07-08
 
 ### New Features
