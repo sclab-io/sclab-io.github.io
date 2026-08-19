@@ -4,6 +4,32 @@ tags:
   - History
 ---
 
+## Release v1.8.0, 2026-08-19
+
+### New Features
+* [#378] Added User Editor — users can build their own pages from site data such as charts and tables, with layout and theme editing, undo/redo, and new-window editing
+* [#378] Added user page sharing — share pages through per-user share URLs, and let link viewers access data, files, and real-time updates with owner-level access
+* [#378] Added user page download to PNG or PDF, including full capture of long pages
+* [#378] Added union data creation in the User Editor
+* [#378] Added User Editor permissions — control User Editor availability from the permission page, and configure site page, AI Dashboard, and AI Agent visibility individually
+* [#247] Added maintenance mode — administrators can turn on maintenance with a custom message; regular users are redirected to a maintenance page and automatically return to their original page when maintenance ends
+* [#247] Added SCLAB GPT prompt history — review previously used prompts in data and union settings and apply them again
+* [#247] Added fullscreen support to the iframe popup content area
+
+### Improvements
+* [#247] Improved chart, table, pivot, and location settings popups with a unified layout, popup titles, reorganized settings sections, updated chart list thumbnails, and a cancel button
+* [#378] Unified the site's top-right buttons and changed them to a dropdown for users with edit permissions
+* [#148] Improved large file imports with batched, concurrent embedding for faster processing and detailed progress for the loading, parsing, and OCR stages
+* [#148] Improved AI Agent internal tool call structure for faster responses and better stability
+* [#368] Improved HWPX export speed for documents with CJK text such as Japanese
+* [#68] Cleaned up an unused time series option in chart settings
+
+### Bug Fixes
+* [#148] Fixed an error that occurred when using OpenAI embedding models while the chat model was from another provider such as DeepSeek
+* [#247] Fixed chart dynamic columns that could not be unchecked
+* [#68] Fixed the site AI Agent to move to another page when the currently open page is deleted
+* [#68] Fixed an unintended link on the profile dropdown
+
 ## Release v1.7.1, 2026-07-13
 
 ### New Features
