@@ -4,6 +4,11 @@ tags:
   - History
 ---
 
+## Release v1.8.1, 2026-08-21
+
+### Improvements
+* [#148] Upgraded the AI service runtime to Bun 1.4 for better memory efficiency and stability
+
 ## Release v1.8.0, 2026-08-19
 
 ### New Features
