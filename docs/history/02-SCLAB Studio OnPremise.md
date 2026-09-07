@@ -4,6 +4,37 @@ tags:
   - History
 ---
 
+## Release v1.9.0, 2026-09-08
+
+### New Features
+* [#383] Added the 3D Editor — build 3D scenes next to the Map Editor with basic shapes, GLB models, lights, environment presets/HDR, floor images, text, paths, and saved camera views; edit with move/rotate/scale gizmos, multi-select, grouping, snapping, orthographic views, and full undo/redo, in either a local XYZ or a GEO (longitude/latitude) coordinate system
+* [#383] Added data binding to 3D elements — connect CSV, API, Union, IoT, and Kafka data to labels, position, rotation, and scale, and attach click/hover actions that receive the row values
+* [#383] Added state flows and effects to 3D elements — threshold rules can trigger color changes, glow, blink, pulse, spin, bob, animation clips, path following, hide, and label emphasis, and alarms/actions work the same way as maps and charts
+* [#383] Added Data Rows elements — spawn one 3D instance per key in a dataset with per-key labels, states, and effects, including a high-performance instanced render mode for large counts
+* [#383] Added the 3D player for dashboards — embed scenes as a layout item with camera view buttons, auto-rotate, labels, hover popups, and a CAMERA_VIEW action; scenes are included in publishing and site backup/restore
+* [#383] Added a 3D Editor item to the license feature list so administrators can enable or disable it per license
+* [#384] Added an optional on-premise map tile server — the installer asks whether to install it; the image bundles the styles, fonts, and map data (world map up to zoom 12 plus South Korea in full detail) so map widgets work without internet access and without the "API KEY REQUIRED" watermark that CARTO started adding. Configure it with `public.tileServerURL` in settings.json and the allowed domains in tileserver.env
+* [#384] Added the Tile Server page to the admin menu — register external customer domains that are allowed to load map tiles (the site domain and custom domains of published sites are allowed automatically)
+* [#367] Added an input context limit option to AI settings — turn it on to cap the tokens sent to the model, seeded from the model's configured limit
+* [#367] Added version history to AI Dashboards — every save is kept as a version with a (v2), (v3) label and creation time in the history dropdown
+
+### Improvements
+* [#367] Model entries in settings.json now honor `contextLimit`, so the input limit can match the GPU of each deployment instead of the model's theoretical maximum
+* [#367] AI Dashboard scripts are now validated before saving (syntax errors and definite runtime defects), the model receives line-level fix guidance, and missing data renders an empty chart instead of a blank screen
+* [#367] Improved AI chat and report reliability on long conversations by counting tool definitions and attached images in the input budget and trimming in one place
+* [#378] Removed the Pivot option from the User Editor block list
+
+### Bug Fixes
+* [#367] Fixed AI chat returning empty answers from the second question onward with Qwen-series models served by vLLM or Ollama
+* [#367] Fixed empty responses and report generation timeouts caused by model "thinking" not being turned off on vLLM
+* [#367] Fixed AI chat staying in the loading state when the model returned an empty response
+* [#367] Fixed conversations being dropped when an image was attached to an AI chat message
+* [#367] Fixed the AI Agent report block printing raw tool-call JSON instead of the result
+* [#378] Fixed theme and layout not being applied after creating a new User Editor page, and aligned the theme background list
+* [#68] Fixed the User Editor data list collapse icon
+* [#68] Fixed calendar charts not rendering when the date column did not match the configured format
+* [#68] Fixed site login not redirecting to the configured page
+
 ## Release v1.8.1, 2026-08-21
 
 ### Improvements
