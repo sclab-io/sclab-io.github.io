@@ -4,6 +4,27 @@ tags:
   - History
 ---
 
+## Release v1.9.1, 2026-09-17
+
+### New Features
+* [#382] Redesigned the pivot table with a built-in pivot engine — arrange fields in Rows, Columns, Values, and Filter zones; aggregate by sum, count, distinct count, average, median, min, max, or standard deviation; choose a compact or tabular layout with subtotals, column subtotals, and grand totals; color cells with a heatmap (positive/negative colors, applied to values, totals, or both); set decimals and sorting by name or value; and optionally let viewers sort and filter in the player. Large pivots render with virtualization, and existing pivots are converted automatically
+* [#382] Pivot tables are now available in the User Editor (New Pivot)
+* [#378] Added API sources to the User Editor — call an external API (GET or POST with headers, parameters, body, timeout, and refresh interval), pick fields from the response with a root path and field paths, preview the response before saving, and use the result in charts, tables, pivots, and unions. Every User Editor user can add up to 20 API sources per site; only public API addresses are allowed
+* [#378] Added data files to the User Editor — upload CSV files (up to 20 per site) and use them in charts, tables, pivots, and unions
+
+### Improvements
+* [#386] AI chat and AI Agent requests are now built to reuse the model provider's prompt cache, which lowers cost and speeds up responses on long conversations
+* [#384] Improved map tile server stability — the tile cache no longer shares the node's system disk and the renderer has more memory, so maps no longer fall back to the watermarked CARTO tiles when the cache fills up
+* [#368] Renamed the DeepSeek model entry to DeepSeek Flash (deepseek-flash) and updated its usage cost calculation
+
+### Bug Fixes
+* [#386] Fixed AI chat losing attached documents, images, and dashboard context in follow-up turns after tool calls, and the tool bank offering every candidate tool on those turns
+* [#383] Fixed the 3D Editor element tree freezing for tens of seconds when a scene had hundreds of elements
+* [#383] Fixed multi-select rotate and scale in the 3D Editor applying only to the primary element
+* [#68] Fixed thresholds not appearing on User Editor pages and threshold display in tables
+* [#68] Fixed the data view header in the User Editor data list always showing "API"
+* [#378] Fixed User Editor API sources converting XML responses to JSON incorrectly, the Add API button not appearing, and the sidebar item hover area
+
 ## Release v1.9.0, 2026-09-08
 
 ### New Features
