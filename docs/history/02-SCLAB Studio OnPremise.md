@@ -4,6 +4,23 @@ tags:
   - History
 ---
 
+## Release v1.9.2, 2026-10-02
+
+### New Features
+* [#387] Added the Comparison Metric chart, which shows the change rate between a current value and a compare value
+* [#247] Expanded the ECharts chart settings (multiple axes, value labels, multi-color, and more)
+* [#367] Added the GPT-6 and GPT-6.1 models — add `GPT6_ASTRA`, `GPT6_SOL`, `GPT6_LUNA`, or `GPT6.1_SOL` to the model list in settings.json
+
+### Improvements
+* [#378] The User Editor now opens straight into the editor without the home screen
+* [#388] Data lists in the property panel now show the data source type next to each name
+* [#68] Items are now semi-transparent while being dragged in the editor
+
+### Bug Fixes
+* [#247] Fixed axis and legend display issues in Chart.js charts and the chart player settings dropdown
+* [#387] Fixed the Comparison Metric chart not resizing correctly
+* [#68] Fixed ECharts click actions firing repeatedly and minor editor layout issues
+
 ## Release v1.9.1, 2026-09-17
 
 ### New Features
