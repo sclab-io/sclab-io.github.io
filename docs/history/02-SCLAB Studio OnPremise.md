@@ -4,6 +4,20 @@ tags:
   - History
 ---
 
+## Release v1.10.0, 2026-10-30
+
+### New Features
+* [#389] Added per-site SSO login — Keycloak, LDAP, OpenSSO (OpenAM), and Kerberos (ID/password and automatic browser login) — with a "Save and publish permissions only" option and default page permissions for new SSO members
+* [#391] Added site page download, including a share option for embedded content such as iframes and YouTube
+* [#392] Redesigned backup and restore — back up only the tabs you select, merge-restore into an existing site, restore directly from the server history, and follow progress in a log panel. Backups of tens of GB are now supported (the restore upload limit can be set with `backupZipMaxMB` in the `private` section of settings.json, default 1 TB)
+* [#393] Redesigned access control (members, teams, guests), team permission hierarchy, and the API Action, AI Agent, Data, Map, and 3D screens, and added team member management
+
+### Improvements
+* [#247] Added search to the data selection list in the Union popup
+
+### Bug Fixes
+* [#385] Fixed table values appearing empty when a column name contains a "."
+
 ## Release v1.9.2, 2026-10-02
 
 ### New Features
