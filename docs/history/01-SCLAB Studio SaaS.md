@@ -4,6 +4,36 @@ tags:
   - History
 ---
 
+## Release v2.0.2, 2026-11-11
+
+### Bug Fixes
+* [#68] Fixed an "Internal server error" that occurred when undoing the deletion of an iterator (group) block in the AI agent editor
+
+## Release v2.0.1, 2026-11-10
+
+### Bug Fixes
+* [#395] Fixed the server failing to start when the scheduled-job history index in an existing database differs from the current settings
+* [#397] Fixed a scrollbar appearing in the editor menu while dragging it
+* [#396] Removed pointless connection attempts — Kafka and MQTT clients now ignore malformed addresses (e.g. `abc:9092`) instead of trying to connect
+
+## Release v2.0.0, 2026-11-10
+
+### New Features
+* [#397] Added the Debugger — a debug window for the page editor and published pages that traces variable changes, data flow, and action execution, with breakpoints and step-by-step run. Includes an AI helper that analyzes the traced data
+* [#394] Added the iframe AI assistant — assign multiple data sources to an iframe, choose how each is passed to the AI (header only / first N rows / all), and let the assistant write and fix the iframe HTML
+* [#367] Added the GPT-6.1 Terra and gpt-image-2.5 models, and changed the default model to GPT-6.1 Sol
+* [#247] Added a button to delete all unused files in the file library at once
+
+### Improvements
+* [#395] Upgraded the platform core for better stability and speed, and strengthened security (resolved dependency vulnerabilities and fixed permission checks)
+* [#396] Rebuilt the IoT/GIS/Kafka background services in Rust for better efficiency and stability
+* [#148] Faster first page load, and AI chat now delegates tool execution to a separate sub-model
+* [#393] Unified the payment and team access control screen designs, and cleaned up dependencies and warnings
+
+### Bug Fixes
+* [#393] Fixed tutorial popovers overlapping or appearing at the wrong position, and a blank screen when leaving the payment page
+* [#68] Fixed the location popup not appearing next to the pin on scrolled published sites
+
 ## Release v1.10.0, 2026-10-30
 
 ### New Features
