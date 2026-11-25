@@ -4,6 +4,19 @@ tags:
   - History
 ---
 
+## Release v2.0.4, 2026-11-26
+
+### Improvements
+* [#375] The CCTV widget now plays the event-box stream (with fire/smoke boxes drawn on the video) first and falls back to the normal camera stream if it is not ready, retrying the event stream every minute. The CCTV player also reopens the stream automatically when it restarts or stalls
+* [#375] Fire/smoke detection boxes stay on screen for a while after being confirmed, and false boxes on scenes without fire (static areas, scene changes, below-threshold candidates) are no longer drawn
+
+### Bug Fixes
+* [#392] Fixed a backup waiting forever at 98% when an uploaded file was missing or a stream error occurred — missing files are skipped and stream errors end the backup as failed
+* [#392] Fixed missed backup/restore requests not being processed, and remote backup downloads failing intermittently
+* [#392] Fixed theme apply not finishing its follow-up work when the request was taken over by another server
+* [#68] Fixed the file upload progress bar staying at 0%
+* [#68] Fixed site pages failing to download
+
 ## Release v2.0.3, 2026-11-23
 
 ### New Features
