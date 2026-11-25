@@ -4,6 +4,33 @@ tags:
   - History
 ---
 
+## Release v2.0.3, 2026-11-23
+
+### New Features
+* [#398] Added AI chat designs — choose from Default, Glass, Bubble, Enterprise, and Gradient, switch between dark and light, set an accent color, and override colors per area (new chat button, conversation list, user and AI messages, input box, open button). Chats using the old custom colors are converted when you pick a new design
+* [#399] Added the HTML to PDF block to AI agents — converts a published page, mobile page, iframe, URL, or raw HTML into a PDF. Pick the target from a searchable list, add query parameters and agent variables, and choose paper size and orientation. Auto height (on by default) splits long dashboards across pages without cutting cards or charts in half, and private sites or permission-protected data are rendered with the agent creator's permissions through a one-time print token
+* [#399] The AI agent assistant can now create HTML to PDF blocks
+* [#399] Added a button to copy the published iframe URL in the iframe list
+* [#247] Replaced the location icons and added new ones
+* [#399] HTML to PDF requires the Gotenberg service — add the `gotenberg` service from the ai-service docker-compose, set `GOTENBERG_URL=http://gotenberg:3000` in common.env, and add your site host to `HTML_TO_PDF_ALLOWED_HOSTS` (wildcards such as `*.example.com` are supported). If `SERVER_FILE_URL` is an internal service name, set `HTML_TO_PDF_PUBLIC_URL` to the site's public address
+
+### Improvements
+* [#400] Faster loading of published sites — editor code is split out, heavy modules load only when needed, and public pages show a page skeleton right away while loading
+* [#68] User Editor downloads now match the screen you are viewing and wait for slow-loading data before saving
+* [#399] Iframe data requests can now pass variables as data API parameters
+* [#400] Aligned the row icons in the editor page and layout lists
+* [#397] Debug bar buttons no longer wrap, and the bar can no longer be dragged outside the window
+* [#405] All on-premise images (webapp, ai-service, tile server, Gotenberg) are now published for both amd64 and arm64, and HWP/HWPX document conversion also works on arm64
+
+### Bug Fixes
+* [#68] Fixed the white-label title and logo not being applied in the editor, user AI agent, and AI dashboard
+* [#68] Fixed an "Unauthorized" error popup when a shared-link viewer with threshold (lamp) widgets was opened without logging in
+* [#68] Fixed paginated lists always showing only one page
+* [#68] Fixed thresholds being clipped when they were outside the chart's y-axis range on first render
+* [#68] Fixed User Editor layout settings not updating when another layout was selected
+* [#68] Fixed dragged files being misaligned after scrolling the User Editor file list
+* [#399] Fixed the wrong block (Email) being created when dragging a block after searching the AI agent block palette
+
 ## Release v2.0.2, 2026-11-11
 
 ### Bug Fixes
